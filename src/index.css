@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: #121214;
+  --surface: #1a1a1d;
+  --surface-raised: #232327;
+  --sheet: #1d1d21;
+  --text: #f0edf3;
+  --reading-text: #e8e4eb;
+  --muted-light: #b1aab9;
+  --muted: #8b8494;
+  --line: #2d2b31;
+  --line-strong: #3b3741;
+  --accent: #ad91d4;
+  --accent-bright: #c3a9e8;
+  --accent-hover: #ceb7ee;
+  --accent-soft: #5b486f;
+  --accent-faint: #2a2233;
+  --button-text: #1d1427;
+  --success: #8fbca3;
+  --warning: #d2b77d;
+  --danger: #e3a2a8;
+  --danger-soft: #67434a;
+  --danger-faint: #322226;
+  --font-ui: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  --font-cjk: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --font-cjk-reading: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
+  color-scheme: dark;
+  font-family: var(--font-ui);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; background: var(--canvas); scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100dvh; background: var(--canvas); }
+button, input, textarea, select { font-family: inherit; }
+button { -webkit-tap-highlight-color: transparent; }
+::selection { color: var(--text); background: var(--accent-soft); }
