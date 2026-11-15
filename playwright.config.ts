@@ -7,14 +7,14 @@ export default defineConfig({
   reporter: 'list',
   timeout: 45_000,
   use: {
-    baseURL: 'http://127.0.0.1:4173',
+    baseURL: 'http://127.0.0.1:4273',
     browserName: 'chromium',
     headless: true,
     trace: 'retain-on-failure',
   },
   webServer: {
-    command: 'npm run preview -- --host 127.0.0.1 --port 4173',
-    url: 'http://127.0.0.1:4173',
+    command: 'npm run preview -- --host 127.0.0.1 --port 4273',
+    url: 'http://127.0.0.1:4273',
     reuseExistingServer: false,
     timeout: 120_000,
   },

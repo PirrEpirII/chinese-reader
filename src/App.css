@@ -517,3 +517,101 @@ button:disabled { cursor: default; }
   .settings-note, .copy-button { font-size: 12px; }
   .settings-preview { font-size: 19px; }
 }
+
+/* Batch 2: library, auto-resume, phrase selection, GitHub source */
+.mobile-nav { grid-template-columns: repeat(3, 1fr); }
+
+.library-list { display: grid; gap: 14px; margin-top: 24px; }
+.library-card {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  min-height: 44px;
+  padding: 19px 18px 16px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  color: var(--text);
+  background: var(--surface);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 160ms ease-out, background-color 160ms ease-out, transform 150ms ease-out;
+}
+.library-card:hover { border-color: var(--accent-soft); background: var(--surface-raised); }
+.library-card:active { transform: scale(0.99); }
+.library-origin {
+  display: inline-block;
+  margin-bottom: 9px;
+  padding: 3px 8px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.library-card h2 { color: var(--text); font-family: var(--font-cjk); font-size: 20px; font-weight: 600; line-height: 1.5; letter-spacing: 0.01em; }
+.library-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; margin-top: 9px; color: var(--muted); font-size: 11px; }
+.library-card-foot { display: flex; align-items: center; gap: 11px; }
+.card-progress { flex: 1 1 auto; height: 4px; border-radius: 3px; background: var(--line); overflow: hidden; }
+.card-progress > span { display: block; height: 100%; border-radius: 3px; background: var(--accent); transition: width 300ms ease-out; }
+.library-status { color: var(--muted-light); font-size: 11px; white-space: nowrap; }
+.library-card-foot svg { flex: 0 0 auto; color: var(--accent); }
+
+.extend-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.extend-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 9px;
+  color: var(--muted-light);
+  background: var(--surface);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 150ms ease-out, border-color 150ms ease-out, background-color 150ms ease-out;
+}
+.extend-button:hover:not(:disabled) { color: var(--accent-bright); border-color: var(--accent-soft); background: var(--accent-faint); }
+.extend-button:disabled { opacity: 0.35; }
+.extend-hint { color: var(--muted); font-size: 10px; letter-spacing: 0.04em; white-space: nowrap; }
+
+.phrase-component { display: inline-flex; align-items: baseline; gap: 9px; font-family: var(--font-cjk); font-size: 16px; color: var(--text); }
+
+.library-source strong { color: var(--muted-light); font-weight: 600; }
+.token-field { display: grid; gap: 7px; margin-top: 12px; }
+.token-field span { color: var(--muted); font-size: 11px; font-weight: 600; }
+.token-field input {
+  min-height: 46px;
+  padding: 10px 13px;
+  border: 1px solid var(--line-strong);
+  border-radius: 9px;
+  color: var(--text);
+  background: var(--surface);
+  font-size: 14px;
+  font-family: inherit;
+}
+.token-field input:focus-visible { outline: 2px solid var(--accent-bright); outline-offset: 2px; }
+.sync-button { width: 100%; margin-top: 13px; }
+.sync-note { min-height: 17px; }
+
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.is-spinning { animation: spin 900ms linear infinite; }
+
+@media (max-width: 759px) {
+  .library-meta, .library-status, .extend-hint, .token-field span { font-size: 12px; }
+  .library-card h2 { font-size: 21px; }
+}
+
+@media (min-width: 760px) {
+  .library-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

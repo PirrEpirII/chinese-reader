@@ -9,6 +9,7 @@ await page.evaluate(() => {
   window.localStorage.setItem('chinese-reader-settings-v1', JSON.stringify({ theme: 'paper', fontSize: 1 }))
 })
 await page.reload()
+await page.locator('.library-card').filter({ hasText: '前三季度经济运行总体平稳' }).click()
 await page.getByRole('heading', { name: '前三季度经济运行总体平稳 高质量发展取得新成效' }).waitFor()
 await page.screenshot({ path: 'test-results/paper-reader.png', fullPage: true })
 await page.locator('.word').filter({ hasText: '新质生产力' }).click()
