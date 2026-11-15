@@ -2,6 +2,16 @@
 
 Technical handoff for the static browser compatibility test. Read the project note `30 Projects/Chinese Reader/Chinese Reader.md` in the owner's Obsidian vault (KB) first for the product architecture and owner decisions; since 2026-11-15 this code lives outside the vault in its own repository. This README covers the implemented code, local operation and verification boundary.
 
+## Status update — 2026-11-15 22:50 (Claude_Leonid)
+
+This section is newer than the rest of the file; where they disagree, this wins.
+
+- The app is **published** at https://pirrepirii.github.io/chinese-reader/ by `.github/workflows/deploy.yml` on every push to `main`.
+- The owner ran the **physical-iPhone check** (iOS 27.0, Safari): tapping, saving, reload persistence, Home Screen install and Airplane Mode all worked, by his report.
+- The architecture changed (no Google Drive; GitHub for app and data; laptop-side text processing; personal glossary). The project note in the vault has the details and the task list for the next agent.
+- `tools/` holds the laptop pipeline, a sample glossary and a sample package; see `tools/README.md`.
+- Next work, in order: load packages in the app, save words with their clause, unsave, Copy as Markdown, then the Obsidian merge.
+
 ## Current status — 2026-11-15
 
 - The local React/TypeScript/Vite test is implemented.

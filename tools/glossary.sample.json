@@ -1,0 +1,25 @@
+{
+  "_about": "Seed glossary from the real-text test of 2026-11-15. The live glossary belongs in the private data repository, not here. terms = words the dictionary lacks or splits wrongly; senses = a first meaning to show before the dictionary's; readings = context rules for single characters with several readings.",
+  "terms": {
+    "前三季度": {"pinyin": "qián sān jì dù", "meaning": "the first three quarters of the year (January to September)"},
+    "一季度": {"pinyin": "yī jì dù", "meaning": "first quarter (Q1)"},
+    "二季度": {"pinyin": "èr jì dù", "meaning": "second quarter (Q2)"},
+    "三季度": {"pinyin": "sān jì dù", "meaning": "third quarter (Q3)"},
+    "新质生产力": {"pinyin": "xīn zhì shēng chǎn lì", "meaning": "\"new quality productive forces\": policy term for innovation-driven, high-tech productivity"},
+    "夏粮": {"pinyin": "xià liáng", "meaning": "summer grain harvest"},
+    "禽肉": {"pinyin": "qín ròu", "meaning": "poultry meat"},
+    "生猪": {"pinyin": "shēng zhū", "meaning": "live hogs; pigs raised for slaughter"},
+    "存栏": {"pinyin": "cún lán", "meaning": "livestock on hand; number of animals currently in stock"},
+    "出栏": {"pinyin": "chū lán", "meaning": "(of livestock) sent to slaughter or market; slaughter numbers"},
+    "增势": {"pinyin": "zēng shì", "meaning": "growth momentum; upward trend"},
+    "亿元": {"pinyin": "yì yuán", "meaning": "100 million yuan (unit)"},
+    "万吨": {"pinyin": "wàn dūn", "meaning": "10,000 tonnes (unit)"},
+    "万头": {"pinyin": "wàn tóu", "meaning": "10,000 head (unit for livestock)"}
+  },
+  "senses": {
+    "动能": "(economics) momentum; growth driver, as in 新动能 \"new growth drivers\""
+  },
+  "readings": [
+    {"word": "为", "pinyin": "wéi", "cedict": "wei2", "after": "以", "window": 8, "note": "In 以…为… (take … as …) the reading is wéi, not wèi."}
+  ]
+}
