@@ -414,3 +414,35 @@ button:disabled { cursor: default; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
+
+/* Step A: package-driven reading */
+.package-status { padding: 120px 22px; text-align: center; }
+.package-status h1 { color: var(--text); font-size: 20px; font-weight: 600; }
+.package-status p { margin-top: 12px; color: var(--muted-light); font-size: 14px; line-height: 1.6; }
+
+.glossary-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  padding: 4px 10px;
+  border: 1px solid var(--accent-soft);
+  border-radius: 999px;
+  color: var(--accent-bright);
+  background: var(--accent-faint);
+  font-size: 11px;
+  font-weight: 650;
+}
+.glossary-note { margin-top: 9px; color: var(--muted-light); font-size: 12px; line-height: 1.6; }
+
+.sense-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 11px; }
+.sense-list li { display: grid; gap: 2px; padding-left: 12px; border-left: 2px solid var(--line-strong); }
+.sense-pinyin { color: var(--accent-bright); font-size: 12px; letter-spacing: 0.02em; }
+.sense-defs { color: var(--muted-light); font-size: 13px; line-height: 1.6; }
+
+.dict-credit { margin-top: 12px; color: var(--muted); font-size: 10px; line-height: 1.6; }
+
+@media (max-width: 759px) {
+  .glossary-badge, .glossary-note, .dict-credit { font-size: 12px; }
+  .sense-pinyin, .sense-defs { font-size: 14px; }
+}

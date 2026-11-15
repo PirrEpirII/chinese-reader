@@ -1,0 +1,3061 @@
+{
+ "schema_version": 1,
+ "package_id": "package-000001",
+ "created_at": "2026-11-15T19:47:55+00:00",
+ "article": {
+  "id": "article-000001",
+  "title": "前三季度经济运行总体平稳 高质量发展取得新成效",
+  "source_name": "国家统计局",
+  "source_url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261019_1965618.html",
+  "date": "2026-10-19"
+ },
+ "paragraphs": [
+  [
+   {
+    "t": "前三季度",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "以",
+    "w": 1
+   },
+   {
+    "t": "习近平",
+    "w": 1
+   },
+   {
+    "t": "同志",
+    "w": 1
+   },
+   {
+    "t": "为",
+    "w": 1,
+    "k": "为#wei2"
+   },
+   {
+    "t": "核心",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "党中央",
+    "w": 1
+   },
+   {
+    "t": "坚强",
+    "w": 1
+   },
+   {
+    "t": "领导",
+    "w": 1
+   },
+   {
+    "t": "下",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "各",
+    "w": 1
+   },
+   {
+    "t": "地区",
+    "w": 1
+   },
+   {
+    "t": "各",
+    "w": 1
+   },
+   {
+    "t": "部门",
+    "w": 1
+   },
+   {
+    "t": "认真",
+    "w": 1
+   },
+   {
+    "t": "贯彻",
+    "w": 1
+   },
+   {
+    "t": "落实",
+    "w": 1
+   },
+   {
+    "t": "党中央",
+    "w": 1
+   },
+   {
+    "t": "、"
+   },
+   {
+    "t": "国务院",
+    "w": 1
+   },
+   {
+    "t": "决策",
+    "w": 1
+   },
+   {
+    "t": "部署",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "坚持",
+    "w": 1
+   },
+   {
+    "t": "稳中求进",
+    "w": 1
+   },
+   {
+    "t": "工作",
+    "w": 1
+   },
+   {
+    "t": "总",
+    "w": 1
+   },
+   {
+    "t": "基调",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "加大",
+    "w": 1
+   },
+   {
+    "t": "宏观",
+    "w": 1
+   },
+   {
+    "t": "政策",
+    "w": 1
+   },
+   {
+    "t": "调节",
+    "w": 1
+   },
+   {
+    "t": "力度",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "着力",
+    "w": 1
+   },
+   {
+    "t": "深化",
+    "w": 1
+   },
+   {
+    "t": "改革",
+    "w": 1
+   },
+   {
+    "t": "开放",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "因地制宜",
+    "w": 1
+   },
+   {
+    "t": "培育",
+    "w": 1
+   },
+   {
+    "t": "壮大",
+    "w": 1
+   },
+   {
+    "t": "新质生产力",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "有效",
+    "w": 1
+   },
+   {
+    "t": "化解",
+    "w": 1
+   },
+   {
+    "t": "风险",
+    "w": 1
+   },
+   {
+    "t": "隐患",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "国民经济",
+    "w": 1
+   },
+   {
+    "t": "顶住",
+    "w": 1
+   },
+   {
+    "t": "压力",
+    "w": 1
+   },
+   {
+    "t": "保持",
+    "w": 1
+   },
+   {
+    "t": "平稳",
+    "w": 1
+   },
+   {
+    "t": "运行",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "呈现",
+    "w": 1
+   },
+   {
+    "t": "动能",
+    "w": 1
+   },
+   {
+    "t": "向",
+    "w": 1
+   },
+   {
+    "t": "新",
+    "w": 1
+   },
+   {
+    "t": "、"
+   },
+   {
+    "t": "结构",
+    "w": 1
+   },
+   {
+    "t": "向",
+    "w": 1
+   },
+   {
+    "t": "优",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "发展",
+    "w": 1
+   },
+   {
+    "t": "态势",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "生产",
+    "w": 1
+   },
+   {
+    "t": "供给",
+    "w": 1
+   },
+   {
+    "t": "较",
+    "w": 1
+   },
+   {
+    "t": "快",
+    "w": 1
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "对外贸易",
+    "w": 1
+   },
+   {
+    "t": "增势",
+    "w": 1
+   },
+   {
+    "t": "良好",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "就业",
+    "w": 1
+   },
+   {
+    "t": "物价",
+    "w": 1
+   },
+   {
+    "t": "总体",
+    "w": 1
+   },
+   {
+    "t": "稳定",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "民生",
+    "w": 1
+   },
+   {
+    "t": "保障",
+    "w": 1
+   },
+   {
+    "t": "有力",
+    "w": 1
+   },
+   {
+    "t": "有效",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "发展",
+    "w": 1
+   },
+   {
+    "t": "韧性",
+    "w": 1
+   },
+   {
+    "t": "和",
+    "w": 1
+   },
+   {
+    "t": "活力",
+    "w": 1
+   },
+   {
+    "t": "持续",
+    "w": 1
+   },
+   {
+    "t": "彰显",
+    "w": 1
+   },
+   {
+    "t": "。"
+   }
+  ],
+  [
+   {
+    "t": "初步",
+    "w": 1
+   },
+   {
+    "t": "核算",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "前三季度",
+    "w": 1
+   },
+   {
+    "t": "国内",
+    "w": 1
+   },
+   {
+    "t": "生产总值",
+    "w": 1
+   },
+   {
+    "t": "1071071"
+   },
+   {
+    "t": "亿元",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "按",
+    "w": 1
+   },
+   {
+    "t": "不变价格",
+    "w": 1
+   },
+   {
+    "t": "计算",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "同比",
+    "w": 1
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "4.6%"
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "分",
+    "w": 1
+   },
+   {
+    "t": "产业",
+    "w": 1
+   },
+   {
+    "t": "看",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "第一产业",
+    "w": 1
+   },
+   {
+    "t": "增加值",
+    "w": 1
+   },
+   {
+    "t": "58994"
+   },
+   {
+    "t": "亿元",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "同比",
+    "w": 1
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "3.7%"
+   },
+   {
+    "t": "；"
+   },
+   {
+    "t": "第二产业",
+    "w": 1
+   },
+   {
+    "t": "增加值",
+    "w": 1
+   },
+   {
+    "t": "383822"
+   },
+   {
+    "t": "亿元",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "3.8%"
+   },
+   {
+    "t": "；"
+   },
+   {
+    "t": "第三产业",
+    "w": 1
+   },
+   {
+    "t": "增加值",
+    "w": 1
+   },
+   {
+    "t": "628255"
+   },
+   {
+    "t": "亿元",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "5.2%"
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "分",
+    "w": 1
+   },
+   {
+    "t": "季度",
+    "w": 1
+   },
+   {
+    "t": "看",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "一季度",
+    "w": 1
+   },
+   {
+    "t": "国内",
+    "w": 1
+   },
+   {
+    "t": "生产总值",
+    "w": 1
+   },
+   {
+    "t": "同比",
+    "w": 1
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "5.0%"
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "二季度",
+    "w": 1
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "4.3%"
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "三季度",
+    "w": 1
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "4.5%"
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "从",
+    "w": 1
+   },
+   {
+    "t": "环比",
+    "w": 1
+   },
+   {
+    "t": "看",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "三季度",
+    "w": 1
+   },
+   {
+    "t": "国内",
+    "w": 1
+   },
+   {
+    "t": "生产总值",
+    "w": 1
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "1.2%"
+   },
+   {
+    "t": "。"
+   }
+  ],
+  [
+   {
+    "t": "前三季度",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "农业",
+    "w": 1
+   },
+   {
+    "t": "（"
+   },
+   {
+    "t": "种植业",
+    "w": 1
+   },
+   {
+    "t": "）"
+   },
+   {
+    "t": "增加值",
+    "w": 1
+   },
+   {
+    "t": "同比",
+    "w": 1
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "3.6%"
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "全国",
+    "w": 1
+   },
+   {
+    "t": "夏粮",
+    "w": 1
+   },
+   {
+    "t": "早稻",
+    "w": 1
+   },
+   {
+    "t": "产量",
+    "w": 1
+   },
+   {
+    "t": "合计",
+    "w": 1
+   },
+   {
+    "t": "17904"
+   },
+   {
+    "t": "万吨",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "比",
+    "w": 1
+   },
+   {
+    "t": "上年",
+    "w": 1
+   },
+   {
+    "t": "增加",
+    "w": 1
+   },
+   {
+    "t": "78"
+   },
+   {
+    "t": "万吨",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "0.4%"
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "秋粮",
+    "w": 1
+   },
+   {
+    "t": "生产",
+    "w": 1
+   },
+   {
+    "t": "形势",
+    "w": 1
+   },
+   {
+    "t": "良好",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "全年",
+    "w": 1
+   },
+   {
+    "t": "粮食",
+    "w": 1
+   },
+   {
+    "t": "有望",
+    "w": 1
+   },
+   {
+    "t": "再",
+    "w": 1
+   },
+   {
+    "t": "获",
+    "w": 1
+   },
+   {
+    "t": "丰收",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "前三季度",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "猪",
+    "w": 1
+   },
+   {
+    "t": "牛羊",
+    "w": 1
+   },
+   {
+    "t": "禽肉",
+    "w": 1
+   },
+   {
+    "t": "产量",
+    "w": 1
+   },
+   {
+    "t": "7627"
+   },
+   {
+    "t": "万吨",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "同比",
+    "w": 1
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "4.3%"
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "其中",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "猪肉",
+    "w": 1
+   },
+   {
+    "t": "、"
+   },
+   {
+    "t": "禽肉",
+    "w": 1
+   },
+   {
+    "t": "产量",
+    "w": 1
+   },
+   {
+    "t": "分别",
+    "w": 1
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "3.2%"
+   },
+   {
+    "t": "、"
+   },
+   {
+    "t": "9.3%"
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "牛肉",
+    "w": 1
+   },
+   {
+    "t": "、"
+   },
+   {
+    "t": "羊肉",
+    "w": 1
+   },
+   {
+    "t": "产量",
+    "w": 1
+   },
+   {
+    "t": "分别",
+    "w": 1
+   },
+   {
+    "t": "下降",
+    "w": 1
+   },
+   {
+    "t": "0.7%"
+   },
+   {
+    "t": "、"
+   },
+   {
+    "t": "3.7%"
+   },
+   {
+    "t": "；"
+   },
+   {
+    "t": "牛奶",
+    "w": 1
+   },
+   {
+    "t": "产量",
+    "w": 1
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "2.4%"
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "禽蛋",
+    "w": 1
+   },
+   {
+    "t": "产量",
+    "w": 1
+   },
+   {
+    "t": "下降",
+    "w": 1
+   },
+   {
+    "t": "1.7%"
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "三季度",
+    "w": 1
+   },
+   {
+    "t": "末",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "生猪",
+    "w": 1
+   },
+   {
+    "t": "存栏",
+    "w": 1
+   },
+   {
+    "t": "42533"
+   },
+   {
+    "t": "万头",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "同比",
+    "w": 1
+   },
+   {
+    "t": "下降",
+    "w": 1
+   },
+   {
+    "t": "2.6%"
+   },
+   {
+    "t": "；"
+   },
+   {
+    "t": "前三季度",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "生猪",
+    "w": 1
+   },
+   {
+    "t": "出栏",
+    "w": 1
+   },
+   {
+    "t": "53739"
+   },
+   {
+    "t": "万头",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "1.4%"
+   },
+   {
+    "t": "。"
+   }
+  ]
+ ],
+ "lexicon": {
+  "前三季度": {
+   "pinyin": "qián sān jì dù",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "qián sān jì dù",
+     "defs": [
+      "the first three quarters of the year (January to September)"
+     ]
+    }
+   ]
+  },
+  "在": {
+   "pinyin": "zài",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zài",
+     "defs": [
+      "to exist; to be alive",
+      "(of sb or sth) to be (located) at",
+      "(used before a verb to indicate an action in progress)"
+     ]
+    }
+   ]
+  },
+  "以": {
+   "pinyin": "yǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Yǐ",
+     "defs": [
+      "abbr. for Israel 以色列[Yi3 se4 lie4]"
+     ]
+    },
+    {
+     "pinyin": "yǐ",
+     "defs": [
+      "to use",
+      "by means of",
+      "according to",
+      "in order to",
+      "because of",
+      "at (a certain date or place)"
+     ]
+    }
+   ]
+  },
+  "习近平": {
+   "pinyin": "xí jìn píng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Xí Jìn píng",
+     "defs": [
+      "Xi Jinping (1953-), PRC politician, General Secretary of the CCP from 2012, president of the PRC from 2013"
+     ]
+    }
+   ]
+  },
+  "同志": {
+   "pinyin": "tóng zhì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "tóng zhì",
+     "defs": [
+      "comrade",
+      "(slang) homosexual"
+     ]
+    }
+   ]
+  },
+  "为#wei2": {
+   "pinyin": "wéi",
+   "origin": "glossary",
+   "note": "In 以…为… (take … as …) the reading is wéi, not wèi.",
+   "entries": [
+    {
+     "pinyin": "wéi",
+     "defs": [
+      "as (in the capacity of)",
+      "to take sth as",
+      "to act as",
+      "to serve as",
+      "to behave as",
+      "to become"
+     ]
+    },
+    {
+     "pinyin": "wèi",
+     "defs": [
+      "because of",
+      "for",
+      "to"
+     ]
+    }
+   ]
+  },
+  "核心": {
+   "pinyin": "hé xīn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "hé xīn",
+     "defs": [
+      "core; nucleus"
+     ]
+    }
+   ]
+  },
+  "的": {
+   "pinyin": "de",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "de",
+     "defs": [
+      "of; ~'s (possessive particle)",
+      "(used after an attribute)",
+      "(used to form a nominal expression)",
+      "(used at the end of a declarative sentence for emphasis)",
+      "also pr. [di4] or [di5] in poetry and songs"
+     ]
+    },
+    {
+     "pinyin": "dī",
+     "defs": [
+      "a taxi; a cab (abbr. for 的士[di1 shi4])"
+     ]
+    },
+    {
+     "pinyin": "dí",
+     "defs": [
+      "really and truly"
+     ]
+    },
+    {
+     "pinyin": "dì",
+     "defs": [
+      "(bound form) bull's-eye; target"
+     ]
+    }
+   ]
+  },
+  "党中央": {
+   "pinyin": "dǎng zhōng yāng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Dǎng Zhōng yāng",
+     "defs": [
+      "Central Committee of the CCP"
+     ]
+    }
+   ]
+  },
+  "坚强": {
+   "pinyin": "jiān qiáng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jiān qiáng",
+     "defs": [
+      "staunch",
+      "strong"
+     ]
+    }
+   ]
+  },
+  "领导": {
+   "pinyin": "lǐng dǎo",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lǐng dǎo",
+     "defs": [
+      "lead",
+      "leading",
+      "to lead",
+      "leadership",
+      "leader"
+     ]
+    }
+   ]
+  },
+  "下": {
+   "pinyin": "xià",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xià",
+     "defs": [
+      "down",
+      "downwards",
+      "below",
+      "lower",
+      "later",
+      "next (week etc)"
+     ]
+    }
+   ]
+  },
+  "各": {
+   "pinyin": "gè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gè",
+     "defs": [
+      "each",
+      "every"
+     ]
+    }
+   ]
+  },
+  "地区": {
+   "pinyin": "dì qū",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dì qū",
+     "defs": [
+      "local",
+      "regional",
+      "district (not necessarily formal administrative unit)",
+      "region",
+      "area",
+      "as suffix to city name, means prefecture or county (area administered by a prefecture-level city or, county-level city)"
+     ]
+    }
+   ]
+  },
+  "部门": {
+   "pinyin": "bù mén",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bù mén",
+     "defs": [
+      "department",
+      "branch",
+      "section",
+      "division"
+     ]
+    }
+   ]
+  },
+  "认真": {
+   "pinyin": "rèn zhēn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "rèn zhēn",
+     "defs": [
+      "conscientious",
+      "earnest",
+      "serious",
+      "to take seriously",
+      "to take to heart"
+     ]
+    }
+   ]
+  },
+  "贯彻": {
+   "pinyin": "guàn chè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "guàn chè",
+     "defs": [
+      "to implement",
+      "to put into practice",
+      "to carry out"
+     ]
+    }
+   ]
+  },
+  "落实": {
+   "pinyin": "luò shí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "luò shí",
+     "defs": [
+      "practical",
+      "workable",
+      "to implement",
+      "to carry out",
+      "to decide"
+     ]
+    }
+   ]
+  },
+  "国务院": {
+   "pinyin": "guó wù yuàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Guó wù yuàn",
+     "defs": [
+      "State Council (PRC)",
+      "State Department (USA)"
+     ]
+    }
+   ]
+  },
+  "决策": {
+   "pinyin": "jué cè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jué cè",
+     "defs": [
+      "strategic decision",
+      "decision-making",
+      "policy decision",
+      "to determine policy"
+     ]
+    }
+   ]
+  },
+  "部署": {
+   "pinyin": "bù shǔ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bù shǔ",
+     "defs": [
+      "to dispose",
+      "to deploy",
+      "deployment"
+     ]
+    }
+   ]
+  },
+  "坚持": {
+   "pinyin": "jiān chí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jiān chí",
+     "defs": [
+      "to persevere with",
+      "to persist in",
+      "to insist on"
+     ]
+    }
+   ]
+  },
+  "稳中求进": {
+   "pinyin": "wěn zhōng qiú jìn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "wěn zhōng qiú jìn",
+     "defs": [
+      "to make progress while ensuring stability"
+     ]
+    }
+   ]
+  },
+  "工作": {
+   "pinyin": "gōng zuò",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gōng zuò",
+     "defs": [
+      "to work",
+      "(of a machine) to operate",
+      "job",
+      "work",
+      "task"
+     ]
+    }
+   ]
+  },
+  "总": {
+   "pinyin": "zǒng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zǒng",
+     "defs": [
+      "general; overall",
+      "to sum up",
+      "in every case; always; invariably",
+      "anyway; after all; eventually; sooner or later",
+      "surely",
+      "(after a person's name) abbr. for 總經理|总经理[zong3 jing1 li3] or 總編|总编[zong3 bian1] etc"
+     ]
+    }
+   ]
+  },
+  "基调": {
+   "pinyin": "jī diào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jī diào",
+     "defs": [
+      "main key (of a musical composition)",
+      "keynote (speech)"
+     ]
+    }
+   ]
+  },
+  "加大": {
+   "pinyin": "jiā dà",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jiā dà",
+     "defs": [
+      "to increase (e.g. one's effort)"
+     ]
+    }
+   ]
+  },
+  "宏观": {
+   "pinyin": "hóng guān",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "hóng guān",
+     "defs": [
+      "macro-",
+      "macroscopic",
+      "holistic"
+     ]
+    }
+   ]
+  },
+  "政策": {
+   "pinyin": "zhèng cè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhèng cè",
+     "defs": [
+      "policy"
+     ]
+    }
+   ]
+  },
+  "调节": {
+   "pinyin": "tiáo jié",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "tiáo jié",
+     "defs": [
+      "to adjust",
+      "to regulate",
+      "to harmonize",
+      "to reconcile (accountancy etc)"
+     ]
+    }
+   ]
+  },
+  "力度": {
+   "pinyin": "lì dù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lì dù",
+     "defs": [
+      "strength",
+      "vigor",
+      "efforts",
+      "(music) dynamics"
+     ]
+    }
+   ]
+  },
+  "着力": {
+   "pinyin": "zhuó lì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhuó lì",
+     "defs": [
+      "to put effort into sth",
+      "to try really hard"
+     ]
+    }
+   ]
+  },
+  "深化": {
+   "pinyin": "shēn huà",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shēn huà",
+     "defs": [
+      "to deepen",
+      "to intensify"
+     ]
+    }
+   ]
+  },
+  "改革": {
+   "pinyin": "gǎi gé",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gǎi gé",
+     "defs": [
+      "reform",
+      "to reform"
+     ]
+    }
+   ]
+  },
+  "开放": {
+   "pinyin": "kāi fàng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "kāi fàng",
+     "defs": [
+      "to bloom",
+      "to open",
+      "to be open (to the public)",
+      "to open up (to the outside)",
+      "to be open-minded",
+      "unrestrained by convention"
+     ]
+    }
+   ]
+  },
+  "因地制宜": {
+   "pinyin": "yīn dì zhì yí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yīn dì zhì yí",
+     "defs": [
+      "(idiom) to use methods in line with local circumstances"
+     ]
+    }
+   ]
+  },
+  "培育": {
+   "pinyin": "péi yù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "péi yù",
+     "defs": [
+      "to train",
+      "to breed"
+     ]
+    }
+   ]
+  },
+  "壮大": {
+   "pinyin": "zhuàng dà",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhuàng dà",
+     "defs": [
+      "to expand",
+      "to strengthen"
+     ]
+    }
+   ]
+  },
+  "新质生产力": {
+   "pinyin": "xīn zhì shēng chǎn lì",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "xīn zhì shēng chǎn lì",
+     "defs": [
+      "\"new quality productive forces\": policy term for innovation-driven, high-tech productivity"
+     ]
+    }
+   ]
+  },
+  "有效": {
+   "pinyin": "yǒu xiào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yǒu xiào",
+     "defs": [
+      "effective",
+      "in effect",
+      "valid"
+     ]
+    }
+   ]
+  },
+  "化解": {
+   "pinyin": "huà jiě",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "huà jiě",
+     "defs": [
+      "to dissolve",
+      "to resolve (contradictions)",
+      "to dispel (doubts)",
+      "to iron out (difficulties)",
+      "to defuse (conflicts)",
+      "to neutralize (fears)"
+     ]
+    }
+   ]
+  },
+  "风险": {
+   "pinyin": "fēng xiǎn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fēng xiǎn",
+     "defs": [
+      "risk; hazard"
+     ]
+    }
+   ]
+  },
+  "隐患": {
+   "pinyin": "yǐn huàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yǐn huàn",
+     "defs": [
+      "a danger concealed within sth",
+      "hidden damage",
+      "misfortune not visible from the surface"
+     ]
+    }
+   ]
+  },
+  "国民经济": {
+   "pinyin": "guó mín jīng jì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "guó mín jīng jì",
+     "defs": [
+      "national economy"
+     ]
+    }
+   ]
+  },
+  "顶住": {
+   "pinyin": "dǐng zhù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dǐng zhù",
+     "defs": [
+      "to withstand",
+      "to stand up to"
+     ]
+    }
+   ]
+  },
+  "压力": {
+   "pinyin": "yā lì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yā lì",
+     "defs": [
+      "pressure"
+     ]
+    }
+   ]
+  },
+  "保持": {
+   "pinyin": "bǎo chí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bǎo chí",
+     "defs": [
+      "to keep",
+      "to maintain",
+      "to hold",
+      "to preserve"
+     ]
+    }
+   ]
+  },
+  "平稳": {
+   "pinyin": "píng wěn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "píng wěn",
+     "defs": [
+      "smooth",
+      "steady"
+     ]
+    }
+   ]
+  },
+  "运行": {
+   "pinyin": "yùn xíng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yùn xíng",
+     "defs": [
+      "to move along one's course (of celestial bodies etc)",
+      "(fig.) to function; to be in operation",
+      "(of a train service etc) to operate; to run",
+      "(of a computer) to run"
+     ]
+    }
+   ]
+  },
+  "呈现": {
+   "pinyin": "chéng xiàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chéng xiàn",
+     "defs": [
+      "to appear",
+      "to emerge",
+      "to present (a certain appearance)",
+      "to demonstrate"
+     ]
+    }
+   ]
+  },
+  "动能": {
+   "pinyin": "dòng néng",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "dòng néng",
+     "defs": [
+      "(economics) momentum; growth driver, as in 新动能 \"new growth drivers\""
+     ]
+    },
+    {
+     "pinyin": "dòng néng",
+     "defs": [
+      "kinetic energy"
+     ]
+    }
+   ]
+  },
+  "向": {
+   "pinyin": "xiàng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Xiàng",
+     "defs": [
+      "surname Xiang"
+     ]
+    },
+    {
+     "pinyin": "xiàng",
+     "defs": [
+      "towards",
+      "to face",
+      "to turn towards",
+      "direction",
+      "to support",
+      "to side with"
+     ]
+    },
+    {
+     "pinyin": "xiàng",
+     "defs": [
+      "to tend toward",
+      "to guide",
+      "variant of 向[xiang4]"
+     ]
+    }
+   ]
+  },
+  "新": {
+   "pinyin": "xīn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Xīn",
+     "defs": [
+      "abbr. for Xinjiang 新疆[Xin1 jiang1] or Singapore 新加坡[Xin1 jia1 po1]",
+      "surname Xin"
+     ]
+    },
+    {
+     "pinyin": "xīn",
+     "defs": [
+      "new",
+      "newly",
+      "meso- (chemistry)"
+     ]
+    }
+   ]
+  },
+  "结构": {
+   "pinyin": "jié gòu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jié gòu",
+     "defs": [
+      "structure",
+      "composition",
+      "makeup",
+      "architecture"
+     ]
+    }
+   ]
+  },
+  "优": {
+   "pinyin": "yōu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yōu",
+     "defs": [
+      "excellent",
+      "superior"
+     ]
+    }
+   ]
+  },
+  "发展": {
+   "pinyin": "fā zhǎn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fā zhǎn",
+     "defs": [
+      "development",
+      "growth",
+      "to develop",
+      "to grow",
+      "to expand"
+     ]
+    }
+   ]
+  },
+  "态势": {
+   "pinyin": "tài shì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "tài shì",
+     "defs": [
+      "posture",
+      "situation"
+     ]
+    }
+   ]
+  },
+  "生产": {
+   "pinyin": "shēng chǎn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shēng chǎn",
+     "defs": [
+      "to produce; to manufacture",
+      "to give birth to a child"
+     ]
+    }
+   ]
+  },
+  "供给": {
+   "pinyin": "gōng jǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gōng jǐ",
+     "defs": [
+      "to furnish",
+      "to provide",
+      "supply (as in supply and demand)"
+     ]
+    }
+   ]
+  },
+  "较": {
+   "pinyin": "jiào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jiào",
+     "defs": [
+      "to compare",
+      "to dispute",
+      "compared to",
+      "(before adj.) relatively",
+      "comparatively",
+      "rather"
+     ]
+    }
+   ]
+  },
+  "快": {
+   "pinyin": "kuài",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "kuài",
+     "defs": [
+      "rapid",
+      "quick",
+      "speed",
+      "rate",
+      "soon",
+      "almost"
+     ]
+    }
+   ]
+  },
+  "增长": {
+   "pinyin": "zēng zhǎng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zēng zhǎng",
+     "defs": [
+      "to grow",
+      "to increase"
+     ]
+    }
+   ]
+  },
+  "对外贸易": {
+   "pinyin": "duì wài mào yì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "duì wài mào yì",
+     "defs": [
+      "foreign trade"
+     ]
+    }
+   ]
+  },
+  "增势": {
+   "pinyin": "zēng shì",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "zēng shì",
+     "defs": [
+      "growth momentum; upward trend"
+     ]
+    }
+   ]
+  },
+  "良好": {
+   "pinyin": "liáng hǎo",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "liáng hǎo",
+     "defs": [
+      "good",
+      "favorable",
+      "well",
+      "fine"
+     ]
+    }
+   ]
+  },
+  "就业": {
+   "pinyin": "jiù yè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jiù yè",
+     "defs": [
+      "to get a job",
+      "employment"
+     ]
+    }
+   ]
+  },
+  "物价": {
+   "pinyin": "wù jià",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "wù jià",
+     "defs": [
+      "(commodity) prices"
+     ]
+    }
+   ]
+  },
+  "总体": {
+   "pinyin": "zǒng tǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zǒng tǐ",
+     "defs": [
+      "completely",
+      "totally",
+      "total",
+      "entire",
+      "overall",
+      "population (statistics)"
+     ]
+    }
+   ]
+  },
+  "稳定": {
+   "pinyin": "wěn dìng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "wěn dìng",
+     "defs": [
+      "steady",
+      "stable",
+      "stability",
+      "to stabilize",
+      "to pacify"
+     ]
+    }
+   ]
+  },
+  "民生": {
+   "pinyin": "mín shēng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "mín shēng",
+     "defs": [
+      "people's livelihood",
+      "people's welfare"
+     ]
+    }
+   ]
+  },
+  "保障": {
+   "pinyin": "bǎo zhàng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bǎo zhàng",
+     "defs": [
+      "to ensure",
+      "to guarantee",
+      "to safeguard"
+     ]
+    }
+   ]
+  },
+  "有力": {
+   "pinyin": "yǒu lì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yǒu lì",
+     "defs": [
+      "powerful",
+      "forceful",
+      "vigorous"
+     ]
+    }
+   ]
+  },
+  "韧性": {
+   "pinyin": "rèn xìng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "rèn xìng",
+     "defs": [
+      "toughness"
+     ]
+    }
+   ]
+  },
+  "和": {
+   "pinyin": "hé",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Hé",
+     "defs": [
+      "surname He"
+     ]
+    },
+    {
+     "pinyin": "hé",
+     "defs": [
+      "(joining two nouns) and; together with; with (Taiwan pr. [han4])",
+      "(math.) sum",
+      "to make peace",
+      "(sports) to draw; to tie",
+      "(bound form) harmonious",
+      "(bound form) Japan; Japanese"
+     ]
+    },
+    {
+     "pinyin": "hè",
+     "defs": [
+      "to compose a poem in reply (to sb's poem) using the same rhyme sequence",
+      "to join in the singing",
+      "to chime in with others"
+     ]
+    },
+    {
+     "pinyin": "hú",
+     "defs": [
+      "to complete a set in mahjong or playing cards"
+     ]
+    },
+    {
+     "pinyin": "huó",
+     "defs": [
+      "to combine a powdery substance (flour, plaster etc) with water",
+      "Taiwan pr. [huo4]"
+     ]
+    },
+    {
+     "pinyin": "huò",
+     "defs": [
+      "to mix (ingredients) together",
+      "to blend",
+      "classifier for rinses of clothes",
+      "classifier for boilings of medicinal herbs"
+     ]
+    }
+   ]
+  },
+  "活力": {
+   "pinyin": "huó lì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "huó lì",
+     "defs": [
+      "energy",
+      "vitality",
+      "vigor",
+      "vital force"
+     ]
+    }
+   ]
+  },
+  "持续": {
+   "pinyin": "chí xù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chí xù",
+     "defs": [
+      "to continue",
+      "to persist",
+      "to last",
+      "sustainable",
+      "preservation"
+     ]
+    }
+   ]
+  },
+  "彰显": {
+   "pinyin": "zhāng xiǎn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhāng xiǎn",
+     "defs": [
+      "to put on display (sth abstract)",
+      "to draw attention to",
+      "conspicuous"
+     ]
+    }
+   ]
+  },
+  "初步": {
+   "pinyin": "chū bù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chū bù",
+     "defs": [
+      "initial",
+      "preliminary",
+      "tentative"
+     ]
+    }
+   ]
+  },
+  "核算": {
+   "pinyin": "hé suàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "hé suàn",
+     "defs": [
+      "to calculate",
+      "accounting"
+     ]
+    }
+   ]
+  },
+  "国内": {
+   "pinyin": "guó nèi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "guó nèi",
+     "defs": [
+      "domestic",
+      "internal (to a country)",
+      "civil"
+     ]
+    }
+   ]
+  },
+  "生产总值": {
+   "pinyin": "shēng chǎn zǒng zhí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shēng chǎn zǒng zhí",
+     "defs": [
+      "gross domestic production (GDP)",
+      "total output value"
+     ]
+    }
+   ]
+  },
+  "亿元": {
+   "pinyin": "yì yuán",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "yì yuán",
+     "defs": [
+      "100 million yuan (unit)"
+     ]
+    }
+   ]
+  },
+  "按": {
+   "pinyin": "àn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "àn",
+     "defs": [
+      "to press",
+      "to push",
+      "to leave aside or shelve",
+      "to control",
+      "to restrain",
+      "to keep one's hand on"
+     ]
+    }
+   ]
+  },
+  "不变价格": {
+   "pinyin": "bù biàn jià gé",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bù biàn jià gé",
+     "defs": [
+      "fixed price",
+      "constant price"
+     ]
+    }
+   ]
+  },
+  "计算": {
+   "pinyin": "jì suàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jì suàn",
+     "defs": [
+      "to count",
+      "to calculate",
+      "to compute"
+     ]
+    }
+   ]
+  },
+  "同比": {
+   "pinyin": "tóng bǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "tóng bǐ",
+     "defs": [
+      "(statistics) compared with the same period of the previous year; year on year; year over year"
+     ]
+    }
+   ]
+  },
+  "分": {
+   "pinyin": "fēn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fēn",
+     "defs": [
+      "to divide; to separate",
+      "to distribute; to allocate",
+      "to distinguish (good and bad)",
+      "(bound form) branch of (an organization); sub- (as in 分局[fen1 ju2])",
+      "fraction",
+      "one tenth (of certain units)"
+     ]
+    },
+    {
+     "pinyin": "fèn",
+     "defs": [
+      "part",
+      "share",
+      "ingredient",
+      "component"
+     ]
+    }
+   ]
+  },
+  "产业": {
+   "pinyin": "chǎn yè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chǎn yè",
+     "defs": [
+      "industry",
+      "estate",
+      "property",
+      "industrial"
+     ]
+    }
+   ]
+  },
+  "看": {
+   "pinyin": "kàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "kàn",
+     "defs": [
+      "to see; to look at",
+      "to read",
+      "to watch",
+      "to visit; to call on",
+      "to consider; to regard as",
+      "to look after"
+     ]
+    },
+    {
+     "pinyin": "kān",
+     "defs": [
+      "to look after",
+      "to take care of",
+      "to watch",
+      "to guard"
+     ]
+    }
+   ]
+  },
+  "第一产业": {
+   "pinyin": "dì yī chǎn yè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dì yī chǎn yè",
+     "defs": [
+      "primary sector of industry"
+     ]
+    }
+   ]
+  },
+  "增加值": {
+   "pinyin": "zēng jiā zhí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zēng jiā zhí",
+     "defs": [
+      "value added (accountancy)"
+     ]
+    }
+   ]
+  },
+  "第二产业": {
+   "pinyin": "dì èr chǎn yè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dì èr chǎn yè",
+     "defs": [
+      "secondary industry"
+     ]
+    }
+   ]
+  },
+  "第三产业": {
+   "pinyin": "dì sān chǎn yè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dì sān chǎn yè",
+     "defs": [
+      "tertiary sector of industry"
+     ]
+    }
+   ]
+  },
+  "季度": {
+   "pinyin": "jì dù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jì dù",
+     "defs": [
+      "quarter of a year",
+      "season (sports)"
+     ]
+    }
+   ]
+  },
+  "一季度": {
+   "pinyin": "yī jì dù",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "yī jì dù",
+     "defs": [
+      "first quarter (Q1)"
+     ]
+    }
+   ]
+  },
+  "二季度": {
+   "pinyin": "èr jì dù",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "èr jì dù",
+     "defs": [
+      "second quarter (Q2)"
+     ]
+    }
+   ]
+  },
+  "三季度": {
+   "pinyin": "sān jì dù",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "sān jì dù",
+     "defs": [
+      "third quarter (Q3)"
+     ]
+    }
+   ]
+  },
+  "从": {
+   "pinyin": "cóng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Cóng",
+     "defs": [
+      "surname Cong"
+     ]
+    },
+    {
+     "pinyin": "cóng",
+     "defs": [
+      "from",
+      "through",
+      "via",
+      "to follow",
+      "to obey",
+      "to engage in (an activity)"
+     ]
+    }
+   ]
+  },
+  "环比": {
+   "pinyin": "huán bǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "huán bǐ",
+     "defs": [
+      "(statistics) period on period (i.e. \"month on month\" or \"quarter on quarter\" etc, depending on the context)"
+     ]
+    }
+   ]
+  },
+  "农业": {
+   "pinyin": "nóng yè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "nóng yè",
+     "defs": [
+      "agriculture",
+      "farming"
+     ]
+    }
+   ]
+  },
+  "种植业": {
+   "pinyin": "zhòng zhí yè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhòng zhí yè",
+     "defs": [
+      "plantation"
+     ]
+    }
+   ]
+  },
+  "全国": {
+   "pinyin": "quán guó",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "quán guó",
+     "defs": [
+      "whole nation",
+      "nationwide",
+      "countrywide",
+      "national"
+     ]
+    }
+   ]
+  },
+  "夏粮": {
+   "pinyin": "xià liáng",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "xià liáng",
+     "defs": [
+      "summer grain harvest"
+     ]
+    }
+   ]
+  },
+  "早稻": {
+   "pinyin": "zǎo dào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zǎo dào",
+     "defs": [
+      "early season rice",
+      "rice at transplanting or still unripe"
+     ]
+    }
+   ]
+  },
+  "产量": {
+   "pinyin": "chǎn liàng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chǎn liàng",
+     "defs": [
+      "output"
+     ]
+    }
+   ]
+  },
+  "合计": {
+   "pinyin": "hé jì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "hé jì",
+     "defs": [
+      "to add up the total",
+      "to figure what sth amounts to",
+      "to consider"
+     ]
+    }
+   ]
+  },
+  "万吨": {
+   "pinyin": "wàn dūn",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "wàn dūn",
+     "defs": [
+      "10,000 tonnes (unit)"
+     ]
+    }
+   ]
+  },
+  "比": {
+   "pinyin": "bǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Bǐ",
+     "defs": [
+      "Belgium",
+      "Belgian",
+      "abbr. for 比利時|比利时[Bi3 li4 shi2]"
+     ]
+    },
+    {
+     "pinyin": "bǐ",
+     "defs": [
+      "to compare",
+      "(followed by a noun and adjective) more {adj.} than {noun}",
+      "ratio",
+      "to gesture",
+      "(Taiwan pr. [bi4] in some compounds derived from Classical Chinese)"
+     ]
+    },
+    {
+     "pinyin": "bī",
+     "defs": [
+      "euphemistic variant of 屄[bi1]"
+     ]
+    }
+   ]
+  },
+  "上年": {
+   "pinyin": "shàng nián",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shàng nián",
+     "defs": [
+      "last year"
+     ]
+    }
+   ]
+  },
+  "增加": {
+   "pinyin": "zēng jiā",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zēng jiā",
+     "defs": [
+      "to raise",
+      "to increase"
+     ]
+    }
+   ]
+  },
+  "秋粮": {
+   "pinyin": "qiū liáng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "qiū liáng",
+     "defs": [
+      "autumn grain crops"
+     ]
+    }
+   ]
+  },
+  "形势": {
+   "pinyin": "xíng shì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xíng shì",
+     "defs": [
+      "circumstances",
+      "situation",
+      "terrain"
+     ]
+    }
+   ]
+  },
+  "全年": {
+   "pinyin": "quán nián",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "quán nián",
+     "defs": [
+      "the whole year",
+      "all year long"
+     ]
+    }
+   ]
+  },
+  "粮食": {
+   "pinyin": "liáng shi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "liáng shi",
+     "defs": [
+      "foodstuff",
+      "cereals"
+     ]
+    }
+   ]
+  },
+  "有望": {
+   "pinyin": "yǒu wàng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yǒu wàng",
+     "defs": [
+      "hopeful",
+      "promising"
+     ]
+    }
+   ]
+  },
+  "再": {
+   "pinyin": "zài",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zài",
+     "defs": [
+      "again; once more; re-",
+      "second; another",
+      "then (after sth, and not until then)",
+      "no matter how ... (followed by an adjective or verb, and then (usually) 也[ye3] or 都[dou1] for emphasis)"
+     ]
+    }
+   ]
+  },
+  "获": {
+   "pinyin": "huò",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "huò",
+     "defs": [
+      "(literary) to catch; to capture",
+      "(literary) to get; to obtain; to win"
+     ]
+    },
+    {
+     "pinyin": "huò",
+     "defs": [
+      "(bound form) to reap; to harvest"
+     ]
+    }
+   ]
+  },
+  "丰收": {
+   "pinyin": "fēng shōu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fēng shōu",
+     "defs": [
+      "bumper harvest"
+     ]
+    }
+   ]
+  },
+  "猪": {
+   "pinyin": "zhū",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhū",
+     "defs": [
+      "hog",
+      "pig",
+      "swine"
+     ]
+    }
+   ]
+  },
+  "牛羊": {
+   "pinyin": "niú yáng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "niú yáng",
+     "defs": [
+      "cattle and sheep",
+      "livestock"
+     ]
+    }
+   ]
+  },
+  "禽肉": {
+   "pinyin": "qín ròu",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "qín ròu",
+     "defs": [
+      "poultry meat"
+     ]
+    }
+   ]
+  },
+  "其中": {
+   "pinyin": "qí zhōng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "qí zhōng",
+     "defs": [
+      "among",
+      "in",
+      "included among these"
+     ]
+    }
+   ]
+  },
+  "猪肉": {
+   "pinyin": "zhū ròu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhū ròu",
+     "defs": [
+      "pork"
+     ]
+    }
+   ]
+  },
+  "分别": {
+   "pinyin": "fēn bié",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fēn bié",
+     "defs": [
+      "to part; to leave each other",
+      "to distinguish; to tell apart",
+      "difference; distinction",
+      "in different ways; differently",
+      "separately; individually"
+     ]
+    }
+   ]
+  },
+  "牛肉": {
+   "pinyin": "niú ròu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "niú ròu",
+     "defs": [
+      "beef"
+     ]
+    }
+   ]
+  },
+  "羊肉": {
+   "pinyin": "yáng ròu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yáng ròu",
+     "defs": [
+      "mutton",
+      "goat meat"
+     ]
+    }
+   ]
+  },
+  "下降": {
+   "pinyin": "xià jiàng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xià jiàng",
+     "defs": [
+      "to decline",
+      "to drop",
+      "to fall",
+      "to go down",
+      "to decrease"
+     ]
+    }
+   ]
+  },
+  "牛奶": {
+   "pinyin": "niú nǎi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "niú nǎi",
+     "defs": [
+      "cow's milk"
+     ]
+    }
+   ]
+  },
+  "禽蛋": {
+   "pinyin": "qín dàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "qín dàn",
+     "defs": [
+      "bird eggs"
+     ]
+    }
+   ]
+  },
+  "末": {
+   "pinyin": "mò",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "mò",
+     "defs": [
+      "tip",
+      "end",
+      "final stage",
+      "latter part",
+      "inessential detail",
+      "powder"
+     ]
+    }
+   ]
+  },
+  "生猪": {
+   "pinyin": "shēng zhū",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "shēng zhū",
+     "defs": [
+      "live hogs; pigs raised for slaughter"
+     ]
+    }
+   ]
+  },
+  "存栏": {
+   "pinyin": "cún lán",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "cún lán",
+     "defs": [
+      "livestock on hand; number of animals currently in stock"
+     ]
+    }
+   ]
+  },
+  "万头": {
+   "pinyin": "wàn tóu",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "wàn tóu",
+     "defs": [
+      "10,000 head (unit for livestock)"
+     ]
+    }
+   ]
+  },
+  "出栏": {
+   "pinyin": "chū lán",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "chū lán",
+     "defs": [
+      "(of livestock) sent to slaughter or market; slaughter numbers"
+     ]
+    }
+   ]
+  }
+ }
+}

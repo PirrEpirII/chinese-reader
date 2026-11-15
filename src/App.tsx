@@ -15,18 +15,43 @@ import {
 } from 'lucide-react'
 import './App.css'
 
-type LexiconEntry = {
-  text: string
+type PackageToken = {
+  t: string
+  w?: 1
+  k?: string
+}
+
+type LexiconSense = {
   pinyin: string
-  meaning: string
-  category: string
-  usage: string
-  displayPinyin?: string
+  defs: string[]
+}
+
+type LexiconEntry = {
+  pinyin: string
+  origin: 'dictionary' | 'glossary'
+  note?: string
+  entries: LexiconSense[]
+}
+
+type StudyPackage = {
+  schema_version: number
+  package_id: string
+  created_at: string
+  article: {
+    id: string
+    title: string
+    source_name: string
+    source_url: string
+    date: string
+  }
+  paragraphs: PackageToken[][]
+  lexicon: Record<string, LexiconEntry>
 }
 
 type Selection = {
-  id: string
-  sentence: string
+  key: string
+  text: string
+  clause: string
 }
 
 type SavedWord = {
@@ -38,44 +63,40 @@ type SavedWord = {
 type View = 'read' | 'learn'
 
 const STORAGE_KEY = 'chinese-reader-test-v1'
+const PACKAGE_URL = './packages/package-000001.json'
 
-const LEXICON: Record<string, LexiconEntry> = {
-  近年来: { text: '近年来', pinyin: 'jìn nián lái', meaning: 'in recent years', category: 'Time expression', usage: 'Placed at the start of a sentence to describe a trend or change over the past few years.' },
-  中国: { text: '中国', pinyin: 'Zhōng guó', meaning: 'China', category: 'Proper noun', usage: 'A country name. It can stand alone or modify another noun, as in 中国城市 (Chinese cities).' },
-  城市: { text: '城市', pinyin: 'chéng shì', meaning: 'city; urban area', category: 'Noun', usage: 'Refers to a city in general. Use 一座城市 when counting one city.' },
-  开始: { text: '开始', pinyin: 'kāi shǐ', meaning: 'to begin; to start', category: 'Verb', usage: 'Follow with another verb to describe an action that starts: 开始 + verb.' },
-  重新: { text: '重新', pinyin: 'chóng xīn', meaning: 'again; anew', category: 'Adverb', usage: 'Placed before a verb to show that something is done again or from a fresh perspective.' },
-  思考: { text: '思考', pinyin: 'sī kǎo', meaning: 'to think about; to reflect on', category: 'Verb', usage: 'More deliberate than simply thinking. It can take an object directly: 思考 + question or issue.' },
-  发展: { text: '发展', pinyin: 'fā zhǎn', meaning: 'development; to develop', category: 'Noun / verb', usage: 'Can describe economic, social or personal growth. Here it is a noun modified by 的.' },
-  的: { text: '的', pinyin: 'de', meaning: 'structural particle: of', category: 'Particle', usage: 'Links a modifier to a noun. Here, 发展 modifies 意义: the meaning of development.' },
-  意义: { text: '意义', pinyin: 'yì yì', meaning: 'meaning; significance', category: 'Noun', usage: 'Describes meaning or significance, often in the pattern …的意义 (the significance of …).' },
-  政府: { text: '政府', pinyin: 'zhèng fǔ', meaning: 'government', category: 'Noun', usage: 'Refers to a governing administration. It can act as the subject of a sentence.' },
-  希望: { text: '希望', pinyin: 'xī wàng', meaning: 'to hope; hope', category: 'Verb / noun', usage: 'As a verb, it is commonly followed by a clause describing the desired outcome.' },
-  改善: { text: '改善', pinyin: 'gǎi shàn', meaning: 'to improve', category: 'Verb', usage: 'Used for making a situation, service or condition better: 改善 + condition.' },
-  公共交通: { text: '公共交通', pinyin: 'gōng gòng jiāo tōng', meaning: 'public transport', category: 'Noun phrase', usage: '公共 means public and 交通 means transport. Together they refer to shared transport systems.' },
-  增加: { text: '增加', pinyin: 'zēng jiā', meaning: 'to increase; to add', category: 'Verb', usage: 'Used before a noun for adding quantity, or intransitively for an increase.' },
-  绿地: { text: '绿地', pinyin: 'lǜ dì', meaning: 'green space', category: 'Noun', usage: 'Describes parks, planted areas and other green land in an urban environment.' },
-  推广: { text: '推广', pinyin: 'tuī guǎng', meaning: 'to promote; to spread', category: 'Verb', usage: 'Used for encouraging wider adoption of a product, practice or idea.' },
-  清洁能源: { text: '清洁能源', pinyin: 'qīng jié néng yuán', meaning: 'clean energy', category: 'Noun phrase', usage: '清洁 (clean) modifies 能源 (energy), describing lower-pollution energy sources.' },
-  让: { text: '让', pinyin: 'ràng', meaning: 'to let; to enable', category: 'Verb', usage: 'Introduces a result or enabled action: 让 + person or thing + verb.' },
-  实现: { text: '实现', pinyin: 'shí xiàn', meaning: 'to achieve; to realise', category: 'Verb', usage: 'Used with goals, plans or ambitions: 实现 + goal.' },
-  可持续发展: { text: '可持续发展', pinyin: 'kě chí xù fā zhǎn', meaning: 'sustainable development', category: 'Noun phrase', usage: '持续 means continuous and 发展 means development. It describes growth that can continue without exhausting resources.' },
-  这种: { text: '这种', pinyin: 'zhè zhǒng', meaning: 'this kind of', category: 'Demonstrative', usage: 'Used before a noun to refer to a type already present in the context: 这种 + noun.' },
-  转变: { text: '转变', pinyin: 'zhuǎn biàn', meaning: 'transformation; to transform', category: 'Noun / verb', usage: 'Describes a clear change in form, direction or attitude. It is a noun in this sentence.' },
-  需要: { text: '需要', pinyin: 'xū yào', meaning: 'to need; to require', category: 'Verb', usage: 'Can be followed by a noun (need something) or a verb (need to do something).' },
-  长期: { text: '长期', pinyin: 'cháng qī', meaning: 'long-term; over a long period', category: 'Adjective / adverb', usage: 'Placed before a noun or verb to describe something extending over a long time.' },
-  投入: { text: '投入', pinyin: 'tóu rù', meaning: 'investment; to invest', category: 'Noun / verb', usage: 'Can refer to investing money, time or effort. Here it is a noun: long-term investment.' },
-  也: { text: '也', pinyin: 'yě', meaning: 'also; too', category: 'Adverb', usage: 'Placed before the verb or predicate to add a parallel idea.' },
-  每个人: { text: '每个人', pinyin: 'měi ge rén', meaning: 'everyone; every person', category: 'Pronoun phrase', usage: '每 means every and 个 is the general measure word. Often used with 都 in broader statements.' },
-  积极: { text: '积极', pinyin: 'jī jí', meaning: 'active; positive', category: 'Adjective / adverb', usage: 'Before a verb, it means actively or enthusiastically: 积极 + action.' },
-  参与: { text: '参与', pinyin: 'cān yù', meaning: 'to participate; participation', category: 'Verb / noun', usage: 'Used for taking part in an activity, project or decision, often with an object.' },
-} as Record<string, LexiconEntry & { displayPinyin?: string }>
+// Clause boundaries per tools/README.md: official sentences run to ~180
+// characters, so saved context is the clause around the word.
+const CLAUSE_BOUNDARIES = new Set([
+  '，', '、', '；', '。', '：', '！', '？',
+  '（', '）', '(', ')', '【', '】', '「', '」', '“', '”',
+])
 
-const PARAGRAPHS = [
-  ['近年来', '中国', '城市', '开始', '重新', '思考', '发展', '的', '意义', '。'],
-  ['政府', '希望', '改善', '公共交通', '，', '增加', '绿地', '，', '推广', '清洁能源', '，', '让', '城市', '实现', '可持续发展', '。'],
-  ['这种', '转变', '需要', '长期', '投入', '，', '也', '需要', '每个人', '的', '积极', '参与', '。'],
-]
+function clauseAround(paragraph: PackageToken[], tokenIndex: number): string {
+  let start = 0
+  let end = paragraph.length
+  for (let index = tokenIndex - 1; index >= 0; index -= 1) {
+    if (CLAUSE_BOUNDARIES.has(paragraph[index].t)) {
+      start = index + 1
+      break
+    }
+  }
+  for (let index = tokenIndex + 1; index < paragraph.length; index += 1) {
+    if (CLAUSE_BOUNDARIES.has(paragraph[index].t)) {
+      end = index + 1
+      break
+    }
+  }
+  return paragraph.slice(start, end).map((token) => token.t).join('')
+}
+
+function displayText(key: string): string {
+  return key.split('#')[0]
+}
+
+function firstMeaning(entry: LexiconEntry): string {
+  return entry.entries[0]?.defs.join('; ') ?? ''
+}
 
 function readSavedWords(): SavedWord[] {
   try {
@@ -85,7 +106,7 @@ function readSavedWords(): SavedWord[] {
     if (!Array.isArray(parsed)) return []
     return parsed.filter((item): item is SavedWord => (
       typeof item === 'object' && item !== null &&
-      typeof item.id === 'string' && item.id in LEXICON &&
+      typeof item.id === 'string' &&
       typeof item.sentence === 'string' && typeof item.savedAt === 'string'
     ))
   } catch {
@@ -94,6 +115,8 @@ function readSavedWords(): SavedWord[] {
 }
 
 function App() {
+  const [pkg, setPkg] = useState<StudyPackage | null>(null)
+  const [loadFailed, setLoadFailed] = useState(false)
   const [view, setView] = useState<View>('read')
   const [selection, setSelection] = useState<Selection | null>(null)
   const [savedWords, setSavedWords] = useState<SavedWord[]>(readSavedWords)
@@ -105,8 +128,27 @@ function App() {
   const closeRef = useRef<HTMLButtonElement>(null)
   const previousFocusRef = useRef<HTMLElement | null>(null)
 
-  const selectedEntry = selection ? LEXICON[selection.id] : null
-  const selectedIsSaved = selection ? savedWords.some((word) => word.id === selection.id) : false
+  const selectedEntry = selection && pkg ? pkg.lexicon[selection.key] ?? null : null
+  const selectedIsSaved = selection ? savedWords.some((word) => word.id === selection.key) : false
+
+  useEffect(() => {
+    let cancelled = false
+    fetch(PACKAGE_URL)
+      .then((response) => {
+        if (!response.ok) throw new Error(`Package request failed with status ${response.status}`)
+        return response.json() as Promise<StudyPackage>
+      })
+      .then((data) => {
+        if (cancelled) return
+        setPkg(data)
+        // Drop saved words whose key is not in the loaded package's lexicon.
+        setSavedWords((current) => current.filter((word) => word.id in data.lexicon))
+      })
+      .catch(() => {
+        if (!cancelled) setLoadFailed(true)
+      })
+    return () => { cancelled = true }
+  }, [])
 
   useEffect(() => {
     try {
@@ -177,18 +219,39 @@ function App() {
       setToast('This expression is already in your learning list.')
       return
     }
-    setSavedWords((current) => [{ id: selection.id, sentence: selection.sentence, savedAt: new Date().toISOString() }, ...current])
-    setToast(`${selectedEntry.text} added to learning`)
+    setSavedWords((current) => [{ id: selection.key, sentence: selection.clause, savedAt: new Date().toISOString() }, ...current])
+    setToast(`${selection.text} added to learning`)
   }
 
   const resetTest = () => {
     setSavedWords([])
     setSelection(null)
     setResetArmed(false)
-    setToast('Test data cleared. Your sample text is still here.')
+    setToast('Saved words cleared. The article is still here.')
   }
 
   const connectionLabel = !online ? 'Offline mode' : cacheReady ? 'Offline ready' : 'Local test'
+
+  if (loadFailed) {
+    return (
+      <div className="app-shell">
+        <main className="main-content package-status">
+          <h1>Reading package failed to load</h1>
+          <p>The file {PACKAGE_URL} could not be fetched. Connect once and reload; after the first visit the package is cached for offline reading.</p>
+        </main>
+      </div>
+    )
+  }
+
+  if (!pkg) {
+    return (
+      <div className="app-shell">
+        <main className="main-content package-status">
+          <p>Loading reading package…</p>
+        </main>
+      </div>
+    )
+  }
 
   return (
     <div className="app-shell">
@@ -228,10 +291,9 @@ function App() {
           {view === 'read' ? (
             <section className="reader-view" aria-labelledby="article-title">
               <div className="content-heading">
-                <div className="eyebrow">SAMPLE READING <span>/</span> 01</div>
-                <h1 id="article-title">一座面向未来的城市</h1>
-                <p className="english-title">A city built for the future</p>
-                <div className="article-meta"><span>Synthetic text</span><span className="meta-dot" /> <span>Intermediate</span><span className="meta-dot" /><span>1 min read</span></div>
+                <div className="eyebrow">READING PACKAGE <span>/</span> {pkg.package_id}</div>
+                <h1 id="article-title">{pkg.article.title}</h1>
+                <div className="article-meta"><span>{pkg.article.source_name}</span><span className="meta-dot" /><span>{pkg.article.date}</span></div>
               </div>
 
               <div className="reading-tip">
@@ -240,36 +302,38 @@ function App() {
               </div>
 
               <article className="chinese-article" lang="zh-CN">
-                {PARAGRAPHS.map((paragraph, paragraphIndex) => {
-                  const sentence = paragraph.map((id) => LEXICON[id]?.text ?? id).join('')
-                  return (
-                    <p key={paragraphIndex}>
-                      {paragraph.map((id, tokenIndex) => {
-                        const entry = LEXICON[id]
-                        if (!entry) return <span className="punctuation" key={`${id}-${tokenIndex}`}>{id}</span>
-                        const isSaved = savedWords.some((word) => word.id === id)
-                        const isSelected = selection?.id === id && selection.sentence === sentence
-                        return (
-                          <button
-                            className={`word ${isSaved ? 'is-saved' : ''} ${isSelected ? 'is-selected' : ''}`}
-                            key={`${id}-${tokenIndex}`}
-                            onClick={() => setSelection({ id, sentence })}
-                            aria-label={`${entry.text}, explain this word${isSaved ? ', saved in learning' : ''}`}
-                            aria-pressed={isSelected}
-                          >
-                            {entry.text}
-                          </button>
-                        )
-                      })}
-                    </p>
-                  )
-                })}
+                {pkg.paragraphs.map((paragraph, paragraphIndex) => (
+                  <p key={paragraphIndex}>
+                    {paragraph.map((token, tokenIndex) => {
+                      const key = token.w === 1 ? token.k ?? token.t : null
+                      const entry = key ? pkg.lexicon[key] : undefined
+                      if (!key || !entry) {
+                        return <span className="punctuation" key={`${paragraphIndex}-${tokenIndex}`}>{token.t}</span>
+                      }
+                      const clause = clauseAround(paragraph, tokenIndex)
+                      const isSaved = savedWords.some((word) => word.id === key)
+                      const isSelected = selection?.key === key && selection.clause === clause
+                      return (
+                        <button
+                          className={`word ${isSaved ? 'is-saved' : ''} ${isSelected ? 'is-selected' : ''}`}
+                          key={`${paragraphIndex}-${tokenIndex}`}
+                          onClick={() => setSelection({ key, text: token.t, clause })}
+                          aria-label={`${token.t}, explain this word${isSaved ? ', saved in learning' : ''}`}
+                          aria-pressed={isSelected}
+                        >
+                          {token.t}
+                        </button>
+                      )
+                    })}
+                  </p>
+                ))}
               </article>
 
               <div className="reader-footnote">
                 <span className="tiny-check"><Check size={12} aria-hidden="true" /></span>
                 Pinyin appears only when you ask for it.
               </div>
+              <p className="dict-credit">Dictionary: CC-CEDICT (CC BY-SA 4.0). Entries marked “From your glossary” are your own corrections.</p>
             </section>
           ) : (
             <section className="learning-view" aria-labelledby="learning-title">
@@ -288,22 +352,23 @@ function App() {
                 <div className="empty-state">
                   <div className="empty-icon"><Layers3 size={26} strokeWidth={1.5} aria-hidden="true" /></div>
                   <h2>Your list starts in the text.</h2>
-                  <p>Tap any unfamiliar word while reading, then save it with its sentence.</p>
+                  <p>Tap any unfamiliar word while reading, then save it with its clause.</p>
                   <button className="primary-button empty-action" onClick={() => switchView('read')}>
-                    <ArrowLeft size={17} aria-hidden="true" /> Explore sample text
+                    <ArrowLeft size={17} aria-hidden="true" /> Start reading
                   </button>
                 </div>
               ) : (
                 <div className="learning-list">
                   {savedWords.map((saved) => {
-                    const entry = LEXICON[saved.id]
+                    const entry = pkg.lexicon[saved.id]
+                    if (!entry) return null
                     return (
                       <article className="learning-card" key={saved.id}>
                         <div className="learning-card-top">
-                          <div><h2 lang="zh-CN">{entry.text}</h2><p className="card-pinyin">{entry.displayPinyin ?? entry.pinyin}</p></div>
+                          <div><h2 lang="zh-CN">{displayText(saved.id)}</h2><p className="card-pinyin">{entry.pinyin}</p></div>
                           <span className="saved-marker"><Bookmark size={15} fill="currentColor" aria-hidden="true" /> Learning</span>
                         </div>
-                        <p className="card-meaning">{entry.meaning}</p>
+                        <p className="card-meaning">{firstMeaning(entry)}</p>
                         <div className="card-context"><span>FROM YOUR READING</span><p lang="zh-CN">{saved.sentence}</p></div>
                       </article>
                     )
@@ -342,29 +407,38 @@ function App() {
           <div className="word-sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-expression" ref={sheetRef}>
             <div className="sheet-handle" aria-hidden="true" />
             <div className="sheet-header">
-              <span className="sheet-label">WORD NOTES <span>· SAMPLE DICTIONARY</span></span>
+              <span className="sheet-label">WORD NOTES <span>· {selectedEntry.origin === 'glossary' ? 'YOUR GLOSSARY' : 'CC-CEDICT'}</span></span>
               <button className="icon-button" onClick={() => setSelection(null)} ref={closeRef} aria-label="Close word notes"><X size={20} /></button>
             </div>
             <div className="expression-row">
-              <h2 id="sheet-expression" lang="zh-CN">{selectedEntry.text}</h2>
-              <p>{selectedEntry.displayPinyin ?? selectedEntry.pinyin}</p>
+              <h2 id="sheet-expression" lang="zh-CN">{selection.text}</h2>
+              <p>{selectedEntry.pinyin}</p>
             </div>
-            <p className="sheet-meaning">{selectedEntry.meaning}</p>
-            <div className="sheet-section usage-section">
-              <h3>HOW IT WORKS</h3>
-              <span className="category">{selectedEntry.category}</span>
-              <p>{selectedEntry.usage}</p>
+            {selectedEntry.origin === 'glossary' && (
+              <p className="glossary-badge"><Sparkles size={13} aria-hidden="true" /> From your glossary</p>
+            )}
+            {selectedEntry.note ? <p className="glossary-note">{selectedEntry.note}</p> : null}
+            <div className="sheet-section">
+              <h3>{selectedEntry.entries.length === 1 ? 'MEANING' : 'MEANINGS'}</h3>
+              <ol className="sense-list">
+                {selectedEntry.entries.map((sense, senseIndex) => (
+                  <li key={senseIndex}>
+                    <span className="sense-pinyin">{sense.pinyin}</span>
+                    <span className="sense-defs">{sense.defs.join('; ')}</span>
+                  </li>
+                ))}
+              </ol>
             </div>
             <div className="sheet-section sentence-section">
-              <h3>IN THIS SENTENCE</h3>
-              <p lang="zh-CN">{selection.sentence}</p>
+              <h3>IN THIS CLAUSE</h3>
+              <p lang="zh-CN">{selection.clause}</p>
             </div>
             <button className={`primary-button save-button ${selectedIsSaved ? 'is-saved' : ''}`} onClick={addToLearning} disabled={selectedIsSaved}>
               {selectedIsSaved ? <Check size={19} aria-hidden="true" /> : <Bookmark size={19} aria-hidden="true" />}
               {selectedIsSaved ? 'Saved to learning' : 'Add to learning'}
               {!selectedIsSaved && <ArrowRight size={18} aria-hidden="true" />}
             </button>
-            <p className="sheet-storage-note">Saved locally with the sentence above.</p>
+            <p className="sheet-storage-note">Saved locally with the clause above.</p>
           </div>
         </div>
       )}
