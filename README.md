@@ -1,6 +1,6 @@
 # Chinese Reader Test
 
-Technical handoff for the static browser compatibility test. Read `../Chinese Reader.md` first for the frozen product architecture and owner decisions. This README covers the implemented code, local operation and verification boundary.
+Technical handoff for the static browser compatibility test. Read the project note `30 Projects/Chinese Reader/Chinese Reader.md` in the owner's Obsidian vault (KB) first for the product architecture and owner decisions; since 2026-11-15 this code lives outside the vault in its own repository. This README covers the implemented code, local operation and verification boundary.
 
 ## Current status — 2026-11-15
 
@@ -33,6 +33,13 @@ npm run preview -- --host 0.0.0.0 --port 7100
 ```
 
 `npm run build` runs TypeScript, Vite and `scripts/stamp-sw.mjs`. The last step writes the explicit precache manifest into `dist/sw.js`. Do not edit `dist/` by hand; it is regenerated.
+
+## Deployment (added 2026-11-15 by Claude_Leonid)
+
+- Repository: https://github.com/PirrEpirII/chinese-reader (public). Site: https://pirrepirii.github.io/chinese-reader/
+- `.github/workflows/deploy.yml` runs `npm ci` and `npm run build` on every push to `main` and publishes `dist/` to GitHub Pages. No local build is needed to deploy.
+- One-time setup on github.com: Settings -> Pages -> Source -> GitHub Actions.
+- All app paths are relative (`base: './'`, `./sw.js`, `./manifest.webmanifest`), so the app works under the `/chinese-reader/` sub-path without changes. The build was reproduced with Node 22 on 2026-11-15; the deployed site and physical-iPhone behaviour are not yet verified.
 
 ## Verification
 
