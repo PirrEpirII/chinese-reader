@@ -1,6 +1,6 @@
 import { test, expect, type Page } from '@playwright/test'
 
-// Step A: the app renders the bundled study package (tools/sample/package-000001.json).
+// The app renders the bundled study package (tools/sample/package-000001.json).
 const ARTICLE_TITLE = '前三季度经济运行总体平稳 高质量发展取得新成效'
 const TARGET_WORD = '新质生产力'
 const TARGET_PINYIN = 'xīn zhì shēng chǎn lì'
@@ -49,7 +49,7 @@ test('mobile reading, saving, persistence, learning list and reset', async ({ pa
   await expect(page.getByRole('dialog').getByText(TARGET_CLAUSE, { exact: true })).toBeVisible()
   await page.screenshot({ path: 'test-results/mobile-word-sheet.png', fullPage: true })
   await page.getByRole('button', { name: 'Add to learning' }).click()
-  await expect(page.getByRole('button', { name: 'Saved to learning' })).toBeDisabled()
+  await expect(page.getByRole('button', { name: 'Saved to learning' })).toBeEnabled()
   await page.keyboard.press('Escape')
   await expect(page.getByRole('dialog')).toHaveCount(0)
 
@@ -88,6 +88,53 @@ test('sheet closes by button, backdrop and Escape', async ({ page }) => {
   await expect(page.getByRole('button', { name: 'Close word notes' })).toBeFocused()
   await page.keyboard.press('Escape')
   await expect(targetWord(page)).toBeFocused()
+})
+
+test('unsave with undo, copy as Markdown, theme and text size settings', async ({ page, context }) => {
+  await context.grantPermissions(['clipboard-read', 'clipboard-write'])
+  await page.setViewportSize({ width: 375, height: 812 })
+  await cleanStart(page)
+
+  // Save a word, then unsave it from the sheet; the Saved button is tappable.
+  await targetWord(page).click()
+  await page.getByRole('button', { name: 'Add to learning' }).click()
+  await page.keyboard.press('Escape')
+  await targetWord(page).click()
+  await page.getByRole('button', { name: 'Saved to learning' }).click()
+  await expect(page.getByRole('button', { name: 'Add to learning' })).toBeVisible()
+  await page.getByRole('button', { name: 'Undo', exact: true }).click()
+  await expect(page.getByRole('button', { name: 'Saved to learning' })).toBeVisible()
+  await page.keyboard.press('Escape')
+
+  // Learning view: one card; copy produces the Markdown table.
+  await page.locator('.mobile-nav button').filter({ hasText: 'Learning' }).click()
+  await expect(page.locator('.learning-card')).toHaveCount(1)
+  await page.getByRole('button', { name: 'Copy as Markdown' }).click()
+  const clipboard = await page.evaluate(() => navigator.clipboard.readText())
+  expect(clipboard).toContain('| word | pinyin | meaning | clause | source | date |')
+  expect(clipboard).toContain(`| ${TARGET_WORD} | ${TARGET_PINYIN} |`)
+  expect(clipboard).toContain(TARGET_CLAUSE)
+
+  // Remove from the card, then undo from the toast.
+  await page.getByRole('button', { name: `Remove ${TARGET_WORD} from learning` }).click()
+  await expect(page.locator('.learning-card')).toHaveCount(0)
+  await page.getByRole('button', { name: 'Undo', exact: true }).click()
+  await expect(page.locator('.learning-card')).toHaveCount(1)
+
+  // Settings: theme choice applies to the document, text size to the article.
+  await page.getByRole('button', { name: 'Reading settings' }).click()
+  await page.getByRole('button', { name: 'Dark', exact: true }).click()
+  expect(await page.evaluate(() => document.documentElement.dataset.theme)).toBe('dark')
+  await page.screenshot({ path: 'test-results/mobile-dark-theme.png', fullPage: true })
+  await page.getByRole('button', { name: 'Paper', exact: true }).click()
+  expect(await page.evaluate(() => document.documentElement.dataset.theme)).toBe('paper')
+  await page.getByRole('button', { name: 'XL', exact: true }).click()
+  await page.keyboard.press('Escape')
+  await page.locator('.mobile-nav button').filter({ hasText: 'Read' }).click()
+  expect(await page.evaluate(() => {
+    const article = document.querySelector('.chinese-article')
+    return article ? getComputedStyle(article).fontSize : ''
+  })).toBe('26px')
 })
 
 test('offline reload preserves article, package and saved learning data', async ({ page, context }) => {

@@ -446,3 +446,74 @@ button:disabled { cursor: default; }
   .glossary-badge, .glossary-note, .dict-credit { font-size: 12px; }
   .sense-pinyin, .sense-defs { font-size: 14px; }
 }
+
+/* Batch 1: themes, settings, shared pool, unsave */
+.chinese-article { font-size: var(--reading-size, 21px); }
+@media (min-width: 760px) { .chinese-article { font-size: var(--reading-size, 21px); } }
+
+/* Pinyin sits under the characters, larger and brighter. */
+.expression-row { display: block; }
+.expression-row .expr-pinyin { margin-top: 4px; padding-bottom: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.03em; }
+.card-pinyin { font-size: 14px; font-weight: 600; letter-spacing: 0.02em; }
+
+.topbar-actions { display: flex; align-items: center; gap: 10px; }
+.settings-button { margin-right: 0; }
+
+.settings-title { color: var(--text); font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
+.segmented { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 6px; }
+.segmented button {
+  min-height: 44px;
+  border: 1px solid var(--line-strong);
+  border-radius: 9px;
+  color: var(--muted-light);
+  background: var(--surface);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 150ms ease-out, background-color 150ms ease-out, border-color 150ms ease-out;
+}
+.segmented button.active { color: var(--accent-bright); border-color: var(--accent-soft); background: var(--accent-faint); }
+.settings-note { margin-top: 10px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.settings-preview { color: var(--reading-text); font-family: var(--font-cjk-reading); font-size: 17px; }
+
+.card-unsave { margin-top: -6px; color: var(--muted); }
+.card-unsave:hover { color: var(--danger); background: var(--danger-faint); }
+.card-context + .card-context { margin-top: 12px; }
+
+.copy-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted-light);
+  background: var(--surface);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.copy-button:hover { color: var(--accent-bright); border-color: var(--accent-soft); background: var(--accent-faint); }
+
+.save-button.is-saved { cursor: pointer; }
+.save-button.is-saved:hover { color: var(--danger); border-color: var(--danger-soft); background: var(--danger-faint); }
+
+.toast-action {
+  margin-left: 6px;
+  min-height: 36px;
+  padding: 6px 12px;
+  border: 1px solid var(--accent-soft);
+  border-radius: 7px;
+  color: var(--accent-bright);
+  background: transparent;
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+}
+.toast-action:hover { background: var(--accent-faint); }
+
+@media (max-width: 759px) {
+  .settings-note, .copy-button { font-size: 12px; }
+  .settings-preview { font-size: 19px; }
+}

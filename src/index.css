@@ -2,32 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --canvas: #121214;
-  --surface: #1a1a1d;
-  --surface-raised: #232327;
-  --sheet: #1d1d21;
-  --text: #f0edf3;
-  --reading-text: #e8e4eb;
-  --muted-light: #b1aab9;
-  --muted: #8b8494;
-  --line: #2d2b31;
-  --line-strong: #3b3741;
-  --accent: #ad91d4;
-  --accent-bright: #c3a9e8;
-  --accent-hover: #ceb7ee;
-  --accent-soft: #5b486f;
-  --accent-faint: #2a2233;
-  --button-text: #1d1427;
-  --success: #8fbca3;
-  --warning: #d2b77d;
-  --danger: #e3a2a8;
-  --danger-soft: #67434a;
-  --danger-faint: #322226;
+/* Themes. The active theme is resolved in JS (auto follows the system)
+   and set as <html data-theme="paper|light|dark">. */
+
+html[data-theme='paper'] {
+  --canvas: #f6f1e7;
+  --surface: #fdfaf3;
+  --surface-raised: #efe8d8;
+  --sheet: #fdfaf3;
+  --text: #262019;
+  --reading-text: #2e2820;
+  --muted-light: #6f685a;
+  --muted: #97907f;
+  --line: #e4dccb;
+  --line-strong: #cfc4ab;
+  --accent: #b6412a;
+  --accent-bright: #b6412a;
+  --accent-hover: #a03a26;
+  --accent-soft: #ddb4a6;
+  --accent-faint: #f3e2da;
+  --button-text: #fdf8f0;
+  --success: #6d8f4e;
+  --warning: #a87b24;
+  --danger: #b3341f;
+  --danger-soft: #d9a99d;
+  --danger-faint: #f6e4de;
+  --font-ui: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  --font-cjk: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
+  --font-cjk-reading: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
+  color-scheme: light;
+}
+
+html[data-theme='light'] {
+  --canvas: #ffffff;
+  --surface: #f5f6f8;
+  --surface-raised: #eceef2;
+  --sheet: #ffffff;
+  --text: #1b1d21;
+  --reading-text: #23262b;
+  --muted-light: #5f6570;
+  --muted: #9aa0a8;
+  --line: #e8eaee;
+  --line-strong: #d4d8df;
+  --accent: #2f6fed;
+  --accent-bright: #2f6fed;
+  --accent-hover: #2560d4;
+  --accent-soft: #b9cdfa;
+  --accent-faint: #e9f0fd;
+  --button-text: #ffffff;
+  --success: #2f9e54;
+  --warning: #b97d10;
+  --danger: #d3372c;
+  --danger-soft: #eba9a2;
+  --danger-faint: #fdecea;
   --font-ui: "Avenir Next", Avenir, "Segoe UI", sans-serif;
   --font-cjk: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --font-cjk-reading: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color-scheme: light;
+}
+
+html[data-theme='dark'] {
+  --canvas: #171614;
+  --surface: #211f1c;
+  --surface-raised: #2a2823;
+  --sheet: #22201c;
+  --text: #f0ece4;
+  --reading-text: #e6e0d4;
+  --muted-light: #b7b0a2;
+  --muted: #8f887b;
+  --line: #32302a;
+  --line-strong: #4a463c;
+  --accent: #dfa94e;
+  --accent-bright: #e8b95e;
+  --accent-hover: #d3a349;
+  --accent-soft: #6b5830;
+  --accent-faint: #3a3220;
+  --button-text: #241c08;
+  --success: #7fae6c;
+  --warning: #dfa94e;
+  --danger: #e0654d;
+  --danger-soft: #6e3a30;
+  --danger-faint: #3a2521;
+  --font-ui: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  --font-cjk: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
   --font-cjk-reading: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
   color-scheme: dark;
+}
+
+:root {
   font-family: var(--font-ui);
   font-synthesis: none;
   text-rendering: optimizeLegibility;

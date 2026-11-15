@@ -7,8 +7,10 @@ import {
   Check,
   CheckCircle2,
   CloudOff,
+  Copy,
   Layers3,
   RotateCcw,
+  Settings2,
   Sparkles,
   Wifi,
   X,
@@ -54,16 +56,51 @@ type Selection = {
   clause: string
 }
 
-type SavedWord = {
-  id: string
-  sentence: string
+// Self-contained learning record: survives a change of article and can be
+// exported without access to the package lexicon.
+type Occurrence = {
+  clause: string
+  source: string
   savedAt: string
+}
+
+type PoolEntry = {
+  id: string
+  word: string
+  pinyin: string
+  meaning: string
+  occurrences: Occurrence[]
+}
+
+type ThemeChoice = 'auto' | 'paper' | 'light' | 'dark'
+
+type Settings = {
+  theme: ThemeChoice
+  fontSize: number
+}
+
+type Toast = {
+  text: string
+  action?: {
+    label: string
+    run: () => void
+  }
 }
 
 type View = 'read' | 'learn'
 
-const STORAGE_KEY = 'chinese-reader-test-v1'
+const POOL_KEY = 'chinese-reader-vocab-v1'
+const SETTINGS_KEY = 'chinese-reader-settings-v1'
 const PACKAGE_URL = './packages/package-000001.json'
+
+const FONT_SIZES = [19, 21, 23, 26]
+const FONT_SIZE_LABELS = ['S', 'M', 'L', 'XL']
+const THEME_CHOICES: { value: ThemeChoice; label: string }[] = [
+  { value: 'auto', label: 'Auto' },
+  { value: 'paper', label: 'Paper' },
+  { value: 'light', label: 'Light' },
+  { value: 'dark', label: 'Dark' },
+]
 
 // Clause boundaries per tools/README.md: official sentences run to ~180
 // characters, so saved context is the clause around the word.
@@ -90,27 +127,50 @@ function clauseAround(paragraph: PackageToken[], tokenIndex: number): string {
   return paragraph.slice(start, end).map((token) => token.t).join('')
 }
 
-function displayText(key: string): string {
-  return key.split('#')[0]
-}
-
 function firstMeaning(entry: LexiconEntry): string {
   return entry.entries[0]?.defs.join('; ') ?? ''
 }
 
-function readSavedWords(): SavedWord[] {
+function resolveTheme(choice: ThemeChoice): 'paper' | 'light' | 'dark' {
+  if (choice !== 'auto') return choice
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
+
+function readPool(): PoolEntry[] {
   try {
-    const raw = window.localStorage.getItem(STORAGE_KEY)
+    const raw = window.localStorage.getItem(POOL_KEY)
     if (!raw) return []
     const parsed: unknown = JSON.parse(raw)
     if (!Array.isArray(parsed)) return []
-    return parsed.filter((item): item is SavedWord => (
+    return parsed.filter((item): item is PoolEntry => (
       typeof item === 'object' && item !== null &&
-      typeof item.id === 'string' &&
-      typeof item.sentence === 'string' && typeof item.savedAt === 'string'
+      typeof (item as PoolEntry).id === 'string' &&
+      typeof (item as PoolEntry).word === 'string' &&
+      typeof (item as PoolEntry).pinyin === 'string' &&
+      typeof (item as PoolEntry).meaning === 'string' &&
+      Array.isArray((item as PoolEntry).occurrences)
     ))
   } catch {
     return []
+  }
+}
+
+function readSettings(): Settings {
+  try {
+    const raw = window.localStorage.getItem(SETTINGS_KEY)
+    if (!raw) return { theme: 'auto', fontSize: 1 }
+    const parsed: unknown = JSON.parse(raw)
+    if (typeof parsed !== 'object' || parsed === null) return { theme: 'auto', fontSize: 1 }
+    const candidate = parsed as Partial<Settings>
+    const theme: ThemeChoice = THEME_CHOICES.some((choice) => choice.value === candidate.theme)
+      ? candidate.theme as ThemeChoice
+      : 'auto'
+    const fontSize = typeof candidate.fontSize === 'number' && candidate.fontSize >= 0 && candidate.fontSize < FONT_SIZES.length
+      ? Math.floor(candidate.fontSize)
+      : 1
+    return { theme, fontSize }
+  } catch {
+    return { theme: 'auto', fontSize: 1 }
   }
 }
 
@@ -119,8 +179,10 @@ function App() {
   const [loadFailed, setLoadFailed] = useState(false)
   const [view, setView] = useState<View>('read')
   const [selection, setSelection] = useState<Selection | null>(null)
-  const [savedWords, setSavedWords] = useState<SavedWord[]>(readSavedWords)
-  const [toast, setToast] = useState('')
+  const [pool, setPool] = useState<PoolEntry[]>(readPool)
+  const [settings, setSettings] = useState<Settings>(readSettings)
+  const [settingsOpen, setSettingsOpen] = useState(false)
+  const [toast, setToast] = useState<Toast | null>(null)
   const [resetArmed, setResetArmed] = useState(false)
   const [online, setOnline] = useState(() => window.navigator.onLine)
   const [cacheReady, setCacheReady] = useState(false)
@@ -129,7 +191,7 @@ function App() {
   const previousFocusRef = useRef<HTMLElement | null>(null)
 
   const selectedEntry = selection && pkg ? pkg.lexicon[selection.key] ?? null : null
-  const selectedIsSaved = selection ? savedWords.some((word) => word.id === selection.key) : false
+  const selectedIsSaved = selection ? pool.some((entry) => entry.id === selection.key) : false
 
   useEffect(() => {
     let cancelled = false
@@ -139,10 +201,7 @@ function App() {
         return response.json() as Promise<StudyPackage>
       })
       .then((data) => {
-        if (cancelled) return
-        setPkg(data)
-        // Drop saved words whose key is not in the loaded package's lexicon.
-        setSavedWords((current) => current.filter((word) => word.id in data.lexicon))
+        if (!cancelled) setPkg(data)
       })
       .catch(() => {
         if (!cancelled) setLoadFailed(true)
@@ -152,15 +211,38 @@ function App() {
 
   useEffect(() => {
     try {
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(savedWords))
+      window.localStorage.setItem(POOL_KEY, JSON.stringify(pool))
     } catch {
-      window.setTimeout(() => setToast('This browser could not save your learning list.'), 0)
+      window.setTimeout(() => setToast({ text: 'This browser could not save your learning list.' }), 0)
     }
-  }, [savedWords])
+  }, [pool])
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings))
+    } catch {
+      // Settings are a convenience; a failed write is not worth a toast.
+    }
+  }, [settings])
+
+  useEffect(() => {
+    const apply = () => {
+      document.documentElement.dataset.theme = resolveTheme(settings.theme)
+    }
+    apply()
+    if (settings.theme !== 'auto') return
+    const media = window.matchMedia('(prefers-color-scheme: dark)')
+    media.addEventListener('change', apply)
+    return () => media.removeEventListener('change', apply)
+  }, [settings.theme])
+
+  useEffect(() => {
+    document.documentElement.style.setProperty('--reading-size', `${FONT_SIZES[settings.fontSize]}px`)
+  }, [settings.fontSize])
 
   useEffect(() => {
     if (!toast) return
-    const timer = window.setTimeout(() => setToast(''), 3200)
+    const timer = window.setTimeout(() => setToast(null), 4200)
     return () => window.clearTimeout(timer)
   }, [toast])
 
@@ -206,6 +288,15 @@ function App() {
     }
   }, [selection])
 
+  useEffect(() => {
+    if (!settingsOpen) return
+    const handleKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setSettingsOpen(false)
+    }
+    document.addEventListener('keydown', handleKey)
+    return () => document.removeEventListener('keydown', handleKey)
+  }, [settingsOpen])
+
   const switchView = (nextView: View) => {
     setView(nextView)
     setSelection(null)
@@ -214,20 +305,80 @@ function App() {
   }
 
   const addToLearning = () => {
-    if (!selection || !selectedEntry) return
-    if (selectedIsSaved) {
-      setToast('This expression is already in your learning list.')
+    if (!selection || !selectedEntry || !pkg) return
+    const existing = pool.find((entry) => entry.id === selection.key)
+    if (existing?.occurrences.some((occurrence) => occurrence.clause === selection.clause && occurrence.source === pkg.article.title)) {
+      setToast({ text: 'Already in your learning list with this clause.' })
       return
     }
-    setSavedWords((current) => [{ id: selection.key, sentence: selection.clause, savedAt: new Date().toISOString() }, ...current])
-    setToast(`${selection.text} added to learning`)
+    const occurrence: Occurrence = { clause: selection.clause, source: pkg.article.title, savedAt: new Date().toISOString() }
+    setPool((current) => {
+      const match = current.find((entry) => entry.id === selection.key)
+      if (match) {
+        return current.map((entry) => entry.id === selection.key
+          ? { ...entry, occurrences: [occurrence, ...entry.occurrences] }
+          : entry)
+      }
+      return [{
+        id: selection.key,
+        word: selection.text,
+        pinyin: selectedEntry.pinyin,
+        meaning: firstMeaning(selectedEntry),
+        occurrences: [occurrence],
+      }, ...current]
+    })
+    setToast({ text: `${selection.text} added to learning` })
+  }
+
+  const unsaveWord = (id: string) => {
+    const removed = pool.find((entry) => entry.id === id)
+    if (!removed) return
+    setPool((current) => current.filter((entry) => entry.id !== id))
+    setToast({
+      text: `${removed.word} removed`,
+      action: {
+        label: 'Undo',
+        run: () => setPool((current) => current.some((entry) => entry.id === id) ? current : [removed, ...current]),
+      },
+    })
+  }
+
+  const copyMarkdown = async () => {
+    const rows = pool.flatMap((entry) => entry.occurrences.map((occurrence) => (
+      `| ${entry.word} | ${entry.pinyin} | ${entry.meaning} | ${occurrence.clause} | ${occurrence.source} | ${occurrence.savedAt.slice(0, 10)} |`
+    )))
+    if (rows.length === 0) {
+      setToast({ text: 'Nothing to copy yet — save a word first.' })
+      return
+    }
+    const table = [
+      '| word | pinyin | meaning | clause | source | date |',
+      '|---|---|---|---|---|---|',
+      ...rows,
+    ].join('\n')
+    try {
+      await navigator.clipboard.writeText(table)
+      setToast({ text: `Copied ${rows.length} ${rows.length === 1 ? 'row' : 'rows'} as Markdown` })
+    } catch {
+      const helper = document.createElement('textarea')
+      helper.value = table
+      document.body.appendChild(helper)
+      helper.select()
+      try {
+        document.execCommand('copy')
+        setToast({ text: `Copied ${rows.length} ${rows.length === 1 ? 'row' : 'rows'} as Markdown` })
+      } catch {
+        setToast({ text: 'Copy failed in this browser.' })
+      }
+      helper.remove()
+    }
   }
 
   const resetTest = () => {
-    setSavedWords([])
+    setPool([])
     setSelection(null)
     setResetArmed(false)
-    setToast('Saved words cleared. The article is still here.')
+    setToast({ text: 'Saved words cleared. The article is still here.' })
   }
 
   const connectionLabel = !online ? 'Offline mode' : cacheReady ? 'Offline ready' : 'Local test'
@@ -258,11 +409,16 @@ function App() {
       <header className="topbar">
         <button className="brand" onClick={() => switchView('read')} aria-label="Chinese Reader home">
           <span className="brand-mark" aria-hidden="true">阅</span>
-          <span>Chinese Reader<span className="brand-edition"> / test</span></span>
+          <span>Chinese Reader</span>
         </button>
-        <div className={`connection-pill ${online ? '' : 'is-offline'}`} title="Connection and offline-cache status">
-          {online ? <Wifi size={14} aria-hidden="true" /> : <CloudOff size={14} aria-hidden="true" />}
-          <span>{connectionLabel}</span>
+        <div className="topbar-actions">
+          <button className="icon-button settings-button" onClick={() => setSettingsOpen(true)} aria-label="Reading settings">
+            <Settings2 size={19} />
+          </button>
+          <div className={`connection-pill ${online ? '' : 'is-offline'}`} title="Connection and offline-cache status">
+            {online ? <Wifi size={14} aria-hidden="true" /> : <CloudOff size={14} aria-hidden="true" />}
+            <span>{connectionLabel}</span>
+          </div>
         </div>
       </header>
 
@@ -274,7 +430,7 @@ function App() {
           </button>
           <button className={`sidebar-link ${view === 'learn' ? 'active' : ''}`} onClick={() => switchView('learn')} aria-current={view === 'learn' ? 'page' : undefined}>
             <Layers3 size={19} aria-hidden="true" /> Learning
-            <span className="nav-count">{savedWords.length}</span>
+            <span className="nav-count">{pool.length}</span>
           </button>
           <div className="sidebar-note">
             <Sparkles size={17} aria-hidden="true" />
@@ -311,7 +467,7 @@ function App() {
                         return <span className="punctuation" key={`${paragraphIndex}-${tokenIndex}`}>{token.t}</span>
                       }
                       const clause = clauseAround(paragraph, tokenIndex)
-                      const isSaved = savedWords.some((word) => word.id === key)
+                      const isSaved = pool.some((saved) => saved.id === key)
                       const isSelected = selection?.key === key && selection.clause === clause
                       return (
                         <button
@@ -344,11 +500,13 @@ function App() {
               </div>
 
               <div className="learning-summary">
-                <div><strong>{savedWords.length}</strong><span>{savedWords.length === 1 ? 'expression' : 'expressions'} saved</span></div>
-                <span className="local-badge">LOCAL TEST</span>
+                <div><strong>{pool.length}</strong><span>{pool.length === 1 ? 'expression' : 'expressions'} saved</span></div>
+                <button className="copy-button" onClick={copyMarkdown}>
+                  <Copy size={14} aria-hidden="true" /> Copy as Markdown
+                </button>
               </div>
 
-              {savedWords.length === 0 ? (
+              {pool.length === 0 ? (
                 <div className="empty-state">
                   <div className="empty-icon"><Layers3 size={26} strokeWidth={1.5} aria-hidden="true" /></div>
                   <h2>Your list starts in the text.</h2>
@@ -359,31 +517,34 @@ function App() {
                 </div>
               ) : (
                 <div className="learning-list">
-                  {savedWords.map((saved) => {
-                    const entry = pkg.lexicon[saved.id]
-                    if (!entry) return null
-                    return (
-                      <article className="learning-card" key={saved.id}>
-                        <div className="learning-card-top">
-                          <div><h2 lang="zh-CN">{displayText(saved.id)}</h2><p className="card-pinyin">{entry.pinyin}</p></div>
-                          <span className="saved-marker"><Bookmark size={15} fill="currentColor" aria-hidden="true" /> Learning</span>
+                  {pool.map((saved) => (
+                    <article className="learning-card" key={saved.id}>
+                      <div className="learning-card-top">
+                        <div><h2 lang="zh-CN">{saved.word}</h2><p className="card-pinyin">{saved.pinyin}</p></div>
+                        <button className="icon-button card-unsave" onClick={() => unsaveWord(saved.id)} aria-label={`Remove ${saved.word} from learning`}>
+                          <X size={17} />
+                        </button>
+                      </div>
+                      <p className="card-meaning">{saved.meaning}</p>
+                      {saved.occurrences.map((occurrence, occurrenceIndex) => (
+                        <div className="card-context" key={occurrenceIndex}>
+                          <span>{occurrence.source} · {occurrence.savedAt.slice(0, 10)}</span>
+                          <p lang="zh-CN">{occurrence.clause}</p>
                         </div>
-                        <p className="card-meaning">{firstMeaning(entry)}</p>
-                        <div className="card-context"><span>FROM YOUR READING</span><p lang="zh-CN">{saved.sentence}</p></div>
-                      </article>
-                    )
-                  })}
+                      ))}
+                    </article>
+                  ))}
                 </div>
               )}
 
               <div className="test-controls">
                 {!resetArmed ? (
-                  <button className="text-button" onClick={() => setResetArmed(true)} disabled={savedWords.length === 0}>
+                  <button className="text-button" onClick={() => setResetArmed(true)} disabled={pool.length === 0}>
                     <RotateCcw size={15} aria-hidden="true" /> Reset test data
                   </button>
                 ) : (
                   <div className="reset-confirm" role="group" aria-label="Confirm reset">
-                    <p>Clear all {savedWords.length} saved {savedWords.length === 1 ? 'word' : 'words'}?</p>
+                    <p>Clear all {pool.length} saved {pool.length === 1 ? 'word' : 'words'}?</p>
                     <div><button className="danger-button" onClick={resetTest}>Clear words</button><button className="text-button" onClick={() => setResetArmed(false)}>Cancel</button></div>
                   </div>
                 )}
@@ -398,7 +559,7 @@ function App() {
           <BookOpen size={21} aria-hidden="true" /><span>Read</span>
         </button>
         <button className={view === 'learn' ? 'active' : ''} onClick={() => switchView('learn')} aria-current={view === 'learn' ? 'page' : undefined}>
-          <span className="mobile-learning-icon"><Layers3 size={21} aria-hidden="true" />{savedWords.length > 0 && <span className="mobile-count">{savedWords.length}</span>}</span><span>Learning</span>
+          <span className="mobile-learning-icon"><Layers3 size={21} aria-hidden="true" />{pool.length > 0 && <span className="mobile-count">{pool.length}</span>}</span><span>Learning</span>
         </button>
       </nav>
 
@@ -412,7 +573,7 @@ function App() {
             </div>
             <div className="expression-row">
               <h2 id="sheet-expression" lang="zh-CN">{selection.text}</h2>
-              <p>{selectedEntry.pinyin}</p>
+              <p className="expr-pinyin">{selectedEntry.pinyin}</p>
             </div>
             {selectedEntry.origin === 'glossary' && (
               <p className="glossary-badge"><Sparkles size={13} aria-hidden="true" /> From your glossary</p>
@@ -433,17 +594,72 @@ function App() {
               <h3>IN THIS CLAUSE</h3>
               <p lang="zh-CN">{selection.clause}</p>
             </div>
-            <button className={`primary-button save-button ${selectedIsSaved ? 'is-saved' : ''}`} onClick={addToLearning} disabled={selectedIsSaved}>
+            <button className={`primary-button save-button ${selectedIsSaved ? 'is-saved' : ''}`} onClick={selectedIsSaved ? () => unsaveWord(selection.key) : addToLearning}>
               {selectedIsSaved ? <Check size={19} aria-hidden="true" /> : <Bookmark size={19} aria-hidden="true" />}
               {selectedIsSaved ? 'Saved to learning' : 'Add to learning'}
-              {!selectedIsSaved && <ArrowRight size={18} aria-hidden="true" />}
+              {selectedIsSaved ? <X size={18} aria-hidden="true" /> : <ArrowRight size={18} aria-hidden="true" />}
             </button>
-            <p className="sheet-storage-note">Saved locally with the clause above.</p>
+            <p className="sheet-storage-note">{selectedIsSaved ? 'Tap again to remove it from your list.' : 'Saved locally with the clause above.'}</p>
           </div>
         </div>
       )}
 
-      {toast && <div className="toast" role="status"><CheckCircle2 size={18} aria-hidden="true" />{toast}</div>}
+      {settingsOpen && (
+        <div className="sheet-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) setSettingsOpen(false) }}>
+          <div className="word-sheet settings-sheet" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+            <div className="sheet-handle" aria-hidden="true" />
+            <div className="sheet-header">
+              <span className="sheet-label">READING SETTINGS</span>
+              <button className="icon-button" onClick={() => setSettingsOpen(false)} aria-label="Close settings"><X size={20} /></button>
+            </div>
+            <h2 className="settings-title" id="settings-title">Appearance</h2>
+            <div className="sheet-section">
+              <h3>THEME</h3>
+              <div className="segmented" role="group" aria-label="Theme">
+                {THEME_CHOICES.map((choice) => (
+                  <button
+                    key={choice.value}
+                    className={settings.theme === choice.value ? 'active' : ''}
+                    onClick={() => setSettings((current) => ({ ...current, theme: choice.value }))}
+                    aria-pressed={settings.theme === choice.value}
+                  >
+                    {choice.label}
+                  </button>
+                ))}
+              </div>
+              <p className="settings-note">Auto follows your device: light by day, dark by night.</p>
+            </div>
+            <div className="sheet-section">
+              <h3>TEXT SIZE</h3>
+              <div className="segmented" role="group" aria-label="Text size">
+                {FONT_SIZE_LABELS.map((label, index) => (
+                  <button
+                    key={label}
+                    className={settings.fontSize === index ? 'active' : ''}
+                    onClick={() => setSettings((current) => ({ ...current, fontSize: index }))}
+                    aria-pressed={settings.fontSize === index}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+              <p className="settings-note settings-preview" lang="zh-CN">新质生产力 · 阅读舒适最重要</p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {toast && (
+        <div className="toast" role="status">
+          <CheckCircle2 size={18} aria-hidden="true" />
+          <span>{toast.text}</span>
+          {toast.action && (
+            <button className="toast-action" onClick={() => { toast.action?.run(); setToast(null) }}>
+              {toast.action.label}
+            </button>
+          )}
+        </div>
+      )}
     </div>
   )
 }
