@@ -1,0 +1,5014 @@
+{
+ "schema_version": 1,
+ "package_id": "package-000003",
+ "created_at": "2026-11-16T04:22:28+00:00",
+ "article": {
+  "id": "article-000003",
+  "title": "要闻综述：深圳迎接APEC会议",
+  "source_name": "Claude 综述，据11月15日《新闻联播》要闻等公开报道",
+  "source_url": "http://stock.10jqka.com.cn/20261115/c681830450.shtml",
+  "date": "2026-11-16"
+ },
+ "paragraphs": [
+  [
+   {
+    "t": "2026"
+   },
+   {
+    "t": "年",
+    "w": 1
+   },
+   {
+    "t": "亚太经合组织",
+    "w": 1
+   },
+   {
+    "t": "（"
+   },
+   {
+    "t": "APEC"
+   },
+   {
+    "t": "）"
+   },
+   {
+    "t": "会议",
+    "w": 1
+   },
+   {
+    "t": "即将",
+    "w": 1
+   },
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "深圳",
+    "w": 1
+   },
+   {
+    "t": "举行",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "据",
+    "w": 1
+   },
+   {
+    "t": "11"
+   },
+   {
+    "t": "月",
+    "w": 1
+   },
+   {
+    "t": "15"
+   },
+   {
+    "t": "日",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "《"
+   },
+   {
+    "t": "新闻联播",
+    "w": 1
+   },
+   {
+    "t": "》"
+   },
+   {
+    "t": "报道",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "APEC"
+   },
+   {
+    "t": "工商",
+    "w": 1
+   },
+   {
+    "t": "领导人",
+    "w": 1
+   },
+   {
+    "t": "峰会",
+    "w": 1
+   },
+   {
+    "t": "将",
+    "w": 1
+   },
+   {
+    "t": "于",
+    "w": 1
+   },
+   {
+    "t": "11"
+   },
+   {
+    "t": "月",
+    "w": 1
+   },
+   {
+    "t": "17"
+   },
+   {
+    "t": "日",
+    "w": 1
+   },
+   {
+    "t": "到",
+    "w": 1
+   },
+   {
+    "t": "18"
+   },
+   {
+    "t": "日",
+    "w": 1
+   },
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "深圳",
+    "w": 1
+   },
+   {
+    "t": "举办",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "目前",
+    "w": 1
+   },
+   {
+    "t": "各",
+    "w": 1
+   },
+   {
+    "t": "项",
+    "w": 1
+   },
+   {
+    "t": "筹备",
+    "w": 1
+   },
+   {
+    "t": "工作",
+    "w": 1
+   },
+   {
+    "t": "已经",
+    "w": 1
+   },
+   {
+    "t": "就绪",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "随着",
+    "w": 1
+   },
+   {
+    "t": "会议",
+    "w": 1
+   },
+   {
+    "t": "临近",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "深圳",
+    "w": 1
+   },
+   {
+    "t": "口岸",
+    "w": 1
+   },
+   {
+    "t": "迎来",
+    "w": 1
+   },
+   {
+    "t": "了",
+    "w": 1
+   },
+   {
+    "t": "客流",
+    "w": 1
+   },
+   {
+    "t": "高峰",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "APEC"
+   },
+   {
+    "t": "大使",
+    "w": 1
+   },
+   {
+    "t": "与",
+    "w": 1
+   },
+   {
+    "t": "企业",
+    "w": 1
+   },
+   {
+    "t": "首席执行官",
+    "w": 1
+   },
+   {
+    "t": "圆桌",
+    "w": 1
+   },
+   {
+    "t": "会",
+    "w": 1
+   },
+   {
+    "t": "也",
+    "w": 1
+   },
+   {
+    "t": "已",
+    "w": 1
+   },
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "当地",
+    "w": 1
+   },
+   {
+    "t": "举行",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "多",
+    "w": 1
+   },
+   {
+    "t": "国",
+    "w": 1
+   },
+   {
+    "t": "人士",
+    "w": 1
+   },
+   {
+    "t": "表示",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "期待",
+    "w": 1
+   },
+   {
+    "t": "中国",
+    "w": 1
+   },
+   {
+    "t": "与",
+    "w": 1
+   },
+   {
+    "t": "亚太",
+    "w": 1
+   },
+   {
+    "t": "伙伴",
+    "w": 1
+   },
+   {
+    "t": "携手",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "共同",
+    "w": 1
+   },
+   {
+    "t": "推动",
+    "w": 1
+   },
+   {
+    "t": "地区",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "发展",
+    "w": 1
+   },
+   {
+    "t": "与",
+    "w": 1
+   },
+   {
+    "t": "繁荣",
+    "w": 1
+   },
+   {
+    "t": "。"
+   }
+  ],
+  [
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "外交",
+    "w": 1
+   },
+   {
+    "t": "方面",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "国务院",
+    "w": 1
+   },
+   {
+    "t": "总理",
+    "w": 1
+   },
+   {
+    "t": "李强",
+    "w": 1
+   },
+   {
+    "t": "会见",
+    "w": 1
+   },
+   {
+    "t": "了",
+    "w": 1
+   },
+   {
+    "t": "泰国",
+    "w": 1
+   },
+   {
+    "t": "国王",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "并",
+    "w": 1
+   },
+   {
+    "t": "同",
+    "w": 1
+   },
+   {
+    "t": "泰国",
+    "w": 1
+   },
+   {
+    "t": "总理",
+    "w": 1
+   },
+   {
+    "t": "共同",
+    "w": 1
+   },
+   {
+    "t": "出席",
+    "w": 1
+   },
+   {
+    "t": "中泰",
+    "w": 1
+   },
+   {
+    "t": "企业家",
+    "w": 1
+   },
+   {
+    "t": "座谈会",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "刚刚",
+    "w": 1
+   },
+   {
+    "t": "闭幕",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "第",
+    "w": 1
+   },
+   {
+    "t": "九",
+    "w": 1
+   },
+   {
+    "t": "届",
+    "w": 1
+   },
+   {
+    "t": "中国",
+    "w": 1
+   },
+   {
+    "t": "国际",
+    "w": 1
+   },
+   {
+    "t": "进口",
+    "w": 1
+   },
+   {
+    "t": "博览会",
+    "w": 1
+   },
+   {
+    "t": "上",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "有",
+    "w": 1
+   },
+   {
+    "t": "5"
+   },
+   {
+    "t": "个",
+    "w": 1
+   },
+   {
+    "t": "APEC"
+   },
+   {
+    "t": "成员",
+    "w": 1
+   },
+   {
+    "t": "参加",
+    "w": 1
+   },
+   {
+    "t": "国家",
+    "w": 1
+   },
+   {
+    "t": "展",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "17"
+   },
+   {
+    "t": "个",
+    "w": 1
+   },
+   {
+    "t": "成员",
+    "w": 1
+   },
+   {
+    "t": "参加",
+    "w": 1
+   },
+   {
+    "t": "企业",
+    "w": 1
+   },
+   {
+    "t": "展",
+    "w": 1
+   },
+   {
+    "t": "。"
+   }
+  ],
+  [
+   {
+    "t": "经济",
+    "w": 1
+   },
+   {
+    "t": "和",
+    "w": 1
+   },
+   {
+    "t": "民生",
+    "w": 1
+   },
+   {
+    "t": "领域",
+    "w": 1
+   },
+   {
+    "t": "也",
+    "w": 1
+   },
+   {
+    "t": "有",
+    "w": 1
+   },
+   {
+    "t": "不少",
+    "w": 1
+   },
+   {
+    "t": "新",
+    "w": 1
+   },
+   {
+    "t": "消息",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "今年",
+    "w": 1
+   },
+   {
+    "t": "1"
+   },
+   {
+    "t": "月",
+    "w": 1
+   },
+   {
+    "t": "至",
+    "w": 1
+   },
+   {
+    "t": "10"
+   },
+   {
+    "t": "月",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "全国",
+    "w": 1
+   },
+   {
+    "t": "期货",
+    "w": 1
+   },
+   {
+    "t": "市场",
+    "w": 1
+   },
+   {
+    "t": "累计",
+    "w": 1
+   },
+   {
+    "t": "成交额",
+    "w": 1
+   },
+   {
+    "t": "同比",
+    "w": 1
+   },
+   {
+    "t": "增长",
+    "w": 1
+   },
+   {
+    "t": "32.44%"
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "2026"
+   },
+   {
+    "t": "年",
+    "w": 1
+   },
+   {
+    "t": "“"
+   },
+   {
+    "t": "秋招",
+    "w": 1
+   },
+   {
+    "t": "”"
+   },
+   {
+    "t": "共",
+    "w": 1
+   },
+   {
+    "t": "提供",
+    "w": 1
+   },
+   {
+    "t": "岗位",
+    "w": 1
+   },
+   {
+    "t": "551.5"
+   },
+   {
+    "t": "万",
+    "w": 1
+   },
+   {
+    "t": "个",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "主要",
+    "w": 1
+   },
+   {
+    "t": "面向",
+    "w": 1
+   },
+   {
+    "t": "高校",
+    "w": 1
+   },
+   {
+    "t": "毕业生",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "2026"
+   },
+   {
+    "t": "年",
+    "w": 1
+   },
+   {
+    "t": "国家",
+    "w": 1
+   },
+   {
+    "t": "医保",
+    "w": 1
+   },
+   {
+    "t": "药品",
+    "w": 1
+   },
+   {
+    "t": "目录",
+    "w": 1
+   },
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "苏州",
+    "w": 1
+   },
+   {
+    "t": "发布",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "新增",
+    "w": 1
+   },
+   {
+    "t": "107"
+   },
+   {
+    "t": "种",
+    "w": 1
+   },
+   {
+    "t": "药品",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "其中",
+    "w": 1
+   },
+   {
+    "t": "一类新药",
+    "w": 1
+   },
+   {
+    "t": "51"
+   },
+   {
+    "t": "个",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "数量",
+    "w": 1
+   },
+   {
+    "t": "创",
+    "w": 1
+   },
+   {
+    "t": "历史",
+    "w": 1
+   },
+   {
+    "t": "新高",
+    "w": 1
+   },
+   {
+    "t": "；"
+   },
+   {
+    "t": "一种",
+    "w": 1
+   },
+   {
+    "t": "价格",
+    "w": 1
+   },
+   {
+    "t": "高",
+    "w": 1
+   },
+   {
+    "t": "达",
+    "w": 1
+   },
+   {
+    "t": "百万",
+    "w": 1
+   },
+   {
+    "t": "元",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "抗癌",
+    "w": 1
+   },
+   {
+    "t": "疗法",
+    "w": 1
+   },
+   {
+    "t": "首次",
+    "w": 1
+   },
+   {
+    "t": "被",
+    "w": 1
+   },
+   {
+    "t": "纳入",
+    "w": 1
+   },
+   {
+    "t": "基本",
+    "w": 1
+   },
+   {
+    "t": "医保",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "患者",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "负担",
+    "w": 1
+   },
+   {
+    "t": "有望",
+    "w": 1
+   },
+   {
+    "t": "减轻",
+    "w": 1
+   },
+   {
+    "t": "。"
+   }
+  ],
+  [
+   {
+    "t": "科技",
+    "w": 1
+   },
+   {
+    "t": "方面",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "中国",
+    "w": 1
+   },
+   {
+    "t": "空间站",
+    "w": 1
+   },
+   {
+    "t": "完成",
+    "w": 1
+   },
+   {
+    "t": "了",
+    "w": 1
+   },
+   {
+    "t": "第",
+    "w": 1
+   },
+   {
+    "t": "四次",
+    "w": 1
+   },
+   {
+    "t": "空间",
+    "w": 1
+   },
+   {
+    "t": "辐射",
+    "w": 1
+   },
+   {
+    "t": "生物",
+    "w": 1
+   },
+   {
+    "t": "装置",
+    "w": 1
+   },
+   {
+    "t": "暴露",
+    "w": 1
+   },
+   {
+    "t": "实验",
+    "w": 1
+   },
+   {
+    "t": "；"
+   },
+   {
+    "t": "我国",
+    "w": 1
+   },
+   {
+    "t": "还",
+    "w": 1
+   },
+   {
+    "t": "刷新",
+    "w": 1
+   },
+   {
+    "t": "了",
+    "w": 1
+   },
+   {
+    "t": "6000"
+   },
+   {
+    "t": "米",
+    "w": 1
+   },
+   {
+    "t": "井深",
+    "w": 1
+   },
+   {
+    "t": "陆相",
+    "w": 1
+   },
+   {
+    "t": "页岩",
+    "w": 1
+   },
+   {
+    "t": "油井",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "最",
+    "w": 1
+   },
+   {
+    "t": "短",
+    "w": 1
+   },
+   {
+    "t": "钻井",
+    "w": 1
+   },
+   {
+    "t": "周期",
+    "w": 1
+   },
+   {
+    "t": "纪录",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "值得一提",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "是",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "2026"
+   },
+   {
+    "t": "年",
+    "w": 1
+   },
+   {
+    "t": "参加",
+    "w": 1
+   },
+   {
+    "t": "中文",
+    "w": 1
+   },
+   {
+    "t": "水平",
+    "w": 1
+   },
+   {
+    "t": "考试",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "考生",
+    "w": 1
+   },
+   {
+    "t": "人数",
+    "w": 1
+   },
+   {
+    "t": "首次",
+    "w": 1
+   },
+   {
+    "t": "突破",
+    "w": 1
+   },
+   {
+    "t": "100"
+   },
+   {
+    "t": "万人",
+    "w": 1
+   },
+   {
+    "t": "次",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "显示",
+    "w": 1
+   },
+   {
+    "t": "出",
+    "w": 1
+   },
+   {
+    "t": "中文",
+    "w": 1
+   },
+   {
+    "t": "学习",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "热度",
+    "w": 1
+   },
+   {
+    "t": "仍",
+    "w": 1
+   },
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "上升",
+    "w": 1
+   },
+   {
+    "t": "。"
+   }
+  ],
+  [
+   {
+    "t": "天气",
+    "w": 1
+   },
+   {
+    "t": "方面",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "我国",
+    "w": 1
+   },
+   {
+    "t": "中东部",
+    "w": 1
+   },
+   {
+    "t": "地区",
+    "w": 1
+   },
+   {
+    "t": "将",
+    "w": 1
+   },
+   {
+    "t": "出现",
+    "w": 1
+   },
+   {
+    "t": "大",
+    "w": 1
+   },
+   {
+    "t": "范围",
+    "w": 1
+   },
+   {
+    "t": "大风",
+    "w": 1
+   },
+   {
+    "t": "降温",
+    "w": 1
+   },
+   {
+    "t": "和",
+    "w": 1
+   },
+   {
+    "t": "雨雪",
+    "w": 1
+   },
+   {
+    "t": "天气",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "公众",
+    "w": 1
+   },
+   {
+    "t": "需要",
+    "w": 1
+   },
+   {
+    "t": "注意",
+    "w": 1
+   },
+   {
+    "t": "防寒保暖",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "合理",
+    "w": 1
+   },
+   {
+    "t": "安排",
+    "w": 1
+   },
+   {
+    "t": "出行",
+    "w": 1
+   },
+   {
+    "t": "。"
+   }
+  ],
+  [
+   {
+    "t": "国际",
+    "w": 1
+   },
+   {
+    "t": "方面",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "联合国",
+    "w": 1
+   },
+   {
+    "t": "呼吁",
+    "w": 1
+   },
+   {
+    "t": "恢复",
+    "w": 1
+   },
+   {
+    "t": "霍尔木兹海峡",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "化肥",
+    "w": 1
+   },
+   {
+    "t": "运输",
+    "w": 1
+   },
+   {
+    "t": "；"
+   },
+   {
+    "t": "阿拉伯国家联盟",
+    "w": 1
+   },
+   {
+    "t": "及",
+    "w": 1
+   },
+   {
+    "t": "18"
+   },
+   {
+    "t": "个",
+    "w": 1
+   },
+   {
+    "t": "国家",
+    "w": 1
+   },
+   {
+    "t": "谴责",
+    "w": 1
+   },
+   {
+    "t": "以色列",
+    "w": 1
+   },
+   {
+    "t": "军队",
+    "w": 1
+   },
+   {
+    "t": "空袭",
+    "w": 1
+   },
+   {
+    "t": "加沙",
+    "w": 1
+   },
+   {
+    "t": "一家",
+    "w": 1
+   },
+   {
+    "t": "医院",
+    "w": 1
+   },
+   {
+    "t": "；"
+   },
+   {
+    "t": "美国",
+    "w": 1
+   },
+   {
+    "t": "取消",
+    "w": 1
+   },
+   {
+    "t": "停飞令",
+    "w": 1
+   },
+   {
+    "t": "后",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "第二天",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "仍",
+    "w": 1
+   },
+   {
+    "t": "有",
+    "w": 1
+   },
+   {
+    "t": "上万",
+    "w": 1
+   },
+   {
+    "t": "个",
+    "w": 1
+   },
+   {
+    "t": "航班",
+    "w": 1
+   },
+   {
+    "t": "受到",
+    "w": 1
+   },
+   {
+    "t": "影响",
+    "w": 1
+   },
+   {
+    "t": "；"
+   },
+   {
+    "t": "意大利",
+    "w": 1
+   },
+   {
+    "t": "则",
+    "w": 1
+   },
+   {
+    "t": "因",
+    "w": 1
+   },
+   {
+    "t": "擅自",
+    "w": 1
+   },
+   {
+    "t": "读取",
+    "w": 1
+   },
+   {
+    "t": "用户",
+    "w": 1
+   },
+   {
+    "t": "数据",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "对",
+    "w": 1
+   },
+   {
+    "t": "美国",
+    "w": 1
+   },
+   {
+    "t": "元宇宙",
+    "w": 1
+   },
+   {
+    "t": "公司",
+    "w": 1
+   },
+   {
+    "t": "（"
+   },
+   {
+    "t": "Meta"
+   },
+   {
+    "t": "）"
+   },
+   {
+    "t": "作出",
+    "w": 1
+   },
+   {
+    "t": "处罚",
+    "w": 1
+   },
+   {
+    "t": "。"
+   }
+  ]
+ ],
+ "lexicon": {
+  "年": {
+   "pinyin": "nián",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "nián",
+     "defs": [
+      "year"
+     ]
+    },
+    {
+     "pinyin": "nián",
+     "defs": [
+      "grain",
+      "harvest (old)",
+      "variant of 年[nian2]"
+     ]
+    },
+    {
+     "pinyin": "Nián",
+     "defs": [
+      "surname Nian"
+     ]
+    }
+   ]
+  },
+  "亚太经合组织": {
+   "pinyin": "yà tài jīng hé zǔ zhī",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Yà Tài Jīng Hé Zǔ zhī",
+     "defs": [
+      "APEC (organization)"
+     ]
+    }
+   ]
+  },
+  "会议": {
+   "pinyin": "huì yì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "huì yì",
+     "defs": [
+      "meeting",
+      "conference"
+     ]
+    }
+   ]
+  },
+  "即将": {
+   "pinyin": "jí jiāng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jí jiāng",
+     "defs": [
+      "on the eve of",
+      "to be about to",
+      "to be on the verge of"
+     ]
+    }
+   ]
+  },
+  "在": {
+   "pinyin": "zài",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zài",
+     "defs": [
+      "to exist; to be alive",
+      "(of sb or sth) to be (located) at",
+      "(used before a verb to indicate an action in progress)"
+     ]
+    }
+   ]
+  },
+  "深圳": {
+   "pinyin": "shēn zhèn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Shēn zhèn",
+     "defs": [
+      "Shenzhen subprovincial city in Guangdong, special economic zone close to Hong Kong"
+     ]
+    }
+   ]
+  },
+  "举行": {
+   "pinyin": "jǔ xíng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jǔ xíng",
+     "defs": [
+      "to hold (a meeting, ceremony etc)"
+     ]
+    }
+   ]
+  },
+  "据": {
+   "pinyin": "jù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jù",
+     "defs": [
+      "according to",
+      "to act in accordance with",
+      "to depend on",
+      "to seize",
+      "to occupy"
+     ]
+    },
+    {
+     "pinyin": "jū",
+     "defs": [
+      "used in 拮据[jie2 ju1]"
+     ]
+    }
+   ]
+  },
+  "月": {
+   "pinyin": "yuè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yuè",
+     "defs": [
+      "moon",
+      "month",
+      "monthly"
+     ]
+    }
+   ]
+  },
+  "日": {
+   "pinyin": "rì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "rì",
+     "defs": [
+      "sun",
+      "day",
+      "date, day of the month"
+     ]
+    },
+    {
+     "pinyin": "Rì",
+     "defs": [
+      "abbr. for 日本[Ri4 ben3], Japan"
+     ]
+    }
+   ]
+  },
+  "的": {
+   "pinyin": "de",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "de",
+     "defs": [
+      "of; ~'s (possessive particle)",
+      "(used after an attribute)",
+      "(used to form a nominal expression)",
+      "(used at the end of a declarative sentence for emphasis)",
+      "also pr. [di4] or [di5] in poetry and songs"
+     ]
+    },
+    {
+     "pinyin": "dī",
+     "defs": [
+      "a taxi; a cab (abbr. for 的士[di1 shi4])"
+     ]
+    },
+    {
+     "pinyin": "dí",
+     "defs": [
+      "really and truly"
+     ]
+    },
+    {
+     "pinyin": "dì",
+     "defs": [
+      "(bound form) bull's-eye; target"
+     ]
+    }
+   ]
+  },
+  "新闻联播": {
+   "pinyin": "Xīn wén Lián bō",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "Xīn wén Lián bō",
+     "defs": [
+      "Xinwen Lianbo, the main evening news programme of China Central Television"
+     ]
+    }
+   ]
+  },
+  "报道": {
+   "pinyin": "bào dào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bào dào",
+     "defs": [
+      "to report (news)",
+      "report"
+     ]
+    }
+   ]
+  },
+  "工商": {
+   "pinyin": "gōng shāng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gōng shāng",
+     "defs": [
+      "industry and commerce"
+     ]
+    }
+   ]
+  },
+  "领导人": {
+   "pinyin": "lǐng dǎo rén",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lǐng dǎo rén",
+     "defs": [
+      "leader"
+     ]
+    }
+   ]
+  },
+  "峰会": {
+   "pinyin": "fēng huì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fēng huì",
+     "defs": [
+      "summit meeting"
+     ]
+    }
+   ]
+  },
+  "将": {
+   "pinyin": "jiāng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jiāng",
+     "defs": [
+      "will",
+      "shall",
+      "to use",
+      "to take",
+      "to checkmate",
+      "just a short while ago"
+     ]
+    },
+    {
+     "pinyin": "jiàng",
+     "defs": [
+      "(bound form) a general",
+      "(literary) to command; to lead",
+      "(Chinese chess) general (on the black side, equivalent to a king in Western chess)"
+     ]
+    },
+    {
+     "pinyin": "qiāng",
+     "defs": [
+      "to desire",
+      "to invite",
+      "to request"
+     ]
+    }
+   ]
+  },
+  "于": {
+   "pinyin": "yú",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "yú",
+     "defs": [
+      "(formal) at; on; in (a time or place), as in 于11月17日 \"on 17 November\""
+     ]
+    },
+    {
+     "pinyin": "yú",
+     "defs": [
+      "to go",
+      "to take",
+      "sentence-final interrogative particle",
+      "variant of 於|于[yu2]"
+     ]
+    },
+    {
+     "pinyin": "yú",
+     "defs": [
+      "(of time or place) in; at; on",
+      "(indicating any indirect relation) to; toward; vis-à-vis; with regard to; for",
+      "(indicating a source) from; out of",
+      "(used in comparison) than",
+      "(used in the passive voice) by"
+     ]
+    },
+    {
+     "pinyin": "Yú",
+     "defs": [
+      "surname Yu"
+     ]
+    }
+   ]
+  },
+  "到": {
+   "pinyin": "dào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dào",
+     "defs": [
+      "to reach; to arrive",
+      "to leave for; to go to",
+      "to (a place); until (a time); up to (a point)",
+      "(verb complement indicating arriving at a place or reaching a point)",
+      "considerate; thoughtful; thorough"
+     ]
+    }
+   ]
+  },
+  "举办": {
+   "pinyin": "jǔ bàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jǔ bàn",
+     "defs": [
+      "to conduct",
+      "to hold"
+     ]
+    }
+   ]
+  },
+  "目前": {
+   "pinyin": "mù qián",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "mù qián",
+     "defs": [
+      "at the present time",
+      "currently"
+     ]
+    }
+   ]
+  },
+  "各": {
+   "pinyin": "gè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gè",
+     "defs": [
+      "each",
+      "every"
+     ]
+    }
+   ]
+  },
+  "项": {
+   "pinyin": "xiàng",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "xiàng",
+     "defs": [
+      "measure word for items, tasks, projects and investigations, as in 这项调查"
+     ]
+    },
+    {
+     "pinyin": "xiàng",
+     "defs": [
+      "back of neck",
+      "item",
+      "thing",
+      "term (in a mathematical formula)",
+      "sum (of money)",
+      "classifier for principles, items, clauses, tasks, research projects etc"
+     ]
+    },
+    {
+     "pinyin": "Xiàng",
+     "defs": [
+      "surname Xiang"
+     ]
+    }
+   ]
+  },
+  "筹备": {
+   "pinyin": "chóu bèi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chóu bèi",
+     "defs": [
+      "preparations",
+      "to get ready for sth"
+     ]
+    }
+   ]
+  },
+  "工作": {
+   "pinyin": "gōng zuò",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gōng zuò",
+     "defs": [
+      "to work",
+      "(of a machine) to operate",
+      "job",
+      "work",
+      "task"
+     ]
+    }
+   ]
+  },
+  "已经": {
+   "pinyin": "yǐ jīng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yǐ jīng",
+     "defs": [
+      "already"
+     ]
+    }
+   ]
+  },
+  "就绪": {
+   "pinyin": "jiù xù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jiù xù",
+     "defs": [
+      "to be ready",
+      "to be in order"
+     ]
+    }
+   ]
+  },
+  "随着": {
+   "pinyin": "suí zhe",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "suí zhe",
+     "defs": [
+      "along with",
+      "in the wake of",
+      "following"
+     ]
+    }
+   ]
+  },
+  "临近": {
+   "pinyin": "lín jìn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lín jìn",
+     "defs": [
+      "close to",
+      "approaching"
+     ]
+    }
+   ]
+  },
+  "口岸": {
+   "pinyin": "kǒu àn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "kǒu àn",
+     "defs": [
+      "a port for external trade",
+      "a trading or transit post on border between countries"
+     ]
+    }
+   ]
+  },
+  "迎来": {
+   "pinyin": "yíng lái",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yíng lái",
+     "defs": [
+      "to welcome (a visitor or newcomer)",
+      "(fig.) to usher in"
+     ]
+    }
+   ]
+  },
+  "了": {
+   "pinyin": "le",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "le",
+     "defs": [
+      "(completed action marker)",
+      "(modal particle indicating change of state, situation now)",
+      "(modal particle intensifying preceding clause)"
+     ]
+    },
+    {
+     "pinyin": "liǎo",
+     "defs": [
+      "to finish",
+      "to achieve",
+      "variant of 瞭|了[liao3]",
+      "to understand clearly"
+     ]
+    },
+    {
+     "pinyin": "liǎo",
+     "defs": [
+      "(of eyes) bright",
+      "clear-sighted",
+      "to understand clearly"
+     ]
+    },
+    {
+     "pinyin": "liào",
+     "defs": [
+      "unofficial variant of 瞭[liao4]"
+     ]
+    }
+   ]
+  },
+  "客流": {
+   "pinyin": "kè liú",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "kè liú",
+     "defs": [
+      "passenger flow",
+      "customer flow"
+     ]
+    }
+   ]
+  },
+  "高峰": {
+   "pinyin": "gāo fēng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gāo fēng",
+     "defs": [
+      "peak",
+      "summit",
+      "height"
+     ]
+    }
+   ]
+  },
+  "大使": {
+   "pinyin": "dà shǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dà shǐ",
+     "defs": [
+      "ambassador",
+      "envoy"
+     ]
+    }
+   ]
+  },
+  "与": {
+   "pinyin": "yǔ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yǔ",
+     "defs": [
+      "and",
+      "to give",
+      "together with"
+     ]
+    },
+    {
+     "pinyin": "yù",
+     "defs": [
+      "to take part in"
+     ]
+    }
+   ]
+  },
+  "企业": {
+   "pinyin": "qǐ yè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "qǐ yè",
+     "defs": [
+      "company; firm; enterprise; corporation"
+     ]
+    }
+   ]
+  },
+  "首席执行官": {
+   "pinyin": "shǒu xí zhí xíng guān",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "shǒu xí zhí xíng guān",
+     "defs": [
+      "chief executive officer (CEO)"
+     ]
+    },
+    {
+     "pinyin": "shǒu xí zhí xíng guān",
+     "defs": [
+      "chief executive officer (CEO)"
+     ]
+    }
+   ]
+  },
+  "圆桌": {
+   "pinyin": "yuán zhuō",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yuán zhuō",
+     "defs": [
+      "round table"
+     ]
+    }
+   ]
+  },
+  "会": {
+   "pinyin": "huì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "huì",
+     "defs": [
+      "can; to have the skill; to know how to",
+      "to be likely to; to be sure to",
+      "to meet; to get together",
+      "meeting; gathering",
+      "(suffix) union; group; association",
+      "(bound form) a moment (Taiwan pr. [hui3])"
+     ]
+    },
+    {
+     "pinyin": "kuài",
+     "defs": [
+      "to balance an account",
+      "accounting",
+      "accountant"
+     ]
+    }
+   ]
+  },
+  "也": {
+   "pinyin": "yě",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yě",
+     "defs": [
+      "(adverb) also; both ... and ... (before predicates only)",
+      "(literary) particle having functions similar to 啊[a5]"
+     ]
+    },
+    {
+     "pinyin": "Yě",
+     "defs": [
+      "surname Ye"
+     ]
+    }
+   ]
+  },
+  "已": {
+   "pinyin": "yǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yǐ",
+     "defs": [
+      "already",
+      "to stop",
+      "then",
+      "afterwards"
+     ]
+    }
+   ]
+  },
+  "当地": {
+   "pinyin": "dāng dì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dāng dì",
+     "defs": [
+      "local"
+     ]
+    }
+   ]
+  },
+  "多": {
+   "pinyin": "duō",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "duō",
+     "defs": [
+      "many; much",
+      "too many; in excess",
+      "(after a numeral) ... odd",
+      "how (to what extent) (Taiwan pr. [duo2])",
+      "(bound form) multi-; poly-"
+     ]
+    }
+   ]
+  },
+  "国": {
+   "pinyin": "guó",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "guó",
+     "defs": [
+      "country; nation; state (CL:個|个[ge4])",
+      "(bound form) national"
+     ]
+    },
+    {
+     "pinyin": "Guó",
+     "defs": [
+      "surname Guo"
+     ]
+    }
+   ]
+  },
+  "人士": {
+   "pinyin": "rén shì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "rén shì",
+     "defs": [
+      "person",
+      "figure",
+      "public figure"
+     ]
+    }
+   ]
+  },
+  "表示": {
+   "pinyin": "biǎo shì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "biǎo shì",
+     "defs": [
+      "(of sb) to express; to state; to show",
+      "(of sth) to indicate; to signify; to show",
+      "expression; manifestation"
+     ]
+    }
+   ]
+  },
+  "期待": {
+   "pinyin": "qī dài",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "qī dài",
+     "defs": [
+      "to look forward to",
+      "to await",
+      "expectation"
+     ]
+    }
+   ]
+  },
+  "中国": {
+   "pinyin": "zhōng guó",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Zhōng guó",
+     "defs": [
+      "China"
+     ]
+    }
+   ]
+  },
+  "亚太": {
+   "pinyin": "yà tài",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Yà Tài",
+     "defs": [
+      "Asia-Pacific"
+     ]
+    }
+   ]
+  },
+  "伙伴": {
+   "pinyin": "huǒ bàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "huǒ bàn",
+     "defs": [
+      "partner",
+      "companion",
+      "comrade"
+     ]
+    }
+   ]
+  },
+  "携手": {
+   "pinyin": "xié shǒu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xié shǒu",
+     "defs": [
+      "hand in hand",
+      "to join hands",
+      "to collaborate"
+     ]
+    }
+   ]
+  },
+  "共同": {
+   "pinyin": "gòng tóng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gòng tóng",
+     "defs": [
+      "common",
+      "joint",
+      "jointly",
+      "together",
+      "collaborative"
+     ]
+    }
+   ]
+  },
+  "推动": {
+   "pinyin": "tuī dòng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "tuī dòng",
+     "defs": [
+      "to push (e.g. for acceptance of a plan); to promote; to give impetus to"
+     ]
+    }
+   ]
+  },
+  "地区": {
+   "pinyin": "dì qū",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dì qū",
+     "defs": [
+      "local",
+      "regional",
+      "district (not necessarily formal administrative unit)",
+      "region",
+      "area",
+      "as suffix to city name, means prefecture or county (area administered by a prefecture-level city or, county-level city)"
+     ]
+    }
+   ]
+  },
+  "发展": {
+   "pinyin": "fā zhǎn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fā zhǎn",
+     "defs": [
+      "development",
+      "growth",
+      "to develop",
+      "to grow",
+      "to expand"
+     ]
+    }
+   ]
+  },
+  "繁荣": {
+   "pinyin": "fán róng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fán róng",
+     "defs": [
+      "prosperous; booming (economy)"
+     ]
+    }
+   ]
+  },
+  "外交": {
+   "pinyin": "wài jiāo",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "wài jiāo",
+     "defs": [
+      "diplomacy",
+      "diplomatic",
+      "foreign affairs"
+     ]
+    }
+   ]
+  },
+  "方面": {
+   "pinyin": "fāng miàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fāng miàn",
+     "defs": [
+      "respect",
+      "aspect",
+      "field",
+      "side"
+     ]
+    }
+   ]
+  },
+  "国务院": {
+   "pinyin": "guó wù yuàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Guó wù yuàn",
+     "defs": [
+      "State Council (PRC)",
+      "State Department (USA)"
+     ]
+    }
+   ]
+  },
+  "总理": {
+   "pinyin": "zǒng lǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zǒng lǐ",
+     "defs": [
+      "premier",
+      "prime minister"
+     ]
+    }
+   ]
+  },
+  "李强": {
+   "pinyin": "Lǐ Qiáng",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "Lǐ Qiáng",
+     "defs": [
+      "Li Qiang, Premier of China's State Council"
+     ]
+    }
+   ]
+  },
+  "会见": {
+   "pinyin": "huì jiàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "huì jiàn",
+     "defs": [
+      "to meet with (sb who is paying a visit)"
+     ]
+    }
+   ]
+  },
+  "泰国": {
+   "pinyin": "tài guó",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Tài guó",
+     "defs": [
+      "Thailand",
+      "Thai"
+     ]
+    }
+   ]
+  },
+  "国王": {
+   "pinyin": "guó wáng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "guó wáng",
+     "defs": [
+      "king"
+     ]
+    }
+   ]
+  },
+  "并": {
+   "pinyin": "bìng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bìng",
+     "defs": [
+      "and",
+      "furthermore",
+      "also",
+      "together with",
+      "(not) at all",
+      "simultaneously"
+     ]
+    },
+    {
+     "pinyin": "bìng",
+     "defs": [
+      "to combine",
+      "to amalgamate"
+     ]
+    },
+    {
+     "pinyin": "Bīng",
+     "defs": [
+      "short name for Taiyuan 太原[Tai4 yuan2]"
+     ]
+    }
+   ]
+  },
+  "同": {
+   "pinyin": "tóng",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "tóng",
+     "defs": [
+      "together with; and"
+     ]
+    },
+    {
+     "pinyin": "tóng",
+     "defs": [
+      "like",
+      "same",
+      "similar",
+      "together",
+      "alike",
+      "with"
+     ]
+    },
+    {
+     "pinyin": "tòng",
+     "defs": [
+      "see 衚衕|胡同[hu2 tong4]"
+     ]
+    }
+   ]
+  },
+  "出席": {
+   "pinyin": "chū xí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chū xí",
+     "defs": [
+      "to attend",
+      "to participate",
+      "present"
+     ]
+    }
+   ]
+  },
+  "中泰": {
+   "pinyin": "Zhōng Tài",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "Zhōng Tài",
+     "defs": [
+      "China and Thailand; Sino-Thai"
+     ]
+    }
+   ]
+  },
+  "企业家": {
+   "pinyin": "qǐ yè jiā",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "qǐ yè jiā",
+     "defs": [
+      "entrepreneur"
+     ]
+    }
+   ]
+  },
+  "座谈会": {
+   "pinyin": "zuò tán huì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zuò tán huì",
+     "defs": [
+      "conference",
+      "symposium",
+      "rap session"
+     ]
+    }
+   ]
+  },
+  "刚刚": {
+   "pinyin": "gāng gang",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gāng gang",
+     "defs": [
+      "just recently",
+      "just a moment ago"
+     ]
+    }
+   ]
+  },
+  "闭幕": {
+   "pinyin": "bì mù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bì mù",
+     "defs": [
+      "the curtain falls",
+      "lower the curtain",
+      "to come to an end (of a meeting)"
+     ]
+    }
+   ]
+  },
+  "第": {
+   "pinyin": "dì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dì",
+     "defs": [
+      "(prefix indicating ordinal number, as in 第六[di4 liu4] \"sixth\")",
+      "(literary) grades in which successful candidates in the imperial examinations were placed",
+      "(old) residence of a high official",
+      "(literary) but; however",
+      "(literary) only; just"
+     ]
+    }
+   ]
+  },
+  "九": {
+   "pinyin": "jiǔ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jiǔ",
+     "defs": [
+      "nine",
+      "9"
+     ]
+    }
+   ]
+  },
+  "届": {
+   "pinyin": "jiè",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "jiè",
+     "defs": [
+      "measure word for sessions, meetings and graduating classes, as in 第九届 \"the ninth (edition)\""
+     ]
+    },
+    {
+     "pinyin": "jiè",
+     "defs": [
+      "to arrive at (place or time)",
+      "period",
+      "to become due",
+      "classifier for events, meetings, elections, sporting fixtures, years (of graduation)"
+     ]
+    }
+   ]
+  },
+  "国际": {
+   "pinyin": "guó jì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "guó jì",
+     "defs": [
+      "international"
+     ]
+    }
+   ]
+  },
+  "进口": {
+   "pinyin": "jìn kǒu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jìn kǒu",
+     "defs": [
+      "to import",
+      "imported",
+      "entrance",
+      "inlet (for the intake of air, water etc)"
+     ]
+    }
+   ]
+  },
+  "博览会": {
+   "pinyin": "bó lǎn huì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bó lǎn huì",
+     "defs": [
+      "exposition",
+      "international fair"
+     ]
+    }
+   ]
+  },
+  "上": {
+   "pinyin": "shàng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shàng",
+     "defs": [
+      "(bound form) up; upper; above; previous",
+      "first (of multiple parts)",
+      "to climb; to get onto; to go up",
+      "to attend (class or university)",
+      "(directional complement) up",
+      "(noun suffix) on; above"
+     ]
+    },
+    {
+     "pinyin": "shǎng",
+     "defs": [
+      "used in 上聲|上声[shang3 sheng1]"
+     ]
+    }
+   ]
+  },
+  "有": {
+   "pinyin": "yǒu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yǒu",
+     "defs": [
+      "to have; there is",
+      "(bound form) having; with; -ful; -ed; -al (as in 有意[you3 yi4] intentional)"
+     ]
+    }
+   ]
+  },
+  "个": {
+   "pinyin": "gè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gè",
+     "defs": [
+      "(classifier used before a noun that has no specific classifier)",
+      "(bound form) individual"
+     ]
+    },
+    {
+     "pinyin": "gě",
+     "defs": [
+      "used in 自個兒|自个儿[zi4 ge3 r5]"
+     ]
+    }
+   ]
+  },
+  "成员": {
+   "pinyin": "chéng yuán",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chéng yuán",
+     "defs": [
+      "member"
+     ]
+    }
+   ]
+  },
+  "参加": {
+   "pinyin": "cān jiā",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "cān jiā",
+     "defs": [
+      "to participate",
+      "to take part",
+      "to join"
+     ]
+    }
+   ]
+  },
+  "国家": {
+   "pinyin": "guó jiā",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "guó jiā",
+     "defs": [
+      "country; nation; state"
+     ]
+    }
+   ]
+  },
+  "展": {
+   "pinyin": "zhǎn",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "zhǎn",
+     "defs": [
+      "exhibition; show (short for 展览), as in 国家展 \"country exhibition\""
+     ]
+    },
+    {
+     "pinyin": "zhǎn",
+     "defs": [
+      "to spread out",
+      "to open up",
+      "to exhibit",
+      "to put into effect",
+      "to postpone",
+      "to prolong"
+     ]
+    },
+    {
+     "pinyin": "Zhǎn",
+     "defs": [
+      "surname Zhan"
+     ]
+    }
+   ]
+  },
+  "经济": {
+   "pinyin": "jīng jì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jīng jì",
+     "defs": [
+      "economy",
+      "economic"
+     ]
+    }
+   ]
+  },
+  "和": {
+   "pinyin": "hé",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "hé",
+     "defs": [
+      "(joining two nouns) and; together with; with (Taiwan pr. [han4])",
+      "(math.) sum",
+      "to make peace",
+      "(sports) to draw; to tie",
+      "(bound form) harmonious",
+      "(bound form) Japan; Japanese"
+     ]
+    },
+    {
+     "pinyin": "Hé",
+     "defs": [
+      "surname He"
+     ]
+    },
+    {
+     "pinyin": "hè",
+     "defs": [
+      "to compose a poem in reply (to sb's poem) using the same rhyme sequence",
+      "to join in the singing",
+      "to chime in with others"
+     ]
+    },
+    {
+     "pinyin": "hú",
+     "defs": [
+      "to complete a set in mahjong or playing cards"
+     ]
+    },
+    {
+     "pinyin": "huó",
+     "defs": [
+      "to combine a powdery substance (flour, plaster etc) with water",
+      "Taiwan pr. [huo4]"
+     ]
+    },
+    {
+     "pinyin": "huò",
+     "defs": [
+      "to mix (ingredients) together",
+      "to blend",
+      "classifier for rinses of clothes",
+      "classifier for boilings of medicinal herbs"
+     ]
+    }
+   ]
+  },
+  "民生": {
+   "pinyin": "mín shēng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "mín shēng",
+     "defs": [
+      "people's livelihood",
+      "people's welfare"
+     ]
+    }
+   ]
+  },
+  "领域": {
+   "pinyin": "lǐng yù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lǐng yù",
+     "defs": [
+      "domain",
+      "sphere",
+      "field",
+      "territory",
+      "area"
+     ]
+    }
+   ]
+  },
+  "不少": {
+   "pinyin": "bù shǎo",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bù shǎo",
+     "defs": [
+      "many",
+      "a lot",
+      "not few"
+     ]
+    }
+   ]
+  },
+  "新": {
+   "pinyin": "xīn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xīn",
+     "defs": [
+      "new",
+      "newly",
+      "meso- (chemistry)"
+     ]
+    },
+    {
+     "pinyin": "Xīn",
+     "defs": [
+      "abbr. for Xinjiang 新疆[Xin1 jiang1] or Singapore 新加坡[Xin1 jia1 po1]",
+      "surname Xin"
+     ]
+    }
+   ]
+  },
+  "消息": {
+   "pinyin": "xiāo xi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xiāo xi",
+     "defs": [
+      "news",
+      "information"
+     ]
+    }
+   ]
+  },
+  "今年": {
+   "pinyin": "jīn nián",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jīn nián",
+     "defs": [
+      "this year"
+     ]
+    }
+   ]
+  },
+  "至": {
+   "pinyin": "zhì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhì",
+     "defs": [
+      "to arrive",
+      "most",
+      "to",
+      "until"
+     ]
+    }
+   ]
+  },
+  "全国": {
+   "pinyin": "quán guó",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "quán guó",
+     "defs": [
+      "whole nation",
+      "nationwide",
+      "countrywide",
+      "national"
+     ]
+    }
+   ]
+  },
+  "期货": {
+   "pinyin": "qī huò",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "qī huò",
+     "defs": [
+      "abbr. for 期貨合約|期货合约[qi1 huo4 he2 yue1], futures contract (finance)"
+     ]
+    }
+   ]
+  },
+  "市场": {
+   "pinyin": "shì chǎng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shì chǎng",
+     "defs": [
+      "marketplace",
+      "market (also in abstract)"
+     ]
+    }
+   ]
+  },
+  "累计": {
+   "pinyin": "lěi jì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lěi jì",
+     "defs": [
+      "to calculate the running total",
+      "cumulative",
+      "total",
+      "in total"
+     ]
+    }
+   ]
+  },
+  "成交额": {
+   "pinyin": "chéng jiāo é",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "chéng jiāo é",
+     "defs": [
+      "turnover; total value of trades"
+     ]
+    }
+   ]
+  },
+  "同比": {
+   "pinyin": "tóng bǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "tóng bǐ",
+     "defs": [
+      "(statistics) compared with the same period of the previous year; year on year; year over year"
+     ]
+    }
+   ]
+  },
+  "增长": {
+   "pinyin": "zēng zhǎng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zēng zhǎng",
+     "defs": [
+      "to grow",
+      "to increase"
+     ]
+    }
+   ]
+  },
+  "秋招": {
+   "pinyin": "qiū zhāo",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "qiū zhāo",
+     "defs": [
+      "autumn recruitment season for new graduates (short for 秋季招聘)"
+     ]
+    }
+   ]
+  },
+  "共": {
+   "pinyin": "gòng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gòng",
+     "defs": [
+      "common",
+      "general",
+      "to share",
+      "together",
+      "total",
+      "altogether"
+     ]
+    }
+   ]
+  },
+  "提供": {
+   "pinyin": "tí gōng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "tí gōng",
+     "defs": [
+      "to offer",
+      "to supply",
+      "to provide",
+      "to furnish"
+     ]
+    }
+   ]
+  },
+  "岗位": {
+   "pinyin": "gǎng wèi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gǎng wèi",
+     "defs": [
+      "a post; a job"
+     ]
+    }
+   ]
+  },
+  "万": {
+   "pinyin": "wàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "wàn",
+     "defs": [
+      "ten thousand",
+      "a great number"
+     ]
+    },
+    {
+     "pinyin": "Wàn",
+     "defs": [
+      "surname Wan"
+     ]
+    },
+    {
+     "pinyin": "mò",
+     "defs": [
+      "used in 万俟[Mo4 qi2]"
+     ]
+    }
+   ]
+  },
+  "主要": {
+   "pinyin": "zhǔ yào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhǔ yào",
+     "defs": [
+      "main",
+      "principal",
+      "major",
+      "primary"
+     ]
+    }
+   ]
+  },
+  "面向": {
+   "pinyin": "miàn xiàng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "miàn xiàng",
+     "defs": [
+      "to face",
+      "to turn towards",
+      "to incline to",
+      "geared towards",
+      "catering for",
+      "-oriented"
+     ]
+    }
+   ]
+  },
+  "高校": {
+   "pinyin": "gāo xiào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gāo xiào",
+     "defs": [
+      "universities and colleges",
+      "abbr. for 高等學校|高等学校"
+     ]
+    }
+   ]
+  },
+  "毕业生": {
+   "pinyin": "bì yè shēng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bì yè shēng",
+     "defs": [
+      "graduate"
+     ]
+    }
+   ]
+  },
+  "医保": {
+   "pinyin": "yī bǎo",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "yī bǎo",
+     "defs": [
+      "medical insurance (short for 医疗保险)"
+     ]
+    },
+    {
+     "pinyin": "yī bǎo",
+     "defs": [
+      "medical insurance",
+      "abbr. for 醫療保險|医疗保险[yi1 liao2 bao3 xian3]"
+     ]
+    }
+   ]
+  },
+  "药品": {
+   "pinyin": "yào pǐn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yào pǐn",
+     "defs": [
+      "medicaments",
+      "medicine",
+      "drug"
+     ]
+    }
+   ]
+  },
+  "目录": {
+   "pinyin": "mù lù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "mù lù",
+     "defs": [
+      "catalog",
+      "table of contents",
+      "directory (on computer hard drive)",
+      "list",
+      "contents"
+     ]
+    }
+   ]
+  },
+  "苏州": {
+   "pinyin": "sū zhōu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Sū zhōu",
+     "defs": [
+      "Suzhou, prefecture-level city in Jiangsu"
+     ]
+    }
+   ]
+  },
+  "发布": {
+   "pinyin": "fā bù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fā bù",
+     "defs": [
+      "to release",
+      "to issue",
+      "to announce",
+      "to distribute",
+      "also written 發布|发布[fa1 bu4]"
+     ]
+    },
+    {
+     "pinyin": "fā bù",
+     "defs": [
+      "to release",
+      "to issue",
+      "to announce",
+      "to distribute"
+     ]
+    }
+   ]
+  },
+  "新增": {
+   "pinyin": "xīn zēng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xīn zēng",
+     "defs": [
+      "to add (sth new)",
+      "newly added; additional"
+     ]
+    }
+   ]
+  },
+  "种": {
+   "pinyin": "zhǒng",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "zhǒng",
+     "defs": [
+      "kind; type (measure word), as in 107种药品 \"107 kinds of drugs\""
+     ]
+    },
+    {
+     "pinyin": "zhǒng",
+     "defs": [
+      "seed",
+      "species",
+      "kind",
+      "type",
+      "classifier for types, kinds, sorts"
+     ]
+    },
+    {
+     "pinyin": "zhòng",
+     "defs": [
+      "to plant",
+      "to grow",
+      "to cultivate"
+     ]
+    }
+   ]
+  },
+  "其中": {
+   "pinyin": "qí zhōng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "qí zhōng",
+     "defs": [
+      "among",
+      "in",
+      "included among these"
+     ]
+    }
+   ]
+  },
+  "一类新药": {
+   "pinyin": "yī lèi xīn yào",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "yī lèi xīn yào",
+     "defs": [
+      "Class 1 new drug: an innovative drug not marketed before in China or abroad"
+     ]
+    }
+   ]
+  },
+  "数量": {
+   "pinyin": "shù liàng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shù liàng",
+     "defs": [
+      "amount; quantity (CL:個|个[ge4])",
+      "quantitative",
+      "(math.) scalar quantity"
+     ]
+    }
+   ]
+  },
+  "创": {
+   "pinyin": "chuàng",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "chuàng",
+     "defs": [
+      "to set (a record or new high), as in 创历史新高; to create"
+     ]
+    },
+    {
+     "pinyin": "chuàng",
+     "defs": [
+      "to begin",
+      "to initiate",
+      "to inaugurate",
+      "to start",
+      "to create"
+     ]
+    },
+    {
+     "pinyin": "chuāng",
+     "defs": [
+      "a wound",
+      "cut",
+      "injury",
+      "trauma"
+     ]
+    }
+   ]
+  },
+  "历史": {
+   "pinyin": "lì shǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lì shǐ",
+     "defs": [
+      "history"
+     ]
+    }
+   ]
+  },
+  "新高": {
+   "pinyin": "xīn gāo",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xīn gāo",
+     "defs": [
+      "new high"
+     ]
+    }
+   ]
+  },
+  "一种": {
+   "pinyin": "yī zhǒng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yī zhǒng",
+     "defs": [
+      "one kind of; one type of"
+     ]
+    }
+   ]
+  },
+  "价格": {
+   "pinyin": "jià gé",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jià gé",
+     "defs": [
+      "price"
+     ]
+    }
+   ]
+  },
+  "高": {
+   "pinyin": "gāo",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gāo",
+     "defs": [
+      "high",
+      "tall",
+      "above average",
+      "loud",
+      "your (honorific)"
+     ]
+    },
+    {
+     "pinyin": "Gāo",
+     "defs": [
+      "surname Gao"
+     ]
+    }
+   ]
+  },
+  "达": {
+   "pinyin": "dá",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dá",
+     "defs": [
+      "to attain",
+      "to reach",
+      "to amount to",
+      "to communicate",
+      "eminent"
+     ]
+    },
+    {
+     "pinyin": "Dá",
+     "defs": [
+      "surname Da"
+     ]
+    }
+   ]
+  },
+  "百万": {
+   "pinyin": "bǎi wàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bǎi wàn",
+     "defs": [
+      "million"
+     ]
+    }
+   ]
+  },
+  "元": {
+   "pinyin": "yuán",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yuán",
+     "defs": [
+      "currency unit (esp. Chinese yuan)",
+      "first",
+      "original",
+      "primary",
+      "fundamental",
+      "constituent"
+     ]
+    },
+    {
+     "pinyin": "Yuán",
+     "defs": [
+      "surname Yuan",
+      "the Yuan or Mongol dynasty (1279-1368)"
+     ]
+    }
+   ]
+  },
+  "抗癌": {
+   "pinyin": "kàng ái",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "kàng ái",
+     "defs": [
+      "anti-cancer"
+     ]
+    }
+   ]
+  },
+  "疗法": {
+   "pinyin": "liáo fǎ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "liáo fǎ",
+     "defs": [
+      "therapy",
+      "treatment"
+     ]
+    }
+   ]
+  },
+  "首次": {
+   "pinyin": "shǒu cì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shǒu cì",
+     "defs": [
+      "first",
+      "first time",
+      "for the first time"
+     ]
+    }
+   ]
+  },
+  "被": {
+   "pinyin": "bèi",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "bèi",
+     "defs": [
+      "by (marks the passive), as in 被纳入 \"be included\""
+     ]
+    },
+    {
+     "pinyin": "bèi",
+     "defs": [
+      "quilt",
+      "to cover (with)",
+      "(literary) to suffer (a misfortune)",
+      "used to indicate passive voice (placed before the doer of the action like \"by\" in English passive-voice sentences, or, if the doer is not mentioned, before the verb)",
+      "(since c. 2009) (sarcastic or jocular) used to indicate that the following word should be regarded as being in air quotes (as in 被旅遊|被旅游[bei4 lu:3 you2] to \"go on a trip\", for example)"
+     ]
+    }
+   ]
+  },
+  "纳入": {
+   "pinyin": "nà rù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "nà rù",
+     "defs": [
+      "to bring into",
+      "to channel into",
+      "to integrate into",
+      "to incorporate"
+     ]
+    }
+   ]
+  },
+  "基本": {
+   "pinyin": "jī běn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jī běn",
+     "defs": [
+      "basic",
+      "fundamental",
+      "main",
+      "elementary"
+     ]
+    }
+   ]
+  },
+  "患者": {
+   "pinyin": "huàn zhě",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "huàn zhě",
+     "defs": [
+      "patient; sufferer"
+     ]
+    }
+   ]
+  },
+  "负担": {
+   "pinyin": "fù dān",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fù dān",
+     "defs": [
+      "to bear (an expense, a responsibility etc)",
+      "burden"
+     ]
+    }
+   ]
+  },
+  "有望": {
+   "pinyin": "yǒu wàng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yǒu wàng",
+     "defs": [
+      "hopeful",
+      "promising"
+     ]
+    }
+   ]
+  },
+  "减轻": {
+   "pinyin": "jiǎn qīng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jiǎn qīng",
+     "defs": [
+      "to lighten",
+      "to ease",
+      "to alleviate"
+     ]
+    }
+   ]
+  },
+  "科技": {
+   "pinyin": "kē jì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "kē jì",
+     "defs": [
+      "science and technology"
+     ]
+    }
+   ]
+  },
+  "空间站": {
+   "pinyin": "kōng jiān zhàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "kōng jiān zhàn",
+     "defs": [
+      "space station"
+     ]
+    }
+   ]
+  },
+  "完成": {
+   "pinyin": "wán chéng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "wán chéng",
+     "defs": [
+      "to complete; to accomplish"
+     ]
+    }
+   ]
+  },
+  "四次": {
+   "pinyin": "sì cì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "sì cì",
+     "defs": [
+      "fourth",
+      "four times",
+      "quartic"
+     ]
+    }
+   ]
+  },
+  "空间": {
+   "pinyin": "kōng jiān",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "kōng jiān",
+     "defs": [
+      "space; room",
+      "(fig.) scope; leeway",
+      "(astronomy) outer space",
+      "(physics, math.) space"
+     ]
+    }
+   ]
+  },
+  "辐射": {
+   "pinyin": "fú shè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fú shè",
+     "defs": [
+      "radiation"
+     ]
+    }
+   ]
+  },
+  "生物": {
+   "pinyin": "shēng wù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shēng wù",
+     "defs": [
+      "organism",
+      "living creature",
+      "life form",
+      "biological"
+     ]
+    }
+   ]
+  },
+  "装置": {
+   "pinyin": "zhuāng zhì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhuāng zhì",
+     "defs": [
+      "to install",
+      "installation",
+      "equipment",
+      "system",
+      "unit",
+      "device"
+     ]
+    }
+   ]
+  },
+  "暴露": {
+   "pinyin": "bào lù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bào lù",
+     "defs": [
+      "to expose",
+      "to reveal",
+      "to lay bare",
+      "also pr. [pu4 lu4]"
+     ]
+    }
+   ]
+  },
+  "实验": {
+   "pinyin": "shí yàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shí yàn",
+     "defs": [
+      "experiment",
+      "test",
+      "experimental",
+      "to experiment"
+     ]
+    }
+   ]
+  },
+  "我国": {
+   "pinyin": "wǒ guó",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "wǒ guó",
+     "defs": [
+      "our country",
+      "China"
+     ]
+    }
+   ]
+  },
+  "还": {
+   "pinyin": "hái",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "hái",
+     "defs": [
+      "still",
+      "still in progress",
+      "still more",
+      "yet",
+      "even more",
+      "in addition"
+     ]
+    },
+    {
+     "pinyin": "huán",
+     "defs": [
+      "to pay back",
+      "to return"
+     ]
+    },
+    {
+     "pinyin": "Huán",
+     "defs": [
+      "surname Huan"
+     ]
+    }
+   ]
+  },
+  "刷新": {
+   "pinyin": "shuā xīn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shuā xīn",
+     "defs": [
+      "to renovate",
+      "to refurbish",
+      "to refresh (computer window)",
+      "to write a new page (in history)",
+      "to break (a record)"
+     ]
+    }
+   ]
+  },
+  "米": {
+   "pinyin": "mǐ",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "mǐ",
+     "defs": [
+      "metre (unit of length)"
+     ]
+    },
+    {
+     "pinyin": "mǐ",
+     "defs": [
+      "rice",
+      "meter (classifier)"
+     ]
+    },
+    {
+     "pinyin": "Mǐ",
+     "defs": [
+      "surname Mi"
+     ]
+    }
+   ]
+  },
+  "井深": {
+   "pinyin": "jǐng shēn",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "jǐng shēn",
+     "defs": [
+      "well depth"
+     ]
+    }
+   ]
+  },
+  "陆相": {
+   "pinyin": "lù xiàng",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "lù xiàng",
+     "defs": [
+      "(geology) continental, formed on land or in lakes, as opposed to marine"
+     ]
+    }
+   ]
+  },
+  "页岩": {
+   "pinyin": "yè yán",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yè yán",
+     "defs": [
+      "shale"
+     ]
+    }
+   ]
+  },
+  "油井": {
+   "pinyin": "yóu jǐng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yóu jǐng",
+     "defs": [
+      "oil well"
+     ]
+    }
+   ]
+  },
+  "最": {
+   "pinyin": "zuì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zuì",
+     "defs": [
+      "most",
+      "the most",
+      "-est (superlative suffix)"
+     ]
+    }
+   ]
+  },
+  "短": {
+   "pinyin": "duǎn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "duǎn",
+     "defs": [
+      "short",
+      "brief",
+      "to lack",
+      "weak point",
+      "fault"
+     ]
+    }
+   ]
+  },
+  "钻井": {
+   "pinyin": "zuān jǐng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zuān jǐng",
+     "defs": [
+      "to drill (e.g. for oil)",
+      "a borehole"
+     ]
+    }
+   ]
+  },
+  "周期": {
+   "pinyin": "zhōu qī",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhōu qī",
+     "defs": [
+      "period",
+      "cycle"
+     ]
+    }
+   ]
+  },
+  "纪录": {
+   "pinyin": "jì lù",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "jì lù",
+     "defs": [
+      "record (best result or highest level reached)"
+     ]
+    }
+   ]
+  },
+  "值得一提": {
+   "pinyin": "zhí de yī tí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhí de yī tí",
+     "defs": [
+      "to be worth mentioning"
+     ]
+    }
+   ]
+  },
+  "是": {
+   "pinyin": "shì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shì",
+     "defs": [
+      "to be (followed by substantives only)",
+      "correct; right; true",
+      "(respectful acknowledgement of a command) very well",
+      "(adverb for emphatic assertion)"
+     ]
+    }
+   ]
+  },
+  "中文": {
+   "pinyin": "zhōng wén",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Zhōng wén",
+     "defs": [
+      "Chinese language"
+     ]
+    }
+   ]
+  },
+  "水平": {
+   "pinyin": "shuǐ píng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shuǐ píng",
+     "defs": [
+      "level (of achievement etc)",
+      "standard",
+      "horizontal"
+     ]
+    }
+   ]
+  },
+  "考试": {
+   "pinyin": "kǎo shì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "kǎo shì",
+     "defs": [
+      "to take an exam",
+      "exam"
+     ]
+    }
+   ]
+  },
+  "考生": {
+   "pinyin": "kǎo shēng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "kǎo shēng",
+     "defs": [
+      "exam candidate",
+      "student whose name has been put forward for an exam"
+     ]
+    }
+   ]
+  },
+  "人数": {
+   "pinyin": "rén shù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "rén shù",
+     "defs": [
+      "number of people"
+     ]
+    }
+   ]
+  },
+  "突破": {
+   "pinyin": "tū pò",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "tū pò",
+     "defs": [
+      "to break through",
+      "to make a breakthrough",
+      "to surmount (an obstacle)",
+      "(sports) to break through the opponent's defense"
+     ]
+    }
+   ]
+  },
+  "万人": {
+   "pinyin": "wàn rén",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "wàn rén",
+     "defs": [
+      "ten thousand people",
+      "all the people",
+      "everyman"
+     ]
+    }
+   ]
+  },
+  "次": {
+   "pinyin": "cì",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "cì",
+     "defs": [
+      "time; occasion (measure word), as in 这次 \"this time\""
+     ]
+    },
+    {
+     "pinyin": "cì",
+     "defs": [
+      "next in sequence",
+      "second",
+      "the second (day, time etc)",
+      "secondary",
+      "vice-",
+      "sub-"
+     ]
+    }
+   ]
+  },
+  "显示": {
+   "pinyin": "xiǎn shì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xiǎn shì",
+     "defs": [
+      "to show",
+      "to illustrate",
+      "to display",
+      "to demonstrate"
+     ]
+    }
+   ]
+  },
+  "出": {
+   "pinyin": "chū",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chū",
+     "defs": [
+      "to go out",
+      "to come out",
+      "to occur",
+      "to produce",
+      "to go beyond",
+      "to rise"
+     ]
+    }
+   ]
+  },
+  "学习": {
+   "pinyin": "xué xí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xué xí",
+     "defs": [
+      "to learn",
+      "to study"
+     ]
+    }
+   ]
+  },
+  "热度": {
+   "pinyin": "rè dù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "rè dù",
+     "defs": [
+      "level of heat",
+      "(fig.) zeal",
+      "fervor",
+      "(coll.) a temperature (i.e. abnormally high body heat)"
+     ]
+    }
+   ]
+  },
+  "仍": {
+   "pinyin": "réng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "réng",
+     "defs": [
+      "still; yet",
+      "to remain",
+      "(literary) frequently; often"
+     ]
+    }
+   ]
+  },
+  "上升": {
+   "pinyin": "shàng shēng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shàng shēng",
+     "defs": [
+      "to rise",
+      "to go up",
+      "to ascend"
+     ]
+    }
+   ]
+  },
+  "天气": {
+   "pinyin": "tiān qì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "tiān qì",
+     "defs": [
+      "weather"
+     ]
+    }
+   ]
+  },
+  "中东部": {
+   "pinyin": "zhōng dōng bù",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "zhōng dōng bù",
+     "defs": [
+      "the central and eastern parts (of a country); not the Middle East"
+     ]
+    }
+   ]
+  },
+  "出现": {
+   "pinyin": "chū xiàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chū xiàn",
+     "defs": [
+      "to appear",
+      "to arise",
+      "to emerge",
+      "to show up"
+     ]
+    }
+   ]
+  },
+  "大": {
+   "pinyin": "dà",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dà",
+     "defs": [
+      "big; large; great",
+      "older (than another person)",
+      "eldest (as in 大姐[da4 jie3])",
+      "greatly; freely; fully",
+      "(dialect) father",
+      "(dialect) uncle (father's brother)"
+     ]
+    },
+    {
+     "pinyin": "dài",
+     "defs": [
+      "see 大夫[dai4 fu5]"
+     ]
+    }
+   ]
+  },
+  "范围": {
+   "pinyin": "fàn wéi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fàn wéi",
+     "defs": [
+      "range",
+      "scope",
+      "limit",
+      "extent"
+     ]
+    }
+   ]
+  },
+  "大风": {
+   "pinyin": "dà fēng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dà fēng",
+     "defs": [
+      "gale"
+     ]
+    }
+   ]
+  },
+  "降温": {
+   "pinyin": "jiàng wēn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jiàng wēn",
+     "defs": [
+      "to become cooler",
+      "to lower the temperature",
+      "cooling",
+      "(of interest, activity etc) to decline"
+     ]
+    }
+   ]
+  },
+  "雨雪": {
+   "pinyin": "yǔ xuě",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "yǔ xuě",
+     "defs": [
+      "rain and snow"
+     ]
+    }
+   ]
+  },
+  "公众": {
+   "pinyin": "gōng zhòng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gōng zhòng",
+     "defs": [
+      "public"
+     ]
+    }
+   ]
+  },
+  "需要": {
+   "pinyin": "xū yào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xū yào",
+     "defs": [
+      "to need; to want; to demand; to require",
+      "needs"
+     ]
+    }
+   ]
+  },
+  "注意": {
+   "pinyin": "zhù yì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhù yì",
+     "defs": [
+      "to take note of; to pay attention to"
+     ]
+    }
+   ]
+  },
+  "防寒保暖": {
+   "pinyin": "fáng hán bǎo nuǎn",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "fáng hán bǎo nuǎn",
+     "defs": [
+      "to protect against the cold and keep warm"
+     ]
+    }
+   ]
+  },
+  "合理": {
+   "pinyin": "hé lǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "hé lǐ",
+     "defs": [
+      "rational; reasonable; sensible; fair"
+     ]
+    }
+   ]
+  },
+  "安排": {
+   "pinyin": "ān pái",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "ān pái",
+     "defs": [
+      "to arrange",
+      "to plan",
+      "to set up",
+      "arrangements",
+      "plans"
+     ]
+    }
+   ]
+  },
+  "出行": {
+   "pinyin": "chū xíng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chū xíng",
+     "defs": [
+      "to go out somewhere (relatively short trip)",
+      "to set off on a journey (longer trip)"
+     ]
+    }
+   ]
+  },
+  "联合国": {
+   "pinyin": "lián hé guó",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Lián hé guó",
+     "defs": [
+      "United Nations"
+     ]
+    }
+   ]
+  },
+  "呼吁": {
+   "pinyin": "hū yù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "hū yù",
+     "defs": [
+      "to call on (sb to do sth)",
+      "to appeal (to)",
+      "an appeal"
+     ]
+    }
+   ]
+  },
+  "恢复": {
+   "pinyin": "huī fù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "huī fù",
+     "defs": [
+      "to reinstate",
+      "to resume",
+      "to restore",
+      "to recover",
+      "to regain",
+      "to rehabilitate"
+     ]
+    }
+   ]
+  },
+  "霍尔木兹海峡": {
+   "pinyin": "huò ěr mù zī hǎi xiá",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Huò ěr mù zī Hǎi xiá",
+     "defs": [
+      "Strait of Hormuz"
+     ]
+    }
+   ]
+  },
+  "化肥": {
+   "pinyin": "huà féi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "huà féi",
+     "defs": [
+      "fertilizer"
+     ]
+    }
+   ]
+  },
+  "运输": {
+   "pinyin": "yùn shū",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yùn shū",
+     "defs": [
+      "to transport",
+      "to carry",
+      "transportation"
+     ]
+    }
+   ]
+  },
+  "阿拉伯国家联盟": {
+   "pinyin": "ā lā bó guó jiā lián méng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "ā lā bó Guó jiā Lián méng",
+     "defs": [
+      "Arab League, regional organization of Arab states in Southwest Asia, and North and Northeast Africa, officially called the League of Arab States"
+     ]
+    }
+   ]
+  },
+  "及": {
+   "pinyin": "jí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jí",
+     "defs": [
+      "and",
+      "to reach",
+      "up to",
+      "in time for"
+     ]
+    }
+   ]
+  },
+  "谴责": {
+   "pinyin": "qiǎn zé",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "qiǎn zé",
+     "defs": [
+      "to denounce",
+      "to condemn",
+      "to criticize",
+      "condemnation",
+      "criticism"
+     ]
+    }
+   ]
+  },
+  "以色列": {
+   "pinyin": "yǐ sè liè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Yǐ sè liè",
+     "defs": [
+      "Israel"
+     ]
+    }
+   ]
+  },
+  "军队": {
+   "pinyin": "jūn duì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jūn duì",
+     "defs": [
+      "armed forces; troops"
+     ]
+    }
+   ]
+  },
+  "空袭": {
+   "pinyin": "kōng xí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "kōng xí",
+     "defs": [
+      "to make an air raid"
+     ]
+    }
+   ]
+  },
+  "加沙": {
+   "pinyin": "jiā shā",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Jiā shā",
+     "defs": [
+      "Gaza (territory adjacent to Israel and Egypt)"
+     ]
+    }
+   ]
+  },
+  "一家": {
+   "pinyin": "yī jiā",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yī jiā",
+     "defs": [
+      "the whole family",
+      "the same family",
+      "the family ... (when preceded by a family name)",
+      "group"
+     ]
+    }
+   ]
+  },
+  "医院": {
+   "pinyin": "yī yuàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yī yuàn",
+     "defs": [
+      "hospital"
+     ]
+    }
+   ]
+  },
+  "美国": {
+   "pinyin": "měi guó",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Měi guó",
+     "defs": [
+      "United States",
+      "USA",
+      "US"
+     ]
+    }
+   ]
+  },
+  "取消": {
+   "pinyin": "qǔ xiāo",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "qǔ xiāo",
+     "defs": [
+      "to cancel",
+      "cancellation"
+     ]
+    }
+   ]
+  },
+  "停飞令": {
+   "pinyin": "tíng fēi lìng",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "tíng fēi lìng",
+     "defs": [
+      "grounding order; order to suspend flights"
+     ]
+    }
+   ]
+  },
+  "后": {
+   "pinyin": "hòu",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "hòu",
+     "defs": [
+      "after; later; behind"
+     ]
+    },
+    {
+     "pinyin": "hòu",
+     "defs": [
+      "empress",
+      "queen",
+      "(archaic) monarch",
+      "ruler"
+     ]
+    },
+    {
+     "pinyin": "hòu",
+     "defs": [
+      "back",
+      "behind",
+      "rear",
+      "afterwards",
+      "after",
+      "later"
+     ]
+    },
+    {
+     "pinyin": "Hòu",
+     "defs": [
+      "surname Hou"
+     ]
+    }
+   ]
+  },
+  "第二天": {
+   "pinyin": "dì èr tiān",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dì èr tiān",
+     "defs": [
+      "next day",
+      "the morrow"
+     ]
+    }
+   ]
+  },
+  "上万": {
+   "pinyin": "shàng wàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shàng wàn",
+     "defs": [
+      "over ten thousand",
+      "fig. untold numbers",
+      "innumerable",
+      "thousands upon thousands"
+     ]
+    }
+   ]
+  },
+  "航班": {
+   "pinyin": "háng bān",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "háng bān",
+     "defs": [
+      "(scheduled) flight; (scheduled) sailing"
+     ]
+    }
+   ]
+  },
+  "受到": {
+   "pinyin": "shòu dào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shòu dào",
+     "defs": [
+      "to receive (praise, an education, punishment etc)",
+      "to be ...ed (praised, educated, punished etc)"
+     ]
+    }
+   ]
+  },
+  "影响": {
+   "pinyin": "yǐng xiǎng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yǐng xiǎng",
+     "defs": [
+      "influence",
+      "effect",
+      "to influence",
+      "to affect (usually adversely)",
+      "to disturb"
+     ]
+    }
+   ]
+  },
+  "意大利": {
+   "pinyin": "yì dà lì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Yì dà lì",
+     "defs": [
+      "Italy"
+     ]
+    }
+   ]
+  },
+  "则": {
+   "pinyin": "zé",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zé",
+     "defs": [
+      "(literary) (conjunction used to express contrast with a previous clause) but; then",
+      "(bound form) standard; norm",
+      "(bound form) principle",
+      "(literary) to imitate; to follow",
+      "classifier for written items"
+     ]
+    }
+   ]
+  },
+  "因": {
+   "pinyin": "yīn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yīn",
+     "defs": [
+      "cause",
+      "reason",
+      "because"
+     ]
+    }
+   ]
+  },
+  "擅自": {
+   "pinyin": "shàn zì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shàn zì",
+     "defs": [
+      "without permission"
+     ]
+    }
+   ]
+  },
+  "读取": {
+   "pinyin": "dú qǔ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dú qǔ",
+     "defs": [
+      "(of a computer etc) to read (data)"
+     ]
+    }
+   ]
+  },
+  "用户": {
+   "pinyin": "yòng hù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yòng hù",
+     "defs": [
+      "user",
+      "consumer",
+      "subscriber",
+      "customer"
+     ]
+    }
+   ]
+  },
+  "数据": {
+   "pinyin": "shù jù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shù jù",
+     "defs": [
+      "data"
+     ]
+    }
+   ]
+  },
+  "对": {
+   "pinyin": "duì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "duì",
+     "defs": [
+      "right; correct",
+      "towards; at; for",
+      "concerning; regarding",
+      "to treat (sb a certain way)",
+      "to face",
+      "(bound form) opposite; facing; matching"
+     ]
+    }
+   ]
+  },
+  "元宇宙": {
+   "pinyin": "Yuán yǔ zhòu",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "Yuán yǔ zhòu",
+     "defs": [
+      "Meta (the US company, in Chinese media usage); literally: metaverse"
+     ]
+    },
+    {
+     "pinyin": "yuán yǔ zhòu",
+     "defs": [
+      "metaverse (computing)"
+     ]
+    }
+   ]
+  },
+  "公司": {
+   "pinyin": "gōng sī",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gōng sī",
+     "defs": [
+      "company; firm; corporation"
+     ]
+    }
+   ]
+  },
+  "作出": {
+   "pinyin": "zuò chū",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zuò chū",
+     "defs": [
+      "to put out",
+      "to come up with",
+      "to make (a choice, decision, proposal, response, comment etc)",
+      "to issue (a permit, statement, explanation, apology, reassurance to the public etc)",
+      "to draw (conclusion)",
+      "to deliver (speech, judgment)"
+     ]
+    }
+   ]
+  },
+  "处罚": {
+   "pinyin": "chǔ fá",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chǔ fá",
+     "defs": [
+      "to penalize",
+      "to punish"
+     ]
+    }
+   ]
+  }
+ }
+}

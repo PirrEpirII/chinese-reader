@@ -1,25 +1,202 @@
 {
-  "_about": "Seed glossary from the real-text test of 2026-11-15. The live glossary belongs in the private data repository, not here. terms = words the dictionary lacks or splits wrongly; senses = a first meaning to show before the dictionary's; readings = context rules for single characters with several readings.",
+  "_about": "Working glossary, updated 2026-11-16 for two news texts. The live glossary belongs in the private data repository. terms = words the dictionary lacks or splits wrongly; senses = a first meaning to show before the dictionary's; readings = context rules for single characters with several readings.",
   "terms": {
-    "前三季度": {"pinyin": "qián sān jì dù", "meaning": "the first three quarters of the year (January to September)"},
-    "一季度": {"pinyin": "yī jì dù", "meaning": "first quarter (Q1)"},
-    "二季度": {"pinyin": "èr jì dù", "meaning": "second quarter (Q2)"},
-    "三季度": {"pinyin": "sān jì dù", "meaning": "third quarter (Q3)"},
-    "新质生产力": {"pinyin": "xīn zhì shēng chǎn lì", "meaning": "\"new quality productive forces\": policy term for innovation-driven, high-tech productivity"},
-    "夏粮": {"pinyin": "xià liáng", "meaning": "summer grain harvest"},
-    "禽肉": {"pinyin": "qín ròu", "meaning": "poultry meat"},
-    "生猪": {"pinyin": "shēng zhū", "meaning": "live hogs; pigs raised for slaughter"},
-    "存栏": {"pinyin": "cún lán", "meaning": "livestock on hand; number of animals currently in stock"},
-    "出栏": {"pinyin": "chū lán", "meaning": "(of livestock) sent to slaughter or market; slaughter numbers"},
-    "增势": {"pinyin": "zēng shì", "meaning": "growth momentum; upward trend"},
-    "亿元": {"pinyin": "yì yuán", "meaning": "100 million yuan (unit)"},
-    "万吨": {"pinyin": "wàn dūn", "meaning": "10,000 tonnes (unit)"},
-    "万头": {"pinyin": "wàn tóu", "meaning": "10,000 head (unit for livestock)"}
+    "前三季度": {
+      "pinyin": "qián sān jì dù",
+      "meaning": "the first three quarters of the year (January to September)"
+    },
+    "一季度": {
+      "pinyin": "yī jì dù",
+      "meaning": "first quarter (Q1)"
+    },
+    "二季度": {
+      "pinyin": "èr jì dù",
+      "meaning": "second quarter (Q2)"
+    },
+    "三季度": {
+      "pinyin": "sān jì dù",
+      "meaning": "third quarter (Q3)"
+    },
+    "新质生产力": {
+      "pinyin": "xīn zhì shēng chǎn lì",
+      "meaning": "\"new quality productive forces\": policy term for innovation-driven, high-tech productivity"
+    },
+    "夏粮": {
+      "pinyin": "xià liáng",
+      "meaning": "summer grain harvest"
+    },
+    "禽肉": {
+      "pinyin": "qín ròu",
+      "meaning": "poultry meat"
+    },
+    "生猪": {
+      "pinyin": "shēng zhū",
+      "meaning": "live hogs; pigs raised for slaughter"
+    },
+    "存栏": {
+      "pinyin": "cún lán",
+      "meaning": "livestock on hand; number of animals currently in stock"
+    },
+    "出栏": {
+      "pinyin": "chū lán",
+      "meaning": "(of livestock) sent to slaughter or market; slaughter numbers"
+    },
+    "增势": {
+      "pinyin": "zēng shì",
+      "meaning": "growth momentum; upward trend"
+    },
+    "亿元": {
+      "pinyin": "yì yuán",
+      "meaning": "100 million yuan (unit)"
+    },
+    "万吨": {
+      "pinyin": "wàn dūn",
+      "meaning": "10,000 tonnes (unit)"
+    },
+    "万头": {
+      "pinyin": "wàn tóu",
+      "meaning": "10,000 head (unit for livestock)"
+    },
+    "英伟达": {
+      "pinyin": "Yīng wěi dá",
+      "meaning": "Nvidia (US chip company)"
+    },
+    "黄仁勋": {
+      "pinyin": "Huáng Rén xūn",
+      "meaning": "Jensen Huang, co-founder of Nvidia"
+    },
+    "科莱特": {
+      "pinyin": "Kē lái tè",
+      "meaning": "Colette (given name)"
+    },
+    "克雷斯": {
+      "pinyin": "Kè léi sī",
+      "meaning": "Kress (surname); here Colette Kress, Nvidia's chief financial officer"
+    },
+    "哈维": {
+      "pinyin": "Hā wéi",
+      "meaning": "Harvey (given name)"
+    },
+    "贝森特": {
+      "pinyin": "Bèi sēn tè",
+      "meaning": "Bessent (surname); here Scott Bessent, US Treasury Secretary"
+    },
+    "李强": {
+      "pinyin": "Lǐ Qiáng",
+      "meaning": "Li Qiang, Premier of China's State Council"
+    },
+    "首席执行官": {
+      "pinyin": "shǒu xí zhí xíng guān",
+      "meaning": "chief executive officer (CEO)"
+    },
+    "首席财务官": {
+      "pinyin": "shǒu xí cái wù guān",
+      "meaning": "chief financial officer (CFO)"
+    },
+    "业内人士": {
+      "pinyin": "yè nèi rén shì",
+      "meaning": "industry insiders; people in the trade"
+    },
+    "中东部": {
+      "pinyin": "zhōng dōng bù",
+      "meaning": "the central and eastern parts (of a country); not the Middle East"
+    },
+    "人次": {
+      "pinyin": "rén cì",
+      "meaning": "person-times; number of visits or attendances (measure)"
+    },
+    "新闻联播": {
+      "pinyin": "Xīn wén Lián bō",
+      "meaning": "Xinwen Lianbo, the main evening news programme of China Central Television"
+    },
+    "秋招": {
+      "pinyin": "qiū zhāo",
+      "meaning": "autumn recruitment season for new graduates (short for 秋季招聘)"
+    },
+    "陆相": {
+      "pinyin": "lù xiàng",
+      "meaning": "(geology) continental, formed on land or in lakes, as opposed to marine"
+    },
+    "井深": {
+      "pinyin": "jǐng shēn",
+      "meaning": "well depth"
+    },
+    "防寒保暖": {
+      "pinyin": "fáng hán bǎo nuǎn",
+      "meaning": "to protect against the cold and keep warm"
+    },
+    "雨雪": {
+      "pinyin": "yǔ xuě",
+      "meaning": "rain and snow"
+    },
+    "成交额": {
+      "pinyin": "chéng jiāo é",
+      "meaning": "turnover; total value of trades"
+    },
+    "中泰": {
+      "pinyin": "Zhōng Tài",
+      "meaning": "China and Thailand; Sino-Thai"
+    },
+    "停飞令": {
+      "pinyin": "tíng fēi lìng",
+      "meaning": "grounding order; order to suspend flights"
+    },
+    "纪录": {
+      "pinyin": "jì lù",
+      "meaning": "record (best result or highest level reached)"
+    },
+    "一类新药": {
+      "pinyin": "yī lèi xīn yào",
+      "meaning": "Class 1 new drug: an innovative drug not marketed before in China or abroad"
+    },
+    "元宇宙": {
+      "pinyin": "Yuán yǔ zhòu",
+      "meaning": "Meta (the US company, in Chinese media usage); literally: metaverse"
+    },
+    "医保": {
+      "pinyin": "yī bǎo",
+      "meaning": "medical insurance (short for 医疗保险)"
+    },
+    "财年": {
+      "pinyin": "cái nián",
+      "meaning": "fiscal year"
+    }
   },
   "senses": {
-    "动能": "(economics) momentum; growth driver, as in 新动能 \"new growth drivers\""
+    "动能": "(economics) momentum; growth driver, as in 新动能 \"new growth drivers\"",
+    "于": "(formal) at; on; in (a time or place), as in 于11月17日 \"on 17 November\"",
+    "届": "measure word for sessions, meetings and graduating classes, as in 第九届 \"the ninth (edition)\"",
+    "后": "after; later; behind",
+    "次": "time; occasion (measure word), as in 这次 \"this time\"",
+    "家": "measure word for companies, shops, hospitals and families, as in 这家公司 \"this company\"",
+    "兼": "and concurrently; holding two posts at once, as in 副总裁兼首席财务官",
+    "起": "(after 自 or 从 and a time) starting from, as in 自2013年起 \"since 2013\"",
+    "致": "to send to; addressed to, as in 致员工的信 \"a letter to staff\"",
+    "中": "in; inside; among; middle",
+    "项": "measure word for items, tasks, projects and investigations, as in 这项调查",
+    "米": "metre (unit of length)",
+    "被": "by (marks the passive), as in 被纳入 \"be included\"",
+    "种": "kind; type (measure word), as in 107种药品 \"107 kinds of drugs\"",
+    "展": "exhibition; show (short for 展览), as in 国家展 \"country exhibition\"",
+    "同": "together with; and",
+    "创": "to set (a record or new high), as in 创历史新高; to create"
   },
   "readings": [
-    {"word": "为", "pinyin": "wéi", "cedict": "wei2", "after": "以", "window": 8, "note": "In 以…为… (take … as …) the reading is wéi, not wèi."}
+    {
+      "word": "为",
+      "pinyin": "wéi",
+      "cedict": "wei2",
+      "after": "以",
+      "window": 8,
+      "note": "In 以…为… (take … as …) the reading is wéi, not wèi."
+    },
+    {
+      "word": "为",
+      "pinyin": "wéi",
+      "cedict": "wei2",
+      "after": "任命",
+      "window": 8,
+      "note": "In 任命…为… (appoint … as …) the reading is wéi, not wèi."
+    }
   ]
 }

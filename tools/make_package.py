@@ -95,8 +95,10 @@ def main():
     def entries(w, first=None):
         ents = [{"pinyin": marked(p), "defs": [x for x in defs if not x.startswith("CL:")][:6]}
                 for p, defs in D.get(w, []) if not re.match(r"(old )?variant of", defs[0])]
-        if first:
-            ents.sort(key=lambda e: norm(e["pinyin"]) != norm(first))
+        # Surname and abbreviation entries come first in CC-CEDICT but are rarely
+        # the sense a reader needs, so they go last; the context reading goes first.
+        minor = lambda e: bool(e["defs"]) and e["defs"][0].startswith(("surname ", "abbr. for ", "Japanese variant"))
+        ents.sort(key=lambda e: ((norm(e["pinyin"]) != norm(first)) if first else False, minor(e)))
         return ents
 
     paragraphs, lex = [], {}

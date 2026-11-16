@@ -1,0 +1,4565 @@
+{
+ "schema_version": 1,
+ "package_id": "package-000004",
+ "created_at": "2026-11-16T04:22:29+00:00",
+ "article": {
+  "id": "article-000004",
+  "title": "英伟达换帅：黄仁勋辞职之后",
+  "source_name": "Claude 综述，据英伟达公告及媒体报道",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvda-20261111.htm",
+  "date": "2026-11-16"
+ },
+ "paragraphs": [
+  [
+   {
+    "t": "美国",
+    "w": 1
+   },
+   {
+    "t": "芯片",
+    "w": 1
+   },
+   {
+    "t": "企业",
+    "w": 1
+   },
+   {
+    "t": "英伟达",
+    "w": 1
+   },
+   {
+    "t": "（"
+   },
+   {
+    "t": "Nvidia"
+   },
+   {
+    "t": "）"
+   },
+   {
+    "t": "近日",
+    "w": 1
+   },
+   {
+    "t": "发生",
+    "w": 1
+   },
+   {
+    "t": "重大",
+    "w": 1
+   },
+   {
+    "t": "人事",
+    "w": 1
+   },
+   {
+    "t": "变动",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "根据",
+    "w": 1
+   },
+   {
+    "t": "公司",
+    "w": 1
+   },
+   {
+    "t": "向",
+    "w": 1
+   },
+   {
+    "t": "美国",
+    "w": 1
+   },
+   {
+    "t": "证券",
+    "w": 1
+   },
+   {
+    "t": "交易",
+    "w": 1
+   },
+   {
+    "t": "委员会",
+    "w": 1
+   },
+   {
+    "t": "提交",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "文件",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "董事会",
+    "w": 1
+   },
+   {
+    "t": "于",
+    "w": 1
+   },
+   {
+    "t": "11"
+   },
+   {
+    "t": "月",
+    "w": 1
+   },
+   {
+    "t": "11"
+   },
+   {
+    "t": "日",
+    "w": 1
+   },
+   {
+    "t": "接受",
+    "w": 1
+   },
+   {
+    "t": "了",
+    "w": 1
+   },
+   {
+    "t": "联合",
+    "w": 1
+   },
+   {
+    "t": "创始人",
+    "w": 1
+   },
+   {
+    "t": "黄仁勋",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "辞呈",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "他",
+    "w": 1
+   },
+   {
+    "t": "不再",
+    "w": 1
+   },
+   {
+    "t": "担任",
+    "w": 1
+   },
+   {
+    "t": "总裁",
+    "w": 1
+   },
+   {
+    "t": "、"
+   },
+   {
+    "t": "首席执行官",
+    "w": 1
+   },
+   {
+    "t": "和",
+    "w": 1
+   },
+   {
+    "t": "董事",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "辞职",
+    "w": 1
+   },
+   {
+    "t": "立即",
+    "w": 1
+   },
+   {
+    "t": "生效",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "黄仁勋",
+    "w": 1
+   },
+   {
+    "t": "1993"
+   },
+   {
+    "t": "年",
+    "w": 1
+   },
+   {
+    "t": "参与",
+    "w": 1
+   },
+   {
+    "t": "创立",
+    "w": 1
+   },
+   {
+    "t": "英伟达",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "此后",
+    "w": 1
+   },
+   {
+    "t": "一直",
+    "w": 1
+   },
+   {
+    "t": "掌管",
+    "w": 1
+   },
+   {
+    "t": "这",
+    "w": 1
+   },
+   {
+    "t": "家",
+    "w": 1
+   },
+   {
+    "t": "公司",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "前后",
+    "w": 1
+   },
+   {
+    "t": "长达",
+    "w": 1
+   },
+   {
+    "t": "33"
+   },
+   {
+    "t": "年",
+    "w": 1
+   },
+   {
+    "t": "。"
+   }
+  ],
+  [
+   {
+    "t": "公司",
+    "w": 1
+   },
+   {
+    "t": "宣布",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "执行",
+    "w": 1
+   },
+   {
+    "t": "副",
+    "w": 1
+   },
+   {
+    "t": "总裁",
+    "w": 1
+   },
+   {
+    "t": "兼",
+    "w": 1
+   },
+   {
+    "t": "首席财务官",
+    "w": 1
+   },
+   {
+    "t": "科莱特",
+    "w": 1
+   },
+   {
+    "t": "·"
+   },
+   {
+    "t": "克雷斯",
+    "w": 1
+   },
+   {
+    "t": "出任",
+    "w": 1
+   },
+   {
+    "t": "临时",
+    "w": 1
+   },
+   {
+    "t": "首席执行官",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "同时",
+    "w": 1
+   },
+   {
+    "t": "继续",
+    "w": 1
+   },
+   {
+    "t": "负责",
+    "w": 1
+   },
+   {
+    "t": "财务",
+    "w": 1
+   },
+   {
+    "t": "工作",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "直到",
+    "w": 1
+   },
+   {
+    "t": "正式",
+    "w": 1
+   },
+   {
+    "t": "继任者",
+    "w": 1
+   },
+   {
+    "t": "确定",
+    "w": 1
+   },
+   {
+    "t": "为止",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "克雷斯",
+    "w": 1
+   },
+   {
+    "t": "自",
+    "w": 1
+   },
+   {
+    "t": "2013"
+   },
+   {
+    "t": "年",
+    "w": 1
+   },
+   {
+    "t": "起",
+    "w": 1
+   },
+   {
+    "t": "担任",
+    "w": 1
+   },
+   {
+    "t": "首席财务官",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "董事会",
+    "w": 1
+   },
+   {
+    "t": "还",
+    "w": 1
+   },
+   {
+    "t": "任命",
+    "w": 1
+   },
+   {
+    "t": "哈维",
+    "w": 1
+   },
+   {
+    "t": "·"
+   },
+   {
+    "t": "琼斯",
+    "w": 1
+   },
+   {
+    "t": "为",
+    "w": 1,
+    "k": "为#wei2"
+   },
+   {
+    "t": "公司",
+    "w": 1
+   },
+   {
+    "t": "历史",
+    "w": 1
+   },
+   {
+    "t": "上",
+    "w": 1
+   },
+   {
+    "t": "首位",
+    "w": 1
+   },
+   {
+    "t": "董事会",
+    "w": 1
+   },
+   {
+    "t": "主席",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "他",
+    "w": 1
+   },
+   {
+    "t": "从",
+    "w": 1
+   },
+   {
+    "t": "1993"
+   },
+   {
+    "t": "年",
+    "w": 1
+   },
+   {
+    "t": "起",
+    "w": 1
+   },
+   {
+    "t": "就是",
+    "w": 1
+   },
+   {
+    "t": "董事会",
+    "w": 1
+   },
+   {
+    "t": "成员",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "据",
+    "w": 1
+   },
+   {
+    "t": "报道",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "董事会",
+    "w": 1
+   },
+   {
+    "t": "将",
+    "w": 1
+   },
+   {
+    "t": "同时",
+    "w": 1
+   },
+   {
+    "t": "从",
+    "w": 1
+   },
+   {
+    "t": "公司",
+    "w": 1
+   },
+   {
+    "t": "内部",
+    "w": 1
+   },
+   {
+    "t": "和",
+    "w": 1
+   },
+   {
+    "t": "外部",
+    "w": 1
+   },
+   {
+    "t": "寻找",
+    "w": 1
+   },
+   {
+    "t": "新",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "首席执行官",
+    "w": 1
+   },
+   {
+    "t": "人选",
+    "w": 1
+   },
+   {
+    "t": "。"
+   }
+  ],
+  [
+   {
+    "t": "这",
+    "w": 1
+   },
+   {
+    "t": "次",
+    "w": 1
+   },
+   {
+    "t": "辞职",
+    "w": 1
+   },
+   {
+    "t": "并非",
+    "w": 1
+   },
+   {
+    "t": "毫无",
+    "w": 1
+   },
+   {
+    "t": "征兆",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "多",
+    "w": 1
+   },
+   {
+    "t": "家",
+    "w": 1
+   },
+   {
+    "t": "媒体",
+    "w": 1
+   },
+   {
+    "t": "报道",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "黄仁勋",
+    "w": 1
+   },
+   {
+    "t": "此前",
+    "w": 1
+   },
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "致",
+    "w": 1
+   },
+   {
+    "t": "员工",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "信",
+    "w": 1
+   },
+   {
+    "t": "中",
+    "w": 1
+   },
+   {
+    "t": "承认",
+    "w": 1
+   },
+   {
+    "t": "个人",
+    "w": 1
+   },
+   {
+    "t": "行为",
+    "w": 1
+   },
+   {
+    "t": "不当",
+    "w": 1
+   },
+   {
+    "t": "并",
+    "w": 1
+   },
+   {
+    "t": "表示",
+    "w": 1
+   },
+   {
+    "t": "道歉",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "英伟达",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "独立",
+    "w": 1
+   },
+   {
+    "t": "董事",
+    "w": 1
+   },
+   {
+    "t": "随后",
+    "w": 1
+   },
+   {
+    "t": "聘请",
+    "w": 1
+   },
+   {
+    "t": "外部",
+    "w": 1
+   },
+   {
+    "t": "律师",
+    "w": 1
+   },
+   {
+    "t": "展开",
+    "w": 1
+   },
+   {
+    "t": "独立",
+    "w": 1
+   },
+   {
+    "t": "调查",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "调查",
+    "w": 1
+   },
+   {
+    "t": "内容",
+    "w": 1
+   },
+   {
+    "t": "涉及",
+    "w": 1
+   },
+   {
+    "t": "国家",
+    "w": 1
+   },
+   {
+    "t": "安全",
+    "w": 1
+   },
+   {
+    "t": "方面",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "疑虑",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "他",
+    "w": 1
+   },
+   {
+    "t": "辞职",
+    "w": 1
+   },
+   {
+    "t": "之后",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "这",
+    "w": 1
+   },
+   {
+    "t": "项",
+    "w": 1
+   },
+   {
+    "t": "调查",
+    "w": 1
+   },
+   {
+    "t": "仍",
+    "w": 1
+   },
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "继续",
+    "w": 1
+   },
+   {
+    "t": "。"
+   }
+  ],
+  [
+   {
+    "t": "消息",
+    "w": 1
+   },
+   {
+    "t": "公布",
+    "w": 1
+   },
+   {
+    "t": "后",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "英伟达",
+    "w": 1
+   },
+   {
+    "t": "股价",
+    "w": 1
+   },
+   {
+    "t": "明显",
+    "w": 1
+   },
+   {
+    "t": "下跌",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "市场",
+    "w": 1
+   },
+   {
+    "t": "对",
+    "w": 1
+   },
+   {
+    "t": "这",
+    "w": 1
+   },
+   {
+    "t": "家",
+    "w": 1
+   },
+   {
+    "t": "人工智能",
+    "w": 1
+   },
+   {
+    "t": "芯片",
+    "w": 1
+   },
+   {
+    "t": "龙头企业",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "前景",
+    "w": 1
+   },
+   {
+    "t": "产生",
+    "w": 1
+   },
+   {
+    "t": "担忧",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "不少",
+    "w": 1
+   },
+   {
+    "t": "投资者",
+    "w": 1
+   },
+   {
+    "t": "和",
+    "w": 1
+   },
+   {
+    "t": "业内人士",
+    "w": 1
+   },
+   {
+    "t": "认为",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "黄仁勋",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "个人",
+    "w": 1
+   },
+   {
+    "t": "影响力",
+    "w": 1
+   },
+   {
+    "t": "是",
+    "w": 1
+   },
+   {
+    "t": "英伟达",
+    "w": 1
+   },
+   {
+    "t": "成功",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "重要",
+    "w": 1
+   },
+   {
+    "t": "因素",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "他",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "离开",
+    "w": 1
+   },
+   {
+    "t": "可能",
+    "w": 1
+   },
+   {
+    "t": "给",
+    "w": 1
+   },
+   {
+    "t": "公司",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "战略",
+    "w": 1
+   },
+   {
+    "t": "和",
+    "w": 1
+   },
+   {
+    "t": "供应链",
+    "w": 1
+   },
+   {
+    "t": "带来",
+    "w": 1
+   },
+   {
+    "t": "不",
+    "w": 1
+   },
+   {
+    "t": "确定性",
+    "w": 1
+   },
+   {
+    "t": "。"
+   }
+  ],
+  [
+   {
+    "t": "事情",
+    "w": 1
+   },
+   {
+    "t": "还",
+    "w": 1
+   },
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "发展",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "英国",
+    "w": 1
+   },
+   {
+    "t": "《"
+   },
+   {
+    "t": "金融时报",
+    "w": 1
+   },
+   {
+    "t": "》"
+   },
+   {
+    "t": "11"
+   },
+   {
+    "t": "月",
+    "w": 1
+   },
+   {
+    "t": "15"
+   },
+   {
+    "t": "日",
+    "w": 1
+   },
+   {
+    "t": "援引",
+    "w": 1
+   },
+   {
+    "t": "知情",
+    "w": 1
+   },
+   {
+    "t": "人士",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "消息",
+    "w": 1
+   },
+   {
+    "t": "报道",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "黄仁勋",
+    "w": 1
+   },
+   {
+    "t": "正在",
+    "w": 1
+   },
+   {
+    "t": "考虑",
+    "w": 1
+   },
+   {
+    "t": "重返",
+    "w": 1
+   },
+   {
+    "t": "英伟达",
+    "w": 1
+   },
+   {
+    "t": "担任",
+    "w": 1
+   },
+   {
+    "t": "首席执行官",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "他",
+    "w": 1
+   },
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "硅谷",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "支持者",
+    "w": 1
+   },
+   {
+    "t": "也",
+    "w": 1
+   },
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "游说",
+    "w": 1
+   },
+   {
+    "t": "董事会",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "不过",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "美国",
+    "w": 1
+   },
+   {
+    "t": "财政部长",
+    "w": 1
+   },
+   {
+    "t": "贝森特",
+    "w": 1
+   },
+   {
+    "t": "公开",
+    "w": 1
+   },
+   {
+    "t": "表示",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "希望",
+    "w": 1
+   },
+   {
+    "t": "英伟达",
+    "w": 1
+   },
+   {
+    "t": "从",
+    "w": 1
+   },
+   {
+    "t": "外部",
+    "w": 1
+   },
+   {
+    "t": "选择",
+    "w": 1
+   },
+   {
+    "t": "新",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "领导人",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "截至",
+    "w": 1
+   },
+   {
+    "t": "目前",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "公司",
+    "w": 1
+   },
+   {
+    "t": "尚未",
+    "w": 1
+   },
+   {
+    "t": "宣布",
+    "w": 1
+   },
+   {
+    "t": "任何",
+    "w": 1
+   },
+   {
+    "t": "恢复",
+    "w": 1
+   },
+   {
+    "t": "其",
+    "w": 1
+   },
+   {
+    "t": "职务",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "决定",
+    "w": 1
+   },
+   {
+    "t": "。"
+   }
+  ],
+  [
+   {
+    "t": "按照",
+    "w": 1
+   },
+   {
+    "t": "计划",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "英伟达",
+    "w": 1
+   },
+   {
+    "t": "将",
+    "w": 1
+   },
+   {
+    "t": "于",
+    "w": 1
+   },
+   {
+    "t": "11"
+   },
+   {
+    "t": "月",
+    "w": 1
+   },
+   {
+    "t": "17"
+   },
+   {
+    "t": "日",
+    "w": 1
+   },
+   {
+    "t": "公布",
+    "w": 1
+   },
+   {
+    "t": "2027"
+   },
+   {
+    "t": "财年",
+    "w": 1
+   },
+   {
+    "t": "第",
+    "w": 1
+   },
+   {
+    "t": "三季度",
+    "w": 1
+   },
+   {
+    "t": "财务",
+    "w": 1
+   },
+   {
+    "t": "报告",
+    "w": 1
+   },
+   {
+    "t": "。"
+   },
+   {
+    "t": "在",
+    "w": 1
+   },
+   {
+    "t": "领导层",
+    "w": 1
+   },
+   {
+    "t": "更替",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "背景",
+    "w": 1
+   },
+   {
+    "t": "下",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "这",
+    "w": 1
+   },
+   {
+    "t": "份",
+    "w": 1
+   },
+   {
+    "t": "财报",
+    "w": 1
+   },
+   {
+    "t": "以及",
+    "w": 1
+   },
+   {
+    "t": "临时",
+    "w": 1
+   },
+   {
+    "t": "首席执行官",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "表态",
+    "w": 1
+   },
+   {
+    "t": "，"
+   },
+   {
+    "t": "将",
+    "w": 1
+   },
+   {
+    "t": "受到",
+    "w": 1
+   },
+   {
+    "t": "全球",
+    "w": 1
+   },
+   {
+    "t": "市场",
+    "w": 1
+   },
+   {
+    "t": "的",
+    "w": 1
+   },
+   {
+    "t": "高度",
+    "w": 1
+   },
+   {
+    "t": "关注",
+    "w": 1
+   },
+   {
+    "t": "。"
+   }
+  ]
+ ],
+ "lexicon": {
+  "美国": {
+   "pinyin": "měi guó",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Měi guó",
+     "defs": [
+      "United States",
+      "USA",
+      "US"
+     ]
+    }
+   ]
+  },
+  "芯片": {
+   "pinyin": "xīn piàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xīn piàn",
+     "defs": [
+      "computer chip",
+      "microchip"
+     ]
+    }
+   ]
+  },
+  "企业": {
+   "pinyin": "qǐ yè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "qǐ yè",
+     "defs": [
+      "company; firm; enterprise; corporation"
+     ]
+    }
+   ]
+  },
+  "英伟达": {
+   "pinyin": "Yīng wěi dá",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "Yīng wěi dá",
+     "defs": [
+      "Nvidia (US chip company)"
+     ]
+    },
+    {
+     "pinyin": "Yīng wěi dá",
+     "defs": [
+      "NVIDIA, computer graphics card company"
+     ]
+    }
+   ]
+  },
+  "近日": {
+   "pinyin": "jìn rì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jìn rì",
+     "defs": [
+      "(in) the past few days",
+      "recently",
+      "(within) the next few days"
+     ]
+    }
+   ]
+  },
+  "发生": {
+   "pinyin": "fā shēng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fā shēng",
+     "defs": [
+      "to happen; to occur; to take place; to break out"
+     ]
+    }
+   ]
+  },
+  "重大": {
+   "pinyin": "zhòng dà",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhòng dà",
+     "defs": [
+      "great",
+      "important",
+      "major",
+      "significant"
+     ]
+    }
+   ]
+  },
+  "人事": {
+   "pinyin": "rén shì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "rén shì",
+     "defs": [
+      "personnel",
+      "human resources",
+      "human affairs",
+      "ways of the world",
+      "(euphemism) sexuality",
+      "the facts of life"
+     ]
+    }
+   ]
+  },
+  "变动": {
+   "pinyin": "biàn dòng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "biàn dòng",
+     "defs": [
+      "to change",
+      "to fluctuate",
+      "change",
+      "fluctuation"
+     ]
+    }
+   ]
+  },
+  "根据": {
+   "pinyin": "gēn jù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gēn jù",
+     "defs": [
+      "according to",
+      "based on",
+      "basis",
+      "foundation"
+     ]
+    }
+   ]
+  },
+  "公司": {
+   "pinyin": "gōng sī",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gōng sī",
+     "defs": [
+      "company; firm; corporation"
+     ]
+    }
+   ]
+  },
+  "向": {
+   "pinyin": "xiàng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xiàng",
+     "defs": [
+      "towards",
+      "to face",
+      "to turn towards",
+      "direction",
+      "to support",
+      "to side with"
+     ]
+    },
+    {
+     "pinyin": "xiàng",
+     "defs": [
+      "to tend toward",
+      "to guide",
+      "variant of 向[xiang4]"
+     ]
+    },
+    {
+     "pinyin": "Xiàng",
+     "defs": [
+      "surname Xiang"
+     ]
+    }
+   ]
+  },
+  "证券": {
+   "pinyin": "zhèng quàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhèng quàn",
+     "defs": [
+      "negotiable security (financial)",
+      "certificate",
+      "stocks and bonds"
+     ]
+    }
+   ]
+  },
+  "交易": {
+   "pinyin": "jiāo yì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jiāo yì",
+     "defs": [
+      "to deal; to trade; to transact",
+      "transaction; deal"
+     ]
+    }
+   ]
+  },
+  "委员会": {
+   "pinyin": "wěi yuán huì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "wěi yuán huì",
+     "defs": [
+      "committee"
+     ]
+    }
+   ]
+  },
+  "提交": {
+   "pinyin": "tí jiāo",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "tí jiāo",
+     "defs": [
+      "to submit (a report etc)",
+      "to refer (a problem) to sb"
+     ]
+    }
+   ]
+  },
+  "的": {
+   "pinyin": "de",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "de",
+     "defs": [
+      "of; ~'s (possessive particle)",
+      "(used after an attribute)",
+      "(used to form a nominal expression)",
+      "(used at the end of a declarative sentence for emphasis)",
+      "also pr. [di4] or [di5] in poetry and songs"
+     ]
+    },
+    {
+     "pinyin": "dī",
+     "defs": [
+      "a taxi; a cab (abbr. for 的士[di1 shi4])"
+     ]
+    },
+    {
+     "pinyin": "dí",
+     "defs": [
+      "really and truly"
+     ]
+    },
+    {
+     "pinyin": "dì",
+     "defs": [
+      "(bound form) bull's-eye; target"
+     ]
+    }
+   ]
+  },
+  "文件": {
+   "pinyin": "wén jiàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "wén jiàn",
+     "defs": [
+      "document",
+      "file"
+     ]
+    }
+   ]
+  },
+  "董事会": {
+   "pinyin": "dǒng shì huì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dǒng shì huì",
+     "defs": [
+      "board of directors"
+     ]
+    }
+   ]
+  },
+  "于": {
+   "pinyin": "yú",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "yú",
+     "defs": [
+      "(formal) at; on; in (a time or place), as in 于11月17日 \"on 17 November\""
+     ]
+    },
+    {
+     "pinyin": "yú",
+     "defs": [
+      "to go",
+      "to take",
+      "sentence-final interrogative particle",
+      "variant of 於|于[yu2]"
+     ]
+    },
+    {
+     "pinyin": "yú",
+     "defs": [
+      "(of time or place) in; at; on",
+      "(indicating any indirect relation) to; toward; vis-à-vis; with regard to; for",
+      "(indicating a source) from; out of",
+      "(used in comparison) than",
+      "(used in the passive voice) by"
+     ]
+    },
+    {
+     "pinyin": "Yú",
+     "defs": [
+      "surname Yu"
+     ]
+    }
+   ]
+  },
+  "月": {
+   "pinyin": "yuè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yuè",
+     "defs": [
+      "moon",
+      "month",
+      "monthly"
+     ]
+    }
+   ]
+  },
+  "日": {
+   "pinyin": "rì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "rì",
+     "defs": [
+      "sun",
+      "day",
+      "date, day of the month"
+     ]
+    },
+    {
+     "pinyin": "Rì",
+     "defs": [
+      "abbr. for 日本[Ri4 ben3], Japan"
+     ]
+    }
+   ]
+  },
+  "接受": {
+   "pinyin": "jiē shòu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jiē shòu",
+     "defs": [
+      "to accept (a suggestion, punishment, bribe etc); to acquiesce"
+     ]
+    }
+   ]
+  },
+  "了": {
+   "pinyin": "le",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "le",
+     "defs": [
+      "(completed action marker)",
+      "(modal particle indicating change of state, situation now)",
+      "(modal particle intensifying preceding clause)"
+     ]
+    },
+    {
+     "pinyin": "liǎo",
+     "defs": [
+      "to finish",
+      "to achieve",
+      "variant of 瞭|了[liao3]",
+      "to understand clearly"
+     ]
+    },
+    {
+     "pinyin": "liǎo",
+     "defs": [
+      "(of eyes) bright",
+      "clear-sighted",
+      "to understand clearly"
+     ]
+    },
+    {
+     "pinyin": "liào",
+     "defs": [
+      "unofficial variant of 瞭[liao4]"
+     ]
+    }
+   ]
+  },
+  "联合": {
+   "pinyin": "lián hé",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lián hé",
+     "defs": [
+      "to combine",
+      "to join",
+      "unite",
+      "alliance"
+     ]
+    }
+   ]
+  },
+  "创始人": {
+   "pinyin": "chuàng shǐ rén",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chuàng shǐ rén",
+     "defs": [
+      "creator",
+      "founder",
+      "initiator"
+     ]
+    }
+   ]
+  },
+  "黄仁勋": {
+   "pinyin": "Huáng Rén xūn",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "Huáng Rén xūn",
+     "defs": [
+      "Jensen Huang, co-founder of Nvidia"
+     ]
+    }
+   ]
+  },
+  "辞呈": {
+   "pinyin": "cí chéng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "cí chéng",
+     "defs": [
+      "(written) resignation"
+     ]
+    }
+   ]
+  },
+  "他": {
+   "pinyin": "tā",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "tā",
+     "defs": [
+      "he; him (used for either sex when the sex is unknown or unimportant)",
+      "(used before sb's name for emphasis)",
+      "(used as a meaningless mock object)",
+      "(literary) other"
+     ]
+    }
+   ]
+  },
+  "不再": {
+   "pinyin": "bù zài",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bù zài",
+     "defs": [
+      "no more",
+      "no longer"
+     ]
+    }
+   ]
+  },
+  "担任": {
+   "pinyin": "dān rèn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dān rèn",
+     "defs": [
+      "to hold a governmental office or post",
+      "to assume office of",
+      "to take charge of",
+      "to serve as"
+     ]
+    }
+   ]
+  },
+  "总裁": {
+   "pinyin": "zǒng cái",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zǒng cái",
+     "defs": [
+      "chairman",
+      "director-general (of a company etc)"
+     ]
+    }
+   ]
+  },
+  "首席执行官": {
+   "pinyin": "shǒu xí zhí xíng guān",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "shǒu xí zhí xíng guān",
+     "defs": [
+      "chief executive officer (CEO)"
+     ]
+    },
+    {
+     "pinyin": "shǒu xí zhí xíng guān",
+     "defs": [
+      "chief executive officer (CEO)"
+     ]
+    }
+   ]
+  },
+  "和": {
+   "pinyin": "hé",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "hé",
+     "defs": [
+      "(joining two nouns) and; together with; with (Taiwan pr. [han4])",
+      "(math.) sum",
+      "to make peace",
+      "(sports) to draw; to tie",
+      "(bound form) harmonious",
+      "(bound form) Japan; Japanese"
+     ]
+    },
+    {
+     "pinyin": "Hé",
+     "defs": [
+      "surname He"
+     ]
+    },
+    {
+     "pinyin": "hè",
+     "defs": [
+      "to compose a poem in reply (to sb's poem) using the same rhyme sequence",
+      "to join in the singing",
+      "to chime in with others"
+     ]
+    },
+    {
+     "pinyin": "hú",
+     "defs": [
+      "to complete a set in mahjong or playing cards"
+     ]
+    },
+    {
+     "pinyin": "huó",
+     "defs": [
+      "to combine a powdery substance (flour, plaster etc) with water",
+      "Taiwan pr. [huo4]"
+     ]
+    },
+    {
+     "pinyin": "huò",
+     "defs": [
+      "to mix (ingredients) together",
+      "to blend",
+      "classifier for rinses of clothes",
+      "classifier for boilings of medicinal herbs"
+     ]
+    }
+   ]
+  },
+  "董事": {
+   "pinyin": "dǒng shì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dǒng shì",
+     "defs": [
+      "board member"
+     ]
+    }
+   ]
+  },
+  "辞职": {
+   "pinyin": "cí zhí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "cí zhí",
+     "defs": [
+      "to resign"
+     ]
+    }
+   ]
+  },
+  "立即": {
+   "pinyin": "lì jí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lì jí",
+     "defs": [
+      "immediately"
+     ]
+    }
+   ]
+  },
+  "生效": {
+   "pinyin": "shēng xiào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shēng xiào",
+     "defs": [
+      "to take effect",
+      "to go into effect"
+     ]
+    }
+   ]
+  },
+  "年": {
+   "pinyin": "nián",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "nián",
+     "defs": [
+      "year"
+     ]
+    },
+    {
+     "pinyin": "nián",
+     "defs": [
+      "grain",
+      "harvest (old)",
+      "variant of 年[nian2]"
+     ]
+    },
+    {
+     "pinyin": "Nián",
+     "defs": [
+      "surname Nian"
+     ]
+    }
+   ]
+  },
+  "参与": {
+   "pinyin": "cān yù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "cān yù",
+     "defs": [
+      "to participate (in sth)"
+     ]
+    }
+   ]
+  },
+  "创立": {
+   "pinyin": "chuàng lì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chuàng lì",
+     "defs": [
+      "to establish",
+      "to set up",
+      "to found"
+     ]
+    }
+   ]
+  },
+  "此后": {
+   "pinyin": "cǐ hòu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "cǐ hòu",
+     "defs": [
+      "after this",
+      "afterwards",
+      "hereafter"
+     ]
+    }
+   ]
+  },
+  "一直": {
+   "pinyin": "yī zhí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yī zhí",
+     "defs": [
+      "straight (in a straight line)",
+      "continuously; always; all the way through"
+     ]
+    }
+   ]
+  },
+  "掌管": {
+   "pinyin": "zhǎng guǎn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhǎng guǎn",
+     "defs": [
+      "in charge of",
+      "to control"
+     ]
+    }
+   ]
+  },
+  "这": {
+   "pinyin": "zhè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhè",
+     "defs": [
+      "(pronoun) this; these",
+      "(bound form) this; the (followed by a noun)",
+      "(bound form) this; these (followed by a classifier) (in this sense, commonly pr. [zhei4], esp. in Beijing)"
+     ]
+    }
+   ]
+  },
+  "家": {
+   "pinyin": "jiā",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "jiā",
+     "defs": [
+      "measure word for companies, shops, hospitals and families, as in 这家公司 \"this company\""
+     ]
+    },
+    {
+     "pinyin": "jiā",
+     "defs": [
+      "used in 傢伙|家伙[jia1 huo5] and 傢俱|家俱[jia1 ju4]"
+     ]
+    },
+    {
+     "pinyin": "jiā",
+     "defs": [
+      "home",
+      "family",
+      "(polite) my (sister, uncle etc)",
+      "classifier for families or businesses",
+      "refers to the philosophical schools of pre-Han China",
+      "noun suffix for a specialist in some activity, such as a musician or revolutionary, corresponding to English -ist, -er, -ary or -ian"
+     ]
+    }
+   ]
+  },
+  "前后": {
+   "pinyin": "qián hòu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "qián hòu",
+     "defs": [
+      "around",
+      "from beginning to end",
+      "all around",
+      "front and rear"
+     ]
+    }
+   ]
+  },
+  "长达": {
+   "pinyin": "cháng dá",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "cháng dá",
+     "defs": [
+      "to extend as long as",
+      "to lengthen out to"
+     ]
+    }
+   ]
+  },
+  "宣布": {
+   "pinyin": "xuān bù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xuān bù",
+     "defs": [
+      "to declare",
+      "to announce",
+      "to proclaim"
+     ]
+    }
+   ]
+  },
+  "执行": {
+   "pinyin": "zhí xíng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhí xíng",
+     "defs": [
+      "to implement",
+      "to carry out",
+      "to execute",
+      "to run"
+     ]
+    }
+   ]
+  },
+  "副": {
+   "pinyin": "fù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fù",
+     "defs": [
+      "secondary",
+      "auxiliary",
+      "deputy",
+      "assistant",
+      "vice-",
+      "abbr. for 副詞|副词 adverb"
+     ]
+    }
+   ]
+  },
+  "兼": {
+   "pinyin": "jiān",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "jiān",
+     "defs": [
+      "and concurrently; holding two posts at once, as in 副总裁兼首席财务官"
+     ]
+    },
+    {
+     "pinyin": "jiān",
+     "defs": [
+      "double",
+      "twice",
+      "simultaneous",
+      "holding two or more (official) posts at the same time"
+     ]
+    }
+   ]
+  },
+  "首席财务官": {
+   "pinyin": "shǒu xí cái wù guān",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "shǒu xí cái wù guān",
+     "defs": [
+      "chief financial officer (CFO)"
+     ]
+    },
+    {
+     "pinyin": "shǒu xí cái wù guān",
+     "defs": [
+      "chief financial officer (CFO)"
+     ]
+    }
+   ]
+  },
+  "科莱特": {
+   "pinyin": "Kē lái tè",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "Kē lái tè",
+     "defs": [
+      "Colette (given name)"
+     ]
+    }
+   ]
+  },
+  "克雷斯": {
+   "pinyin": "Kè léi sī",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "Kè léi sī",
+     "defs": [
+      "Kress (surname); here Colette Kress, Nvidia's chief financial officer"
+     ]
+    }
+   ]
+  },
+  "出任": {
+   "pinyin": "chū rèn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chū rèn",
+     "defs": [
+      "to take up a post; to start in a new job"
+     ]
+    }
+   ]
+  },
+  "临时": {
+   "pinyin": "lín shí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lín shí",
+     "defs": [
+      "as the time draws near",
+      "at the last moment",
+      "temporary",
+      "interim",
+      "ad hoc"
+     ]
+    }
+   ]
+  },
+  "同时": {
+   "pinyin": "tóng shí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "tóng shí",
+     "defs": [
+      "at the same time",
+      "simultaneously"
+     ]
+    }
+   ]
+  },
+  "继续": {
+   "pinyin": "jì xù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jì xù",
+     "defs": [
+      "to continue",
+      "to proceed with",
+      "to go on with"
+     ]
+    }
+   ]
+  },
+  "负责": {
+   "pinyin": "fù zé",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fù zé",
+     "defs": [
+      "to be responsible for; to be in charge of; to bear responsibility for",
+      "conscientious"
+     ]
+    }
+   ]
+  },
+  "财务": {
+   "pinyin": "cái wù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "cái wù",
+     "defs": [
+      "financial affairs"
+     ]
+    }
+   ]
+  },
+  "工作": {
+   "pinyin": "gōng zuò",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gōng zuò",
+     "defs": [
+      "to work",
+      "(of a machine) to operate",
+      "job",
+      "work",
+      "task"
+     ]
+    }
+   ]
+  },
+  "直到": {
+   "pinyin": "zhí dào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhí dào",
+     "defs": [
+      "until"
+     ]
+    }
+   ]
+  },
+  "正式": {
+   "pinyin": "zhèng shì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhèng shì",
+     "defs": [
+      "formal; official"
+     ]
+    }
+   ]
+  },
+  "继任者": {
+   "pinyin": "jì rèn zhě",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jì rèn zhě",
+     "defs": [
+      "successor"
+     ]
+    }
+   ]
+  },
+  "确定": {
+   "pinyin": "què dìng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "què dìng",
+     "defs": [
+      "definite",
+      "certain",
+      "fixed",
+      "to fix (on sth)",
+      "to determine",
+      "to be sure"
+     ]
+    }
+   ]
+  },
+  "为止": {
+   "pinyin": "wéi zhǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "wéi zhǐ",
+     "defs": [
+      "until",
+      "(used in combination with words like 到[dao4] or 至[zhi4] in constructs of the form 到...為止|到...为止)"
+     ]
+    }
+   ]
+  },
+  "自": {
+   "pinyin": "zì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zì",
+     "defs": [
+      "(bound form) self; oneself",
+      "from; since",
+      "naturally; as a matter of course"
+     ]
+    }
+   ]
+  },
+  "起": {
+   "pinyin": "qǐ",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "qǐ",
+     "defs": [
+      "(after 自 or 从 and a time) starting from, as in 自2013年起 \"since 2013\""
+     ]
+    },
+    {
+     "pinyin": "qǐ",
+     "defs": [
+      "to rise",
+      "to raise",
+      "to get up",
+      "to set out",
+      "to start",
+      "to appear"
+     ]
+    }
+   ]
+  },
+  "还": {
+   "pinyin": "hái",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "hái",
+     "defs": [
+      "still",
+      "still in progress",
+      "still more",
+      "yet",
+      "even more",
+      "in addition"
+     ]
+    },
+    {
+     "pinyin": "huán",
+     "defs": [
+      "to pay back",
+      "to return"
+     ]
+    },
+    {
+     "pinyin": "Huán",
+     "defs": [
+      "surname Huan"
+     ]
+    }
+   ]
+  },
+  "任命": {
+   "pinyin": "rèn mìng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "rèn mìng",
+     "defs": [
+      "to appoint",
+      "(job) appointment"
+     ]
+    }
+   ]
+  },
+  "哈维": {
+   "pinyin": "Hā wéi",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "Hā wéi",
+     "defs": [
+      "Harvey (given name)"
+     ]
+    }
+   ]
+  },
+  "琼斯": {
+   "pinyin": "qióng sī",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Qióng sī",
+     "defs": [
+      "Jones (name)"
+     ]
+    }
+   ]
+  },
+  "为#wei2": {
+   "pinyin": "wéi",
+   "origin": "glossary",
+   "note": "In 任命…为… (appoint … as …) the reading is wéi, not wèi.",
+   "entries": [
+    {
+     "pinyin": "wéi",
+     "defs": [
+      "as (in the capacity of)",
+      "to take sth as",
+      "to act as",
+      "to serve as",
+      "to behave as",
+      "to become"
+     ]
+    },
+    {
+     "pinyin": "wèi",
+     "defs": [
+      "because of",
+      "for",
+      "to"
+     ]
+    }
+   ]
+  },
+  "历史": {
+   "pinyin": "lì shǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lì shǐ",
+     "defs": [
+      "history"
+     ]
+    }
+   ]
+  },
+  "上": {
+   "pinyin": "shàng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shàng",
+     "defs": [
+      "(bound form) up; upper; above; previous",
+      "first (of multiple parts)",
+      "to climb; to get onto; to go up",
+      "to attend (class or university)",
+      "(directional complement) up",
+      "(noun suffix) on; above"
+     ]
+    },
+    {
+     "pinyin": "shǎng",
+     "defs": [
+      "used in 上聲|上声[shang3 sheng1]"
+     ]
+    }
+   ]
+  },
+  "首位": {
+   "pinyin": "shǒu wèi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shǒu wèi",
+     "defs": [
+      "first place"
+     ]
+    }
+   ]
+  },
+  "主席": {
+   "pinyin": "zhǔ xí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhǔ xí",
+     "defs": [
+      "chairperson",
+      "premier",
+      "chairman"
+     ]
+    }
+   ]
+  },
+  "从": {
+   "pinyin": "cóng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "cóng",
+     "defs": [
+      "from",
+      "through",
+      "via",
+      "to follow",
+      "to obey",
+      "to engage in (an activity)"
+     ]
+    },
+    {
+     "pinyin": "Cóng",
+     "defs": [
+      "surname Cong"
+     ]
+    }
+   ]
+  },
+  "就是": {
+   "pinyin": "jiù shì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jiù shì",
+     "defs": [
+      "exactly; precisely",
+      "only; simply; just",
+      "(used correlatively with 也[ye3]) even; even if"
+     ]
+    }
+   ]
+  },
+  "成员": {
+   "pinyin": "chéng yuán",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chéng yuán",
+     "defs": [
+      "member"
+     ]
+    }
+   ]
+  },
+  "据": {
+   "pinyin": "jù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jù",
+     "defs": [
+      "according to",
+      "to act in accordance with",
+      "to depend on",
+      "to seize",
+      "to occupy"
+     ]
+    },
+    {
+     "pinyin": "jū",
+     "defs": [
+      "used in 拮据[jie2 ju1]"
+     ]
+    }
+   ]
+  },
+  "报道": {
+   "pinyin": "bào dào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bào dào",
+     "defs": [
+      "to report (news)",
+      "report"
+     ]
+    }
+   ]
+  },
+  "将": {
+   "pinyin": "jiāng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jiāng",
+     "defs": [
+      "will",
+      "shall",
+      "to use",
+      "to take",
+      "to checkmate",
+      "just a short while ago"
+     ]
+    },
+    {
+     "pinyin": "jiàng",
+     "defs": [
+      "(bound form) a general",
+      "(literary) to command; to lead",
+      "(Chinese chess) general (on the black side, equivalent to a king in Western chess)"
+     ]
+    },
+    {
+     "pinyin": "qiāng",
+     "defs": [
+      "to desire",
+      "to invite",
+      "to request"
+     ]
+    }
+   ]
+  },
+  "内部": {
+   "pinyin": "nèi bù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "nèi bù",
+     "defs": [
+      "interior",
+      "inside (part, section)",
+      "internal"
+     ]
+    }
+   ]
+  },
+  "外部": {
+   "pinyin": "wài bù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "wài bù",
+     "defs": [
+      "the outside; (attributive) external",
+      "exterior; surface"
+     ]
+    }
+   ]
+  },
+  "寻找": {
+   "pinyin": "xún zhǎo",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xún zhǎo",
+     "defs": [
+      "to seek; to look for"
+     ]
+    }
+   ]
+  },
+  "新": {
+   "pinyin": "xīn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xīn",
+     "defs": [
+      "new",
+      "newly",
+      "meso- (chemistry)"
+     ]
+    },
+    {
+     "pinyin": "Xīn",
+     "defs": [
+      "abbr. for Xinjiang 新疆[Xin1 jiang1] or Singapore 新加坡[Xin1 jia1 po1]",
+      "surname Xin"
+     ]
+    }
+   ]
+  },
+  "人选": {
+   "pinyin": "rén xuǎn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "rén xuǎn",
+     "defs": [
+      "choice of person",
+      "candidate"
+     ]
+    }
+   ]
+  },
+  "次": {
+   "pinyin": "cì",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "cì",
+     "defs": [
+      "time; occasion (measure word), as in 这次 \"this time\""
+     ]
+    },
+    {
+     "pinyin": "cì",
+     "defs": [
+      "next in sequence",
+      "second",
+      "the second (day, time etc)",
+      "secondary",
+      "vice-",
+      "sub-"
+     ]
+    }
+   ]
+  },
+  "并非": {
+   "pinyin": "bìng fēi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bìng fēi",
+     "defs": [
+      "really isn't"
+     ]
+    }
+   ]
+  },
+  "毫无": {
+   "pinyin": "háo wú",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "háo wú",
+     "defs": [
+      "not in the least",
+      "to completely lack"
+     ]
+    }
+   ]
+  },
+  "征兆": {
+   "pinyin": "zhēng zhào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhēng zhào",
+     "defs": [
+      "omen",
+      "sign (that sth is about to happen)",
+      "warning sign"
+     ]
+    }
+   ]
+  },
+  "多": {
+   "pinyin": "duō",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "duō",
+     "defs": [
+      "many; much",
+      "too many; in excess",
+      "(after a numeral) ... odd",
+      "how (to what extent) (Taiwan pr. [duo2])",
+      "(bound form) multi-; poly-"
+     ]
+    }
+   ]
+  },
+  "媒体": {
+   "pinyin": "méi tǐ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "méi tǐ",
+     "defs": [
+      "media, esp. news media"
+     ]
+    }
+   ]
+  },
+  "此前": {
+   "pinyin": "cǐ qián",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "cǐ qián",
+     "defs": [
+      "before this",
+      "before then",
+      "previously"
+     ]
+    }
+   ]
+  },
+  "在": {
+   "pinyin": "zài",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zài",
+     "defs": [
+      "to exist; to be alive",
+      "(of sb or sth) to be (located) at",
+      "(used before a verb to indicate an action in progress)"
+     ]
+    }
+   ]
+  },
+  "致": {
+   "pinyin": "zhì",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "zhì",
+     "defs": [
+      "to send to; addressed to, as in 致员工的信 \"a letter to staff\""
+     ]
+    },
+    {
+     "pinyin": "zhì",
+     "defs": [
+      "(bound form) fine; delicate; exquisite"
+     ]
+    },
+    {
+     "pinyin": "zhì",
+     "defs": [
+      "to send",
+      "to devote",
+      "to deliver",
+      "to cause",
+      "to convey"
+     ]
+    }
+   ]
+  },
+  "员工": {
+   "pinyin": "yuán gōng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yuán gōng",
+     "defs": [
+      "staff",
+      "personnel",
+      "employee"
+     ]
+    }
+   ]
+  },
+  "信": {
+   "pinyin": "xìn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xìn",
+     "defs": [
+      "letter",
+      "mail",
+      "to trust",
+      "to believe",
+      "to profess faith in",
+      "truthful"
+     ]
+    }
+   ]
+  },
+  "中": {
+   "pinyin": "zhōng",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "zhōng",
+     "defs": [
+      "in; inside; among; middle"
+     ]
+    },
+    {
+     "pinyin": "Zhōng",
+     "defs": [
+      "China",
+      "Chinese",
+      "surname Zhong"
+     ]
+    },
+    {
+     "pinyin": "zhōng",
+     "defs": [
+      "within; among; in",
+      "middle; center",
+      "while (doing sth); during",
+      "(dialect) OK; all right"
+     ]
+    },
+    {
+     "pinyin": "zhòng",
+     "defs": [
+      "to hit (the mark)",
+      "to be hit by",
+      "to suffer",
+      "to win (a prize, a lottery)"
+     ]
+    }
+   ]
+  },
+  "承认": {
+   "pinyin": "chéng rèn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chéng rèn",
+     "defs": [
+      "to admit",
+      "to concede",
+      "to recognize",
+      "recognition (diplomatic, artistic etc)",
+      "to acknowledge"
+     ]
+    }
+   ]
+  },
+  "个人": {
+   "pinyin": "gè rén",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gè rén",
+     "defs": [
+      "individual",
+      "personal",
+      "oneself"
+     ]
+    }
+   ]
+  },
+  "行为": {
+   "pinyin": "xíng wéi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xíng wéi",
+     "defs": [
+      "action",
+      "conduct",
+      "behavior",
+      "activity"
+     ]
+    }
+   ]
+  },
+  "不当": {
+   "pinyin": "bù dàng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bù dàng",
+     "defs": [
+      "unsuitable; improper; inappropriate"
+     ]
+    }
+   ]
+  },
+  "并": {
+   "pinyin": "bìng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bìng",
+     "defs": [
+      "and",
+      "furthermore",
+      "also",
+      "together with",
+      "(not) at all",
+      "simultaneously"
+     ]
+    },
+    {
+     "pinyin": "bìng",
+     "defs": [
+      "to combine",
+      "to amalgamate"
+     ]
+    },
+    {
+     "pinyin": "Bīng",
+     "defs": [
+      "short name for Taiyuan 太原[Tai4 yuan2]"
+     ]
+    }
+   ]
+  },
+  "表示": {
+   "pinyin": "biǎo shì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "biǎo shì",
+     "defs": [
+      "(of sb) to express; to state; to show",
+      "(of sth) to indicate; to signify; to show",
+      "expression; manifestation"
+     ]
+    }
+   ]
+  },
+  "道歉": {
+   "pinyin": "dào qiàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dào qiàn",
+     "defs": [
+      "to apologize"
+     ]
+    }
+   ]
+  },
+  "独立": {
+   "pinyin": "dú lì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dú lì",
+     "defs": [
+      "independent",
+      "independence",
+      "to stand alone"
+     ]
+    }
+   ]
+  },
+  "随后": {
+   "pinyin": "suí hòu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "suí hòu",
+     "defs": [
+      "soon after"
+     ]
+    }
+   ]
+  },
+  "聘请": {
+   "pinyin": "pìn qǐng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "pìn qǐng",
+     "defs": [
+      "to engage",
+      "to hire (a lawyer etc)"
+     ]
+    }
+   ]
+  },
+  "律师": {
+   "pinyin": "lǜ shī",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lǜ shī",
+     "defs": [
+      "lawyer"
+     ]
+    }
+   ]
+  },
+  "展开": {
+   "pinyin": "zhǎn kāi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhǎn kāi",
+     "defs": [
+      "to unfold; to spread out; to open up",
+      "to launch; to carry out"
+     ]
+    }
+   ]
+  },
+  "调查": {
+   "pinyin": "diào chá",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "diào chá",
+     "defs": [
+      "investigation",
+      "inquiry",
+      "to investigate",
+      "to survey",
+      "survey",
+      "(opinion) poll"
+     ]
+    }
+   ]
+  },
+  "内容": {
+   "pinyin": "nèi róng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "nèi róng",
+     "defs": [
+      "content",
+      "substance",
+      "details"
+     ]
+    }
+   ]
+  },
+  "涉及": {
+   "pinyin": "shè jí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shè jí",
+     "defs": [
+      "to involve",
+      "to touch upon (a topic)"
+     ]
+    }
+   ]
+  },
+  "国家": {
+   "pinyin": "guó jiā",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "guó jiā",
+     "defs": [
+      "country; nation; state"
+     ]
+    }
+   ]
+  },
+  "安全": {
+   "pinyin": "ān quán",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "ān quán",
+     "defs": [
+      "safe; secure",
+      "safety; security"
+     ]
+    }
+   ]
+  },
+  "方面": {
+   "pinyin": "fāng miàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fāng miàn",
+     "defs": [
+      "respect",
+      "aspect",
+      "field",
+      "side"
+     ]
+    }
+   ]
+  },
+  "疑虑": {
+   "pinyin": "yí lǜ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yí lǜ",
+     "defs": [
+      "hesitation",
+      "misgivings",
+      "doubt"
+     ]
+    }
+   ]
+  },
+  "之后": {
+   "pinyin": "zhī hòu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhī hòu",
+     "defs": [
+      "after; behind",
+      "(at the beginning of a sentence) afterwards; since then"
+     ]
+    }
+   ]
+  },
+  "项": {
+   "pinyin": "xiàng",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "xiàng",
+     "defs": [
+      "measure word for items, tasks, projects and investigations, as in 这项调查"
+     ]
+    },
+    {
+     "pinyin": "xiàng",
+     "defs": [
+      "back of neck",
+      "item",
+      "thing",
+      "term (in a mathematical formula)",
+      "sum (of money)",
+      "classifier for principles, items, clauses, tasks, research projects etc"
+     ]
+    },
+    {
+     "pinyin": "Xiàng",
+     "defs": [
+      "surname Xiang"
+     ]
+    }
+   ]
+  },
+  "仍": {
+   "pinyin": "réng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "réng",
+     "defs": [
+      "still; yet",
+      "to remain",
+      "(literary) frequently; often"
+     ]
+    }
+   ]
+  },
+  "消息": {
+   "pinyin": "xiāo xi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xiāo xi",
+     "defs": [
+      "news",
+      "information"
+     ]
+    }
+   ]
+  },
+  "公布": {
+   "pinyin": "gōng bù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gōng bù",
+     "defs": [
+      "to announce; to make public; to publish"
+     ]
+    }
+   ]
+  },
+  "后": {
+   "pinyin": "hòu",
+   "origin": "glossary",
+   "entries": [
+    {
+     "pinyin": "hòu",
+     "defs": [
+      "after; later; behind"
+     ]
+    },
+    {
+     "pinyin": "hòu",
+     "defs": [
+      "empress",
+      "queen",
+      "(archaic) monarch",
+      "ruler"
+     ]
+    },
+    {
+     "pinyin": "hòu",
+     "defs": [
+      "back",
+      "behind",
+      "rear",
+      "afterwards",
+      "after",
+      "later"
+     ]
+    },
+    {
+     "pinyin": "Hòu",
+     "defs": [
+      "surname Hou"
+     ]
+    }
+   ]
+  },
+  "股价": {
+   "pinyin": "gǔ jià",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gǔ jià",
+     "defs": [
+      "stock price",
+      "share price"
+     ]
+    }
+   ]
+  },
+  "明显": {
+   "pinyin": "míng xiǎn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "míng xiǎn",
+     "defs": [
+      "clear",
+      "distinct",
+      "obvious"
+     ]
+    }
+   ]
+  },
+  "下跌": {
+   "pinyin": "xià diē",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xià diē",
+     "defs": [
+      "to fall",
+      "to tumble"
+     ]
+    }
+   ]
+  },
+  "市场": {
+   "pinyin": "shì chǎng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shì chǎng",
+     "defs": [
+      "marketplace",
+      "market (also in abstract)"
+     ]
+    }
+   ]
+  },
+  "对": {
+   "pinyin": "duì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "duì",
+     "defs": [
+      "right; correct",
+      "towards; at; for",
+      "concerning; regarding",
+      "to treat (sb a certain way)",
+      "to face",
+      "(bound form) opposite; facing; matching"
+     ]
+    }
+   ]
+  },
+  "人工智能": {
+   "pinyin": "rén gōng zhì néng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "rén gōng zhì néng",
+     "defs": [
+      "artificial intelligence (AI)"
+     ]
+    }
+   ]
+  },
+  "龙头企业": {
+   "pinyin": "lóng tóu qǐ yè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lóng tóu qǐ yè",
+     "defs": [
+      "key enterprises; leading enterprises"
+     ]
+    }
+   ]
+  },
+  "前景": {
+   "pinyin": "qián jǐng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "qián jǐng",
+     "defs": [
+      "foreground",
+      "vista",
+      "(future) prospects",
+      "perspective"
+     ]
+    }
+   ]
+  },
+  "产生": {
+   "pinyin": "chǎn shēng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chǎn shēng",
+     "defs": [
+      "to arise; to come into being; to come about",
+      "to give rise to; to bring into being; to bring about; to produce; to engender; to generate"
+     ]
+    }
+   ]
+  },
+  "担忧": {
+   "pinyin": "dān yōu",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dān yōu",
+     "defs": [
+      "to worry",
+      "to be concerned"
+     ]
+    }
+   ]
+  },
+  "不少": {
+   "pinyin": "bù shǎo",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bù shǎo",
+     "defs": [
+      "many",
+      "a lot",
+      "not few"
+     ]
+    }
+   ]
+  },
+  "投资者": {
+   "pinyin": "tóu zī zhě",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "tóu zī zhě",
+     "defs": [
+      "investor"
+     ]
+    }
+   ]
+  },
+  "业内人士": {
+   "pinyin": "yè nèi rén shì",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "yè nèi rén shì",
+     "defs": [
+      "industry insiders; people in the trade"
+     ]
+    }
+   ]
+  },
+  "认为": {
+   "pinyin": "rèn wéi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "rèn wéi",
+     "defs": [
+      "to believe; to think; to consider; to feel"
+     ]
+    }
+   ]
+  },
+  "影响力": {
+   "pinyin": "yǐng xiǎng lì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yǐng xiǎng lì",
+     "defs": [
+      "influence",
+      "impact"
+     ]
+    }
+   ]
+  },
+  "是": {
+   "pinyin": "shì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shì",
+     "defs": [
+      "to be (followed by substantives only)",
+      "correct; right; true",
+      "(respectful acknowledgement of a command) very well",
+      "(adverb for emphatic assertion)"
+     ]
+    }
+   ]
+  },
+  "成功": {
+   "pinyin": "chéng gōng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Chéng gōng",
+     "defs": [
+      "Chenggong or Chengkung town in Taitung County 臺東縣|台东县[Tai2 dong1 Xian4], southeast Taiwan"
+     ]
+    },
+    {
+     "pinyin": "chéng gōng",
+     "defs": [
+      "success",
+      "to succeed"
+     ]
+    }
+   ]
+  },
+  "重要": {
+   "pinyin": "zhòng yào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhòng yào",
+     "defs": [
+      "important",
+      "significant",
+      "major"
+     ]
+    }
+   ]
+  },
+  "因素": {
+   "pinyin": "yīn sù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yīn sù",
+     "defs": [
+      "element",
+      "factor"
+     ]
+    }
+   ]
+  },
+  "离开": {
+   "pinyin": "lí kāi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lí kāi",
+     "defs": [
+      "to depart; to leave"
+     ]
+    }
+   ]
+  },
+  "可能": {
+   "pinyin": "kě néng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "kě néng",
+     "defs": [
+      "might (happen)",
+      "possible",
+      "probable",
+      "possibility",
+      "probability",
+      "maybe"
+     ]
+    }
+   ]
+  },
+  "给": {
+   "pinyin": "gěi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gěi",
+     "defs": [
+      "to",
+      "for",
+      "for the benefit of",
+      "to give",
+      "to allow",
+      "to do sth (for sb)"
+     ]
+    },
+    {
+     "pinyin": "jǐ",
+     "defs": [
+      "to supply",
+      "to provide"
+     ]
+    }
+   ]
+  },
+  "战略": {
+   "pinyin": "zhàn lüè",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhàn lüè",
+     "defs": [
+      "strategy"
+     ]
+    }
+   ]
+  },
+  "供应链": {
+   "pinyin": "gōng yìng liàn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gōng yìng liàn",
+     "defs": [
+      "supply chain"
+     ]
+    }
+   ]
+  },
+  "带来": {
+   "pinyin": "dài lái",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dài lái",
+     "defs": [
+      "to bring",
+      "(fig.) to bring about; to produce"
+     ]
+    }
+   ]
+  },
+  "不": {
+   "pinyin": "bù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bù",
+     "defs": [
+      "no; not so",
+      "(bound form) not; un-"
+     ]
+    }
+   ]
+  },
+  "确定性": {
+   "pinyin": "què dìng xìng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "què dìng xìng",
+     "defs": [
+      "determinacy"
+     ]
+    }
+   ]
+  },
+  "事情": {
+   "pinyin": "shì qing",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shì qing",
+     "defs": [
+      "affair; matter; thing; business"
+     ]
+    }
+   ]
+  },
+  "发展": {
+   "pinyin": "fā zhǎn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fā zhǎn",
+     "defs": [
+      "development",
+      "growth",
+      "to develop",
+      "to grow",
+      "to expand"
+     ]
+    }
+   ]
+  },
+  "英国": {
+   "pinyin": "yīng guó",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Yīng guó",
+     "defs": [
+      "United Kingdom 聯合王國|联合王国[Lian2 he2 wang2 guo2]",
+      "United Kingdom of Great Britain and Northern Ireland",
+      "abbr. for England 英格蘭|英格兰[Ying1 ge2 lan2]"
+     ]
+    }
+   ]
+  },
+  "金融时报": {
+   "pinyin": "jīn róng shí bào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Jīn róng Shí bào",
+     "defs": [
+      "Financial Times"
+     ]
+    }
+   ]
+  },
+  "援引": {
+   "pinyin": "yuán yǐn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yuán yǐn",
+     "defs": [
+      "to quote; to cite",
+      "to recommend (one's friends, associates etc)"
+     ]
+    }
+   ]
+  },
+  "知情": {
+   "pinyin": "zhī qíng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhī qíng",
+     "defs": [
+      "to know the facts",
+      "to understand",
+      "to be familiar with the situation"
+     ]
+    }
+   ]
+  },
+  "人士": {
+   "pinyin": "rén shì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "rén shì",
+     "defs": [
+      "person",
+      "figure",
+      "public figure"
+     ]
+    }
+   ]
+  },
+  "正在": {
+   "pinyin": "zhèng zài",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhèng zài",
+     "defs": [
+      "just at (that time)",
+      "right in (that place)",
+      "right in the middle of (doing sth)"
+     ]
+    }
+   ]
+  },
+  "考虑": {
+   "pinyin": "kǎo lǜ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "kǎo lǜ",
+     "defs": [
+      "to think over",
+      "to consider",
+      "consideration"
+     ]
+    }
+   ]
+  },
+  "重返": {
+   "pinyin": "chóng fǎn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "chóng fǎn",
+     "defs": [
+      "to return to"
+     ]
+    }
+   ]
+  },
+  "硅谷": {
+   "pinyin": "guī gǔ",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "Guī gǔ",
+     "defs": [
+      "Silicon Valley"
+     ]
+    }
+   ]
+  },
+  "支持者": {
+   "pinyin": "zhī chí zhě",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhī chí zhě",
+     "defs": [
+      "supporter"
+     ]
+    }
+   ]
+  },
+  "也": {
+   "pinyin": "yě",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yě",
+     "defs": [
+      "(adverb) also; both ... and ... (before predicates only)",
+      "(literary) particle having functions similar to 啊[a5]"
+     ]
+    },
+    {
+     "pinyin": "Yě",
+     "defs": [
+      "surname Ye"
+     ]
+    }
+   ]
+  },
+  "游说": {
+   "pinyin": "yóu shuì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yóu shuì",
+     "defs": [
+      "to lobby",
+      "to campaign",
+      "to promote (an idea, a product)",
+      "(old) to visit various rulers and promote one's political ideas (in the Warring States period)"
+     ]
+    }
+   ]
+  },
+  "不过": {
+   "pinyin": "bù guò",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bù guò",
+     "defs": [
+      "only",
+      "merely",
+      "no more than",
+      "but",
+      "however",
+      "anyway (to get back to a previous topic)"
+     ]
+    }
+   ]
+  },
+  "财政部长": {
+   "pinyin": "cái zhèng bù zhǎng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "cái zhèng bù zhǎng",
+     "defs": [
+      "minister of finance"
+     ]
+    }
+   ]
+  },
+  "贝森特": {
+   "pinyin": "Bèi sēn tè",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "Bèi sēn tè",
+     "defs": [
+      "Bessent (surname); here Scott Bessent, US Treasury Secretary"
+     ]
+    }
+   ]
+  },
+  "公开": {
+   "pinyin": "gōng kāi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gōng kāi",
+     "defs": [
+      "open; overt; public",
+      "to make public; to release"
+     ]
+    }
+   ]
+  },
+  "希望": {
+   "pinyin": "xī wàng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xī wàng",
+     "defs": [
+      "to hope",
+      "a hope; a wish (CL:個|个[ge4])"
+     ]
+    }
+   ]
+  },
+  "选择": {
+   "pinyin": "xuǎn zé",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xuǎn zé",
+     "defs": [
+      "to select; to pick",
+      "choice; option; alternative"
+     ]
+    }
+   ]
+  },
+  "领导人": {
+   "pinyin": "lǐng dǎo rén",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lǐng dǎo rén",
+     "defs": [
+      "leader"
+     ]
+    }
+   ]
+  },
+  "截至": {
+   "pinyin": "jié zhì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jié zhì",
+     "defs": [
+      "up to (a time)",
+      "by (a time)"
+     ]
+    }
+   ]
+  },
+  "目前": {
+   "pinyin": "mù qián",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "mù qián",
+     "defs": [
+      "at the present time",
+      "currently"
+     ]
+    }
+   ]
+  },
+  "尚未": {
+   "pinyin": "shàng wèi",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shàng wèi",
+     "defs": [
+      "not yet; still not"
+     ]
+    }
+   ]
+  },
+  "任何": {
+   "pinyin": "rèn hé",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "rèn hé",
+     "defs": [
+      "any",
+      "whatever",
+      "whichever",
+      "whatsoever"
+     ]
+    }
+   ]
+  },
+  "恢复": {
+   "pinyin": "huī fù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "huī fù",
+     "defs": [
+      "to reinstate",
+      "to resume",
+      "to restore",
+      "to recover",
+      "to regain",
+      "to rehabilitate"
+     ]
+    }
+   ]
+  },
+  "其": {
+   "pinyin": "qí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "qí",
+     "defs": [
+      "his",
+      "her",
+      "its",
+      "their",
+      "that",
+      "such"
+     ]
+    }
+   ]
+  },
+  "职务": {
+   "pinyin": "zhí wù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "zhí wù",
+     "defs": [
+      "post",
+      "position",
+      "job",
+      "duties"
+     ]
+    }
+   ]
+  },
+  "决定": {
+   "pinyin": "jué dìng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jué dìng",
+     "defs": [
+      "to decide (to do something)",
+      "to resolve",
+      "decision",
+      "certainly"
+     ]
+    }
+   ]
+  },
+  "按照": {
+   "pinyin": "àn zhào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "àn zhào",
+     "defs": [
+      "according to",
+      "in accordance with",
+      "in the light of",
+      "on the basis of"
+     ]
+    }
+   ]
+  },
+  "计划": {
+   "pinyin": "jì huà",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "jì huà",
+     "defs": [
+      "plan",
+      "project",
+      "program",
+      "to plan",
+      "to map out"
+     ]
+    }
+   ]
+  },
+  "财年": {
+   "pinyin": "cái nián",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "cái nián",
+     "defs": [
+      "fiscal year"
+     ]
+    },
+    {
+     "pinyin": "cái nián",
+     "defs": [
+      "fiscal year",
+      "financial year"
+     ]
+    }
+   ]
+  },
+  "第": {
+   "pinyin": "dì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "dì",
+     "defs": [
+      "(prefix indicating ordinal number, as in 第六[di4 liu4] \"sixth\")",
+      "(literary) grades in which successful candidates in the imperial examinations were placed",
+      "(old) residence of a high official",
+      "(literary) but; however",
+      "(literary) only; just"
+     ]
+    }
+   ]
+  },
+  "三季度": {
+   "pinyin": "sān jì dù",
+   "origin": "glossary",
+   "note": "",
+   "entries": [
+    {
+     "pinyin": "sān jì dù",
+     "defs": [
+      "third quarter (Q3)"
+     ]
+    }
+   ]
+  },
+  "报告": {
+   "pinyin": "bào gào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bào gào",
+     "defs": [
+      "to inform",
+      "to report",
+      "to make known",
+      "report",
+      "speech",
+      "talk"
+     ]
+    }
+   ]
+  },
+  "领导层": {
+   "pinyin": "lǐng dǎo céng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "lǐng dǎo céng",
+     "defs": [
+      "ruling class",
+      "leaders (of society)",
+      "oligarchy"
+     ]
+    }
+   ]
+  },
+  "更替": {
+   "pinyin": "gēng tì",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gēng tì",
+     "defs": [
+      "to take over (from one another)",
+      "to alternate",
+      "to replace",
+      "to relay"
+     ]
+    }
+   ]
+  },
+  "背景": {
+   "pinyin": "bèi jǐng",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "bèi jǐng",
+     "defs": [
+      "background; backdrop; context",
+      "(fig.) powerful backer"
+     ]
+    }
+   ]
+  },
+  "下": {
+   "pinyin": "xià",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "xià",
+     "defs": [
+      "down",
+      "downwards",
+      "below",
+      "lower",
+      "later",
+      "next (week etc)"
+     ]
+    }
+   ]
+  },
+  "份": {
+   "pinyin": "fèn",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "fèn",
+     "defs": [
+      "classifier for gifts, newspaper, magazine, papers, reports, contracts etc",
+      "variant of 分[fen4]"
+     ]
+    }
+   ]
+  },
+  "财报": {
+   "pinyin": "cái bào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "cái bào",
+     "defs": [
+      "financial report"
+     ]
+    }
+   ]
+  },
+  "以及": {
+   "pinyin": "yǐ jí",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "yǐ jí",
+     "defs": [
+      "as well as",
+      "too",
+      "and"
+     ]
+    }
+   ]
+  },
+  "表态": {
+   "pinyin": "biǎo tài",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "biǎo tài",
+     "defs": [
+      "to declare one's position",
+      "to say where one stands"
+     ]
+    }
+   ]
+  },
+  "受到": {
+   "pinyin": "shòu dào",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "shòu dào",
+     "defs": [
+      "to receive (praise, an education, punishment etc)",
+      "to be ...ed (praised, educated, punished etc)"
+     ]
+    }
+   ]
+  },
+  "全球": {
+   "pinyin": "quán qiú",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "quán qiú",
+     "defs": [
+      "entire",
+      "total",
+      "global",
+      "the (whole) world",
+      "worldwide"
+     ]
+    }
+   ]
+  },
+  "高度": {
+   "pinyin": "gāo dù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "gāo dù",
+     "defs": [
+      "height",
+      "altitude",
+      "elevation",
+      "high degree",
+      "highly"
+     ]
+    }
+   ]
+  },
+  "关注": {
+   "pinyin": "guān zhù",
+   "origin": "dictionary",
+   "entries": [
+    {
+     "pinyin": "guān zhù",
+     "defs": [
+      "to pay attention to",
+      "to follow sth closely",
+      "to follow (on social media)",
+      "concern",
+      "interest",
+      "attention"
+     ]
+    }
+   ]
+  }
+ }
+}
