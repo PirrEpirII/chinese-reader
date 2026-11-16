@@ -349,3 +349,203 @@ for (const width of [768, 1024]) {
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)
   })
 }
+
+// ---- Added 2026-11-16: phrase shortening and spaced review ----
+
+const REVIEW_KEY = 'chinese-reader-review-v1'
+
+async function pageDate(page: Page, offsetDays: number): Promise<string> {
+  return page.evaluate((offset) => {
+    const date = new Date()
+    date.setDate(date.getDate() + offset)
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`
+  }, offsetDays)
+}
+
+async function reviewState(page: Page, id: string) {
+  return page.evaluate(([key, wordId]) => JSON.parse(window.localStorage.getItem(key) ?? '{}')[wordId], [REVIEW_KEY, id])
+}
+
+async function makeDue(page: Page, id: string, stage: number) {
+  const yesterday = await pageDate(page, -1)
+  await page.evaluate(([key, wordId, due, step]) => {
+    const all = JSON.parse(window.localStorage.getItem(key as string) ?? '{}')
+    all[wordId as string] = { ...(all[wordId as string] ?? { right: 0, wrong: 0, last: '' }), stage: step, due }
+    window.localStorage.setItem(key as string, JSON.stringify(all))
+  }, [REVIEW_KEY, id, yesterday, stage] as const)
+  await page.reload()
+  await page.locator('.mobile-nav button').filter({ hasText: 'Learning' }).click()
+  await expect(page.getByRole('heading', { name: 'Learning' })).toBeVisible()
+}
+
+async function saveTargetAndOpenLearning(page: Page) {
+  await page.setViewportSize({ width: 375, height: 812 })
+  await cleanStart(page)
+  await openPackage(page)
+  await targetWord(page).click()
+  await page.getByRole('button', { name: 'Add to learning' }).click()
+  await page.keyboard.press('Escape')
+  await page.locator('.mobile-nav button').filter({ hasText: 'Learning' }).click()
+  await expect(page.getByRole('heading', { name: 'Learning' })).toBeVisible()
+}
+
+test('phrase selection can be shortened from either end', async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 812 })
+  await cleanStart(page)
+  await openPackage(page, SYNTH_TITLE)
+
+  await page.getByRole('button', { name: '天气, explain this word' }).click()
+  const heading = (name: string) => page.getByRole('dialog').getByRole('heading', { name, exact: true })
+  // A single word has nothing to shorten.
+  await expect(page.getByRole('button', { name: 'Remove last word from phrase' })).toHaveCount(0)
+
+  await page.getByRole('button', { name: 'Extend selection forward' }).click()
+  await page.getByRole('button', { name: 'Extend selection forward' }).click()
+  await expect(heading('天气很好')).toBeVisible()
+
+  // One step too far is undone without closing the sheet.
+  await page.getByRole('button', { name: 'Remove last word from phrase' }).click()
+  await expect(heading('天气很')).toBeVisible()
+  await page.getByRole('button', { name: 'Remove first word from phrase' }).click()
+  await expect(heading('很', )).toBeVisible()
+  await expect(page.getByText('Select a phrase', { exact: true })).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Remove first word from phrase' })).toHaveCount(0)
+
+  // Shortening works after a backward extend as well, across the comma.
+  await page.getByRole('button', { name: 'Extend selection backward' }).click()
+  await page.getByRole('button', { name: 'Extend selection backward' }).click()
+  await expect(heading('早上，天气很')).toBeVisible()
+  await page.getByRole('button', { name: 'Remove first word from phrase' }).click()
+  await expect(heading('天气很')).toBeVisible()
+  await page.screenshot({ path: 'test-results/mobile-phrase-shorten.png', fullPage: true })
+})
+
+test('flashcard review follows the 1, 3, 7, 16 day schedule and repeats wrong cards', async ({ page }) => {
+  await saveTargetAndOpenLearning(page)
+  const tomorrow = await pageDate(page, 1)
+  const today = await pageDate(page, 0)
+
+  // A newly saved word is due at once.
+  await expect(page.locator('.review-panel')).toContainText('1')
+  await expect(page.locator('.review-panel')).toContainText('word is due for review')
+  await expect(page.locator('.card-review')).toHaveText('Review: new, due now')
+
+  await page.getByRole('button', { name: 'Flashcards' }).click()
+  await expect(page.locator('.review-bar')).toContainText('Card 1 of 1 · Flashcards')
+  await expect(page.locator('.review-card h2')).toHaveText(TARGET_WORD)
+  await expect(page.getByText(TARGET_MEANING, { exact: true })).toHaveCount(0)
+  await page.screenshot({ path: 'test-results/mobile-review-front.png', fullPage: true })
+  await page.getByRole('button', { name: 'Show answer' }).click()
+  await expect(page.getByText(TARGET_MEANING, { exact: true })).toBeVisible()
+  await expect(page.locator('.review-card .card-pinyin')).toHaveText(TARGET_PINYIN)
+  await expect(page.locator('.review-clause')).toHaveText(TARGET_CLAUSE)
+  await page.screenshot({ path: 'test-results/mobile-review-back.png', fullPage: true })
+  await page.getByRole('button', { name: 'Got it' }).click()
+
+  await expect(page.getByRole('heading', { name: 'Review finished.' })).toBeVisible()
+  await expect(page.getByText('1 right, 0 to repeat.', { exact: false })).toBeVisible()
+  expect(await reviewState(page, TARGET_WORD)).toMatchObject({ stage: 1, due: tomorrow, right: 1, wrong: 0 })
+
+  await page.getByRole('button', { name: 'Back to my words' }).click()
+  await expect(page.locator('.card-review')).toHaveText(`Next review ${tomorrow} · step 1 of 4`)
+  await expect(page.locator('.review-panel')).toContainText(`Next review ${tomorrow}`)
+
+  // Second correct answer, a day late: three days ahead.
+  await makeDue(page, TARGET_WORD, 1)
+  await page.getByRole('button', { name: 'Flashcards' }).click()
+  await page.getByRole('button', { name: 'Show answer' }).click()
+  await page.getByRole('button', { name: 'Got it' }).click()
+  expect(await reviewState(page, TARGET_WORD)).toMatchObject({ stage: 2, due: await pageDate(page, 3) })
+
+  // Third and fourth: seven, then sixteen days; the last step stays at sixteen.
+  for (const [stage, days] of [[2, 7], [3, 16], [4, 16]] as const) {
+    await page.getByRole('button', { name: 'Back to my words' }).click()
+    await makeDue(page, TARGET_WORD, stage)
+    await page.getByRole('button', { name: 'Flashcards' }).click()
+    await page.getByRole('button', { name: 'Show answer' }).click()
+    await page.getByRole('button', { name: 'Got it' }).click()
+    expect(await reviewState(page, TARGET_WORD)).toMatchObject({ stage: Math.min(stage + 1, 4), due: await pageDate(page, days) })
+  }
+
+  // A wrong answer resets the word and brings the card back in the same session.
+  await page.getByRole('button', { name: 'Back to my words' }).click()
+  await makeDue(page, TARGET_WORD, 3)
+  await page.getByRole('button', { name: 'Flashcards' }).click()
+  await page.getByRole('button', { name: 'Show answer' }).click()
+  await page.getByRole('button', { name: 'Again' }).click()
+  await expect(page.locator('.review-bar')).toContainText('Card 2 of 2')
+  expect(await reviewState(page, TARGET_WORD)).toMatchObject({ stage: 0, due: today, wrong: 1 })
+  await page.getByRole('button', { name: 'Show answer' }).click()
+  await page.getByRole('button', { name: 'Got it' }).click()
+  await expect(page.getByText('1 right, 1 to repeat.', { exact: false })).toBeVisible()
+  expect(await reviewState(page, TARGET_WORD)).toMatchObject({ stage: 0, due: tomorrow })
+
+  // Nothing due: a session is practice and leaves the schedule alone.
+  await page.getByRole('button', { name: 'Back to my words' }).click()
+  const before = await reviewState(page, TARGET_WORD)
+  await page.getByRole('button', { name: 'Flashcards' }).click()
+  await expect(page.locator('.review-bar')).toContainText('Practice')
+  await page.getByRole('button', { name: 'Show answer' }).click()
+  await page.getByRole('button', { name: 'Got it' }).click()
+  await expect(page.getByText('This was practice', { exact: false })).toBeVisible()
+  expect(await reviewState(page, TARGET_WORD)).toEqual(before)
+})
+
+test('multiple choice takes wrong answers from unsaved words in the loaded texts', async ({ page }) => {
+  await saveTargetAndOpenLearning(page)
+  const tomorrow = await pageDate(page, 1)
+
+  await page.getByRole('button', { name: 'Multiple choice' }).click()
+  await expect(page.locator('.review-bar')).toContainText('Card 1 of 1 · Multiple choice')
+  const options = page.locator('.choice-option')
+  await expect(options).toHaveCount(4)
+  const texts = await options.allTextContents()
+  expect(new Set(texts).size).toBe(4)
+  expect(texts).toContain(TARGET_MEANING)
+
+  // Every wrong option is the first meaning of a word that is not saved.
+  const allowed = await page.evaluate(async (savedId) => {
+    const files = await (await fetch('./packages/index.json')).json() as string[]
+    const meanings: string[] = []
+    for (const file of files) {
+      const data = await (await fetch(`./packages/${file}`)).json()
+      for (const [key, entry] of Object.entries(data.lexicon as Record<string, { entries: { defs: string[] }[] }>)) {
+        if (key !== savedId && entry.entries[0]) meanings.push(entry.entries[0].defs.join('; '))
+      }
+    }
+    return meanings
+  }, TARGET_WORD)
+  for (const text of texts.filter((value) => value !== TARGET_MEANING)) expect(allowed).toContain(text)
+  await page.screenshot({ path: 'test-results/mobile-review-choice.png', fullPage: true })
+
+  // Wrong pick: both answers are marked and the card returns.
+  const wrongText = texts.find((value) => value !== TARGET_MEANING) as string
+  await options.filter({ hasText: wrongText }).first().click()
+  await expect(page.locator('.choice-option.is-wrong')).toHaveText(wrongText)
+  await expect(page.locator('.choice-option.is-correct')).toHaveText(TARGET_MEANING)
+  await expect(page.locator('.review-verdict')).toContainText('Not this time')
+  await page.getByRole('button', { name: 'Next card' }).click()
+  await expect(page.locator('.review-bar')).toContainText('Card 2 of 2')
+
+  await page.locator('.choice-option').filter({ hasText: TARGET_MEANING }).click()
+  await expect(page.locator('.review-verdict')).toHaveText('Correct')
+  await page.getByRole('button', { name: 'Next card' }).click()
+  await expect(page.getByText('1 right, 1 to repeat.', { exact: false })).toBeVisible()
+  expect(await reviewState(page, TARGET_WORD)).toMatchObject({ stage: 0, due: tomorrow, right: 1, wrong: 1 })
+})
+
+test('a saved phrase is reviewed as a flashcard even in multiple choice', async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 812 })
+  await cleanStart(page)
+  await openPackage(page, SYNTH_TITLE)
+  await page.getByRole('button', { name: '天气, explain this word' }).click()
+  await page.getByRole('button', { name: 'Extend selection forward' }).click()
+  await page.getByRole('button', { name: 'Add phrase to learning' }).click()
+  await page.keyboard.press('Escape')
+  await page.locator('.mobile-nav button').filter({ hasText: 'Learning' }).click()
+
+  await page.getByRole('button', { name: 'Multiple choice' }).click()
+  await expect(page.locator('.review-card h2')).toHaveText('天气很')
+  await expect(page.locator('.choice-option')).toHaveCount(0)
+  await expect(page.getByRole('button', { name: 'Show answer' })).toBeVisible()
+})

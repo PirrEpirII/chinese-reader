@@ -12,6 +12,7 @@ import {
   Copy,
   Layers3,
   Library,
+  Minus,
   RefreshCw,
   RotateCcw,
   Settings2,
@@ -102,6 +103,34 @@ type Toast = {
 
 type View = 'library' | 'read' | 'learn'
 
+// Spaced review. A word with no record is new and due at once. A first-try
+// correct answer moves it one step along REVIEW_INTERVALS; a wrong answer
+// sends it back to the start and keeps it due.
+type ReviewState = {
+  stage: number
+  due: string
+  last: string
+  right: number
+  wrong: number
+}
+
+type ReviewMap = Record<string, ReviewState>
+
+type ReviewMode = 'flash' | 'choice'
+
+type ReviewSession = {
+  mode: ReviewMode
+  practice: boolean
+  queue: string[]
+  position: number
+  revealed: boolean
+  picked: string | null
+  options: string[]
+  retried: string[]
+  right: number
+  wrong: number
+}
+
 type GithubFile = {
   name: string
   type: string
@@ -113,6 +142,8 @@ const PROGRESS_KEY = 'chinese-reader-progress-v1'
 const CURRENT_PACKAGE_KEY = 'chinese-reader-current-v1'
 const GITHUB_TOKEN_KEY = 'chinese-reader-github-token-v1'
 const GITHUB_CACHE_KEY = 'chinese-reader-packages-v1'
+const REVIEW_KEY = 'chinese-reader-review-v1'
+const REVIEW_INTERVALS = [1, 3, 7, 16]
 const MANIFEST_URL = './packages/index.json'
 const GITHUB_REPO = 'PirrEpirII/chinese-reader-data'
 
@@ -176,6 +207,52 @@ function nextWordIndex(pkg: StudyPackage, paragraphIndex: number, from: number, 
     if (isWordToken(pkg, paragraphIndex, index)) return index
   }
   return null
+}
+
+function localDate(offsetDays = 0): string {
+  const date = new Date()
+  date.setDate(date.getDate() + offsetDays)
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const day = String(date.getDate()).padStart(2, '0')
+  return `${date.getFullYear()}-${month}-${day}`
+}
+
+function shuffle<T>(items: T[]): T[] {
+  const result = [...items]
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    const other = Math.floor(Math.random() * (index + 1))
+    ;[result[index], result[other]] = [result[other], result[index]]
+  }
+  return result
+}
+
+function isDue(state: ReviewState | undefined, today: string): boolean {
+  return !state || state.due <= today
+}
+
+function readReview(): ReviewMap {
+  try {
+    const raw = window.localStorage.getItem(REVIEW_KEY)
+    if (!raw) return {}
+    const parsed: unknown = JSON.parse(raw)
+    if (typeof parsed !== 'object' || parsed === null) return {}
+    const result: ReviewMap = {}
+    for (const [id, value] of Object.entries(parsed as Record<string, unknown>)) {
+      const candidate = value as Partial<ReviewState>
+      if (typeof candidate.stage === 'number' && typeof candidate.due === 'string') {
+        result[id] = {
+          stage: Math.max(0, Math.min(REVIEW_INTERVALS.length, Math.floor(candidate.stage))),
+          due: candidate.due,
+          last: typeof candidate.last === 'string' ? candidate.last : '',
+          right: typeof candidate.right === 'number' ? candidate.right : 0,
+          wrong: typeof candidate.wrong === 'number' ? candidate.wrong : 0,
+        }
+      }
+    }
+    return result
+  } catch {
+    return {}
+  }
 }
 
 function readPool(): PoolEntry[] {
@@ -295,6 +372,8 @@ function App() {
   const [currentId, setCurrentId] = useState(readCurrentId)
   const [selection, setSelection] = useState<Selection | null>(null)
   const [pool, setPool] = useState<PoolEntry[]>(readPool)
+  const [review, setReview] = useState<ReviewMap>(readReview)
+  const [session, setSession] = useState<ReviewSession | null>(null)
   const [progressMap, setProgressMap] = useState<ProgressMap>(readProgress)
   const [settings, setSettings] = useState<Settings>(readSettings)
   const [settingsOpen, setSettingsOpen] = useState(false)
@@ -364,6 +443,14 @@ function App() {
       window.setTimeout(() => setToast({ text: 'This browser could not save your learning list.' }), 0)
     }
   }, [pool])
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(REVIEW_KEY, JSON.stringify(review))
+    } catch {
+      // The schedule is rebuilt from scratch if it cannot be saved.
+    }
+  }, [review])
 
   useEffect(() => {
     try {
@@ -548,10 +635,37 @@ function App() {
     }
   }, [selection, pkg])
 
+  // Wrong answers for multiple choice come from words in the loaded texts
+  // that are NOT in the learning list, so they never give away another card.
+  const distractorMeanings = useMemo(() => {
+    const savedIds = new Set(pool.map((entry) => entry.id))
+    const meanings = new Set<string>()
+    for (const candidate of allPackages) {
+      for (const [key, entry] of Object.entries(candidate.lexicon)) {
+        if (savedIds.has(key)) continue
+        const meaning = firstMeaning(entry)
+        if (meaning) meanings.add(meaning)
+      }
+    }
+    return [...meanings]
+  }, [allPackages, pool])
+
+  const today = localDate()
+  const dueIds = pool.filter((entry) => isDue(review[entry.id], today)).map((entry) => entry.id)
+  const nextDue = pool
+    .map((entry) => review[entry.id]?.due)
+    .filter((due): due is string => Boolean(due) && (due as string) > today)
+    .sort()[0]
+  const sessionEntry = session && session.position < session.queue.length
+    ? pool.find((entry) => entry.id === session.queue[session.position]) ?? null
+    : null
+  const sessionAsChoice = Boolean(session && session.mode === 'choice' && session.options.length === 4)
+
   const selectedIsSaved = selectionInfo ? pool.some((entry) => entry.id === selectionInfo.id) : false
 
   const switchView = (nextView: View) => {
     setView(nextView)
+    setSession(null)
     setSelection(null)
     setResetArmed(false)
     if (nextView !== 'read') window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -571,6 +685,82 @@ function App() {
         : nextWordIndex(pkg, current.paragraphIndex, current.end, 1)
       if (next === null) return current
       return direction === -1 ? { ...current, start: next } : { ...current, end: next }
+    })
+  }
+
+  const shrinkSelection = (side: 'start' | 'end') => {
+    setSelection((current) => {
+      if (!current || !pkg || current.start === current.end) return current
+      if (side === 'start') {
+        const next = nextWordIndex(pkg, current.paragraphIndex, current.start, 1)
+        return next === null || next > current.end ? current : { ...current, start: next }
+      }
+      const previous = nextWordIndex(pkg, current.paragraphIndex, current.end, -1)
+      return previous === null || previous < current.start ? current : { ...current, end: previous }
+    })
+  }
+
+  // Multiple choice needs a single-word card and three wrong meanings;
+  // phrases and very small libraries fall back to a flashcard.
+  const optionsFor = (id: string, mode: ReviewMode): string[] => {
+    if (mode !== 'choice' || id.startsWith('phrase:')) return []
+    const entry = pool.find((candidate) => candidate.id === id)
+    if (!entry) return []
+    const wrong = shuffle(distractorMeanings.filter((meaning) => meaning !== entry.meaning)).slice(0, 3)
+    return wrong.length === 3 ? shuffle([entry.meaning, ...wrong]) : []
+  }
+
+  const startReview = (mode: ReviewMode) => {
+    const practice = dueIds.length === 0
+    const queue = shuffle(practice ? pool.map((entry) => entry.id) : dueIds)
+    if (queue.length === 0) return
+    setSession({
+      mode, practice, queue, position: 0, revealed: false, picked: null,
+      options: optionsFor(queue[0], mode), retried: [], right: 0, wrong: 0,
+    })
+    window.scrollTo({ top: 0 })
+  }
+
+  const recordAnswer = (id: string, correct: boolean, isRetry: boolean) => {
+    setReview((current) => {
+      const before = current[id] ?? { stage: 0, due: today, last: '', right: 0, wrong: 0 }
+      if (!correct) {
+        return { ...current, [id]: { ...before, stage: 0, due: today, last: today, wrong: before.wrong + 1 } }
+      }
+      if (isRetry) {
+        return { ...current, [id]: { ...before, stage: 0, due: localDate(REVIEW_INTERVALS[0]), last: today, right: before.right + 1 } }
+      }
+      const step = Math.min(before.stage, REVIEW_INTERVALS.length - 1)
+      return {
+        ...current,
+        [id]: {
+          ...before,
+          stage: Math.min(before.stage + 1, REVIEW_INTERVALS.length),
+          due: localDate(REVIEW_INTERVALS[step]),
+          last: today,
+          right: before.right + 1,
+        },
+      }
+    })
+  }
+
+  // Grade the current card, then move on. A wrong card returns at the end.
+  const gradeCard = (correct: boolean) => {
+    if (!session || !sessionEntry) return
+    const id = sessionEntry.id
+    if (!session.practice) recordAnswer(id, correct, session.retried.includes(id))
+    const queue = correct ? session.queue : [...session.queue, id]
+    const position = session.position + 1
+    setSession({
+      ...session,
+      queue,
+      position,
+      revealed: false,
+      picked: null,
+      options: position < queue.length ? optionsFor(queue[position], session.mode) : [],
+      retried: correct || session.retried.includes(id) ? session.retried : [...session.retried, id],
+      right: session.right + (correct ? 1 : 0),
+      wrong: session.wrong + (correct ? 0 : 1),
     })
   }
 
@@ -646,6 +836,8 @@ function App() {
 
   const resetTest = () => {
     setPool([])
+    setReview({})
+    setSession(null)
     setSelection(null)
     setResetArmed(false)
     setToast({ text: 'Saved words cleared. The articles are still here.' })
@@ -855,12 +1047,119 @@ function App() {
                 <p className="english-title">A quiet place for words worth remembering.</p>
               </div>
 
+              {session ? (
+                <div className="review-session" aria-live="polite">
+                  <div className="review-bar">
+                    <span>
+                      {session.position < session.queue.length
+                        ? `Card ${session.position + 1} of ${session.queue.length}`
+                        : 'Session complete'}
+                      {' · '}{session.mode === 'choice' ? 'Multiple choice' : 'Flashcards'}
+                      {session.practice ? ' · Practice' : ''}
+                    </span>
+                    <button className="text-button" onClick={() => setSession(null)}>End review</button>
+                  </div>
+
+                  {sessionEntry ? (
+                    <article className="review-card">
+                      <h2 lang="zh-CN">{sessionEntry.word}</h2>
+                      {sessionAsChoice ? (
+                        <>
+                          <p className="review-question">Which meaning fits?</p>
+                          <div className="choice-list" role="group" aria-label="Answer options">
+                            {session.options.map((option) => {
+                              const state = session.picked === null ? ''
+                                : option === sessionEntry.meaning ? 'is-correct'
+                                : option === session.picked ? 'is-wrong' : ''
+                              return (
+                                <button
+                                  key={option}
+                                  className={`choice-option ${state}`}
+                                  disabled={session.picked !== null}
+                                  onClick={() => setSession({ ...session, picked: option })}
+                                >
+                                  {option}
+                                </button>
+                              )
+                            })}
+                          </div>
+                          {session.picked !== null && (
+                            <>
+                              <p className={`review-verdict ${session.picked === sessionEntry.meaning ? 'is-correct' : 'is-wrong'}`}>
+                                {session.picked === sessionEntry.meaning ? 'Correct' : 'Not this time. It comes back at the end.'}
+                              </p>
+                              <p className="card-pinyin">{sessionEntry.pinyin}</p>
+                              {sessionEntry.occurrences[0] && <p className="review-clause" lang="zh-CN">{sessionEntry.occurrences[0].clause}</p>}
+                              <button className="primary-button review-wide" onClick={() => gradeCard(session.picked === sessionEntry.meaning)}>
+                                Next card <ArrowRight size={17} aria-hidden="true" />
+                              </button>
+                            </>
+                          )}
+                        </>
+                      ) : session.revealed ? (
+                        <>
+                          <p className="card-pinyin">{sessionEntry.pinyin}</p>
+                          <p className="card-meaning">{sessionEntry.meaning}</p>
+                          {sessionEntry.occurrences[0] && <p className="review-clause" lang="zh-CN">{sessionEntry.occurrences[0].clause}</p>}
+                          <div className="review-grade">
+                            <button className="grade-again" onClick={() => gradeCard(false)}>
+                              <RotateCcw size={16} aria-hidden="true" /> Again
+                            </button>
+                            <button className="primary-button" onClick={() => gradeCard(true)}>
+                              <Check size={17} aria-hidden="true" /> Got it
+                            </button>
+                          </div>
+                        </>
+                      ) : (
+                        <>
+                          <p className="review-question">Recall the pinyin and the meaning, then check.</p>
+                          <button className="primary-button review-wide" onClick={() => setSession({ ...session, revealed: true })}>
+                            Show answer
+                          </button>
+                        </>
+                      )}
+                    </article>
+                  ) : (
+                    <div className="empty-state review-done">
+                      <div className="empty-icon"><CheckCircle2 size={26} strokeWidth={1.5} aria-hidden="true" /></div>
+                      <h2>Review finished.</h2>
+                      <p>
+                        {session.right} right, {session.wrong} to repeat.
+                        {session.practice ? ' This was practice, so the schedule did not change.' : ' Each word now has its next review date.'}
+                      </p>
+                      <button className="primary-button empty-action" onClick={() => setSession(null)}>Back to my words</button>
+                    </div>
+                  )}
+                </div>
+              ) : (
+              <>
               <div className="learning-summary">
                 <div><strong>{pool.length}</strong><span>{pool.length === 1 ? 'expression' : 'expressions'} saved</span></div>
                 <button className="copy-button" onClick={copyMarkdown}>
                   <Copy size={14} aria-hidden="true" /> Copy as Markdown
                 </button>
               </div>
+
+              {pool.length > 0 && (
+                <div className="review-panel">
+                  <div className="review-panel-text">
+                    <strong>{dueIds.length}</strong>
+                    <span>
+                      {dueIds.length > 0
+                        ? `${dueIds.length === 1 ? 'word is' : 'words are'} due for review`
+                        : `due today${nextDue ? `. Next review ${nextDue}` : ''}. You can still practise; the schedule will not change.`}
+                    </span>
+                  </div>
+                  <div className="review-actions">
+                    <button className="primary-button" onClick={() => startReview('flash')}>
+                      <Layers3 size={16} aria-hidden="true" /> Flashcards
+                    </button>
+                    <button className="copy-button review-choice-button" onClick={() => startReview('choice')}>
+                      <CheckCircle2 size={15} aria-hidden="true" /> Multiple choice
+                    </button>
+                  </div>
+                </div>
+              )}
 
               {pool.length === 0 ? (
                 <div className="empty-state">
@@ -882,6 +1181,11 @@ function App() {
                         </button>
                       </div>
                       <p className="card-meaning">{saved.meaning}</p>
+                      <p className="card-review">
+                        {isDue(review[saved.id], today)
+                          ? (review[saved.id] ? 'Review: due now' : 'Review: new, due now')
+                          : `Next review ${review[saved.id].due} · step ${review[saved.id].stage} of ${REVIEW_INTERVALS.length}`}
+                      </p>
                       {saved.occurrences.map((occurrence, occurrenceIndex) => (
                         <div className="card-context" key={occurrenceIndex}>
                           <span>{occurrence.source} · {occurrence.savedAt.slice(0, 10)}</span>
@@ -905,6 +1209,8 @@ function App() {
                   </div>
                 )}
               </div>
+              </>
+              )}
             </section>
           )}
         </main>
@@ -946,6 +1252,17 @@ function App() {
                 Forward <ChevronRight size={17} aria-hidden="true" />
               </button>
             </div>
+            {selectionInfo.isPhrase && (
+              <div className="extend-row shrink-row" role="group" aria-label="Shorten the phrase">
+                <button className="extend-button" onClick={() => shrinkSelection('start')} aria-label="Remove first word from phrase">
+                  <Minus size={15} aria-hidden="true" /> First word
+                </button>
+                <span className="extend-hint">Shorten</span>
+                <button className="extend-button" onClick={() => shrinkSelection('end')} aria-label="Remove last word from phrase">
+                  Last word <Minus size={15} aria-hidden="true" />
+                </button>
+              </div>
+            )}
             {selectionInfo.single ? (
               <>
                 {selectionInfo.single.entry.origin === 'glossary' && (

@@ -615,3 +615,34 @@ button:disabled { cursor: default; }
 @media (min-width: 760px) {
   .library-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* Phrase shortening and spaced review (2026-11-16) */
+.shrink-row { margin-top: 8px; }
+.review-panel { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; margin-top: 18px; padding: 16px 18px; border: 1px solid var(--accent-soft); border-radius: 12px; background: var(--accent-faint); }
+.review-panel-text { display: flex; align-items: baseline; gap: 9px; flex: 1 1 200px; }
+.review-panel-text strong { color: var(--accent-bright); font-size: 27px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.review-panel-text span { color: var(--muted-light); font-size: 13px; line-height: 1.5; }
+.review-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.review-choice-button { min-height: 48px; font-size: 13px; }
+.card-review { margin-top: 9px; color: var(--muted); font-size: 12px; }
+.review-session { margin-top: 6px; }
+.review-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 6px 0 12px; border-bottom: 1px solid var(--line); color: var(--muted-light); font-size: 13px; font-variant-numeric: tabular-nums; }
+.review-card { margin-top: 18px; padding: 26px 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); text-align: center; }
+.review-card h2 { color: var(--text); font-family: var(--font-cjk); font-size: 38px; font-weight: 600; line-height: 1.3; overflow-wrap: anywhere; }
+.review-card .card-pinyin { margin-top: 14px; font-size: 17px; }
+.review-card .card-meaning { margin-top: 10px; font-size: 16px; line-height: 1.55; }
+.review-question { margin: 14px 0 18px; color: var(--muted-light); font-size: 14px; }
+.review-clause { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted-light); font-family: var(--font-cjk); font-size: 15px; line-height: 1.75; }
+.review-wide { width: 100%; margin-top: 18px; }
+.review-grade { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
+.grade-again { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 17px; border: 1px solid var(--line-strong); border-radius: 9px; color: var(--text); background: var(--surface); font-size: 13px; font-weight: 700; cursor: pointer; }
+.grade-again:hover { border-color: var(--danger-soft); color: var(--danger); background: var(--danger-faint); }
+.choice-list { display: grid; gap: 9px; text-align: left; }
+.choice-option { min-height: 48px; padding: 11px 14px; border: 1px solid var(--line-strong); border-radius: 9px; color: var(--text); background: var(--surface); font-size: 14px; line-height: 1.45; text-align: left; cursor: pointer; overflow-wrap: anywhere; }
+.choice-option:hover:not(:disabled) { border-color: var(--accent-soft); background: var(--accent-faint); }
+.choice-option.is-correct { border-color: var(--success); color: var(--text); box-shadow: inset 4px 0 0 var(--success); }
+.choice-option.is-wrong { border-color: var(--danger); color: var(--danger); background: var(--danger-faint); box-shadow: inset 4px 0 0 var(--danger); }
+.review-verdict { margin-top: 16px; font-size: 14px; font-weight: 650; }
+.review-verdict.is-correct { color: var(--success); }
+.review-verdict.is-wrong { color: var(--danger); }
+.review-done { padding-top: 40px; }

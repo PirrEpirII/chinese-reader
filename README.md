@@ -10,7 +10,9 @@ This section is newer than the rest of the file; where they disagree, this wins.
 - The owner ran the **physical-iPhone check** (iOS 27.0, Safari): tapping, saving, reload persistence, Home Screen install and Airplane Mode all worked, by his report.
 - The architecture changed (no Google Drive; GitHub for app and data; laptop-side text processing; personal glossary). The project note in the vault has the details and the task list for the next agent.
 - `tools/` holds the laptop pipeline, a sample glossary and a sample package; see `tools/README.md`.
-- Next work, in order: load packages in the app, save words with their clause, unsave, Copy as Markdown, then the Obsidian merge.
+- Done since by Kimi_Leonid (2026-11-15/16): package rendering, shared learning pool, unsave with undo, Copy as Markdown, themes and settings, Library with auto-resume, phrase selection, GitHub library source.
+- Added by Claude_Leonid on 2026-11-16: **phrase shortening** (remove the first or last word of a selected phrase) and **spaced review** in the Learning view: flashcards and 4-option multiple choice, intervals 1, 3, 7, 16 days, state in `chinese-reader-review-v1`. Wrong options come from unsaved words of the loaded packages; phrases are always flashcards. `npm run lint`, `npm run build` and 14/14 Playwright checks passed in Claude's workspace (Linux, Chrome); not run on the laptop, not yet checked on the iPhone.
+- Next work: the Obsidian merge of saved words; real texts in the data repository.
 
 ## Current status — 2026-11-15
 
